@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="공공기관 심사·평가 경험을 바탕으로 중소기업·스타트업·소상공인 AI교육 및 컨설팅, AI·AX 교육, 공공과제 AI 사업계획서 작성과 연구기획 문서 생산성 향상을 설계하는 윤영식의 소개와 커리어" />
+  <title>윤영식 | 소개·커리어</title>
+  <style>
+    :root {
+      --paper: #f4f1e9;
+      --paper-2: #e8e2d6;
+      --ink: #102c2d;
+      --muted: #617172;
+      --line: rgba(16,44,45,.18);
+      --teal: #007f78;
+      --lime: #c9f04a;
+      --orange: #ff6846;
+      --white: #fffdf8;
+      --display: "Noto Serif KR", "Batang", serif;
+      --body: "Noto Sans KR", "Malgun Gothic", sans-serif;
+      --mono: "Bahnschrift", "Consolas", monospace;
+      --max: 1240px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--body);
+      line-height: 1.65;
+      word-break: keep-all;
+    }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--lime); color: var(--ink); }
+    .grain {
+      position: fixed; inset: 0; pointer-events: none; z-index: 30; opacity: .18;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+    }
+    .nav { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); backdrop-filter: blur(14px); background: rgba(244,241,233,.9); }
+    .nav-inner { max-width: var(--max); min-height: 72px; margin: auto; padding: 0 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font: 650 15px/1 var(--mono); letter-spacing: .04em; }
+    .brand-mark { width: 13px; height: 13px; background: var(--teal); transform: rotate(45deg); box-shadow: 5px 5px 0 var(--lime); }
+    .nav-links { display: flex; gap: 28px; font-size: 13px; font-weight: 700; }
+    .nav-links a { position: relative; }
+    .nav-links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -7px; height: 2px; background: var(--teal); transition: right .25s ease; }
+    .nav-links a:hover::after, .nav-links a.active::after { right: 0; }
+    .nav-cta { justify-self: end; }
+    .pill { display: inline-flex; align-items: center; gap: 9px; padding: 10px 15px; border: 1px solid var(--ink); border-radius: 999px; font-size: 11px; font-weight: 800; }
+    .pill:hover { background: var(--ink); color: var(--paper); }
+
+    .hero {
+      max-width: var(--max);
+      margin: auto;
+      padding: 66px 28px 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr);
+      gap: 28px;
+    }
+    .hero-main { min-height: 650px; padding: 52px; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; position: relative; overflow: hidden; box-shadow: 12px 12px 0 var(--teal); }
+    .hero-main::after { content: ""; position: absolute; width: 340px; height: 340px; right: -90px; bottom: -150px; border: 1px solid rgba(201,240,74,.38); border-radius: 50%; box-shadow: 0 0 0 44px rgba(201,240,74,.055), 0 0 0 88px rgba(201,240,74,.03); }
+    .eyebrow { position: relative; z-index: 1; display: flex; align-items: center; gap: 12px; color: var(--lime); font: 750 10px/1 var(--mono); letter-spacing: .14em; }
+    .eyebrow::before { content: ""; width: 34px; height: 2px; background: var(--lime); }
+    h1 { position: relative; z-index: 1; margin: 74px 0 0; max-width: 760px; font: 760 clamp(49px, 6.2vw, 86px)/1.02 var(--display); letter-spacing: -.065em; }
+    h1 em { color: var(--lime); font-style: normal; }
+    .hero-lead { position: relative; z-index: 1; max-width: 650px; margin: 34px 0 0; color: rgba(255,255,255,.72); font-size: 16px; }
+    .hero-actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 42px; }
+    .button { display: inline-flex; align-items: center; justify-content: space-between; min-width: 190px; min-height: 51px; padding: 0 17px; border: 1px solid rgba(255,255,255,.55); font-size: 12px; font-weight: 800; }
+    .button.primary { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+    .button:hover { transform: translateY(-2px); }
+    .hero-side { display: grid; grid-template-rows: auto 1fr; gap: 28px; }
+    .identity-card { padding: 30px; border: 1px solid var(--ink); background: var(--white); }
+    .identity-card .label { color: var(--teal); font: 800 9px/1 var(--mono); letter-spacing: .14em; }
+    .identity-card h2 { margin: 28px 0 12px; font: 760 39px/1.08 var(--display); letter-spacing: -.045em; }
+    .identity-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .identity-facts { display: grid; margin-top: 29px; border-top: 1px solid var(--line); }
+    .identity-fact { display: grid; grid-template-columns: 82px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+    .identity-fact strong { color: var(--muted); font: 700 9px/1.6 var(--mono); letter-spacing: .08em; }
+    .career-axis { padding: 30px; background: var(--orange); color: var(--ink); display: flex; flex-direction: column; justify-content: space-between; }
+    .career-axis .year { font: 800 12px/1 var(--mono); letter-spacing: .12em; }
+    .career-axis strong { display: block; margin-top: 70px; font: 780 54px/.9 var(--display); letter-spacing: -.06em; }
+    .career-axis p { margin: 26px 0 0; font-size: 13px; }
+
+    .section { padding: 110px 28px; }
+    .section-inner { max-width: var(--max); margin: auto; }
+    .section-kicker { color: var(--teal); font: 800 10px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+    .section-title { margin: 14px 0 50px; font: 760 clamp(42px, 5vw, 68px)/1 var(--display); letter-spacing: -.055em; }
+    .thesis-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+    .thesis { min-height: 310px; padding: 28px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); display: flex; flex-direction: column; }
+    .thesis-num { color: var(--teal); font: 800 10px/1 var(--mono); }
+    .thesis h3 { margin: 70px 0 15px; font: 740 29px/1.17 var(--display); letter-spacing: -.04em; }
+    .thesis p { margin: auto 0 0; color: var(--muted); font-size: 13px; }
+
+    .career { background: var(--ink); color: var(--paper); }
+    .career .section-kicker { color: var(--lime); }
+    .career-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; }
+    .career-intro .section-title { margin-bottom: 0; }
+    .career-intro p { margin: 0; color: rgba(255,255,255,.65); font-size: 14px; }
+    .timeline { margin-top: 58px; border-top: 1px solid rgba(255,255,255,.35); }
+    .timeline-item { display: grid; grid-template-columns: 150px minmax(230px,.75fr) 1.25fr; gap: 28px; padding: 25px 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+    .timeline-time { color: var(--lime); font: 750 11px/1.4 var(--mono); }
+    .timeline-role { font: 720 18px/1.4 var(--display); }
+    .timeline-detail { color: rgba(255,255,255,.65); font-size: 13px; }
+
+    .expertise-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+    .expertise-item { display: grid; grid-template-columns: 52px 1fr; gap: 20px; padding: 27px 0; border-bottom: 1px solid var(--line); }
+    .expertise-item:nth-child(odd) { padding-right: 30px; border-right: 1px solid var(--line); }
+    .expertise-item:nth-child(even) { padding-left: 30px; }
+    .expertise-num { color: var(--teal); font: 800 10px/1 var(--mono); }
+    .expertise-item h3 { margin: -4px 0 8px; font: 730 23px/1.25 var(--display); letter-spacing: -.035em; }
+    .expertise-item p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .evaluator { position: relative; overflow: hidden; background: var(--teal); color: var(--white); }
+    .evaluator::after { content: "REVIEW"; position: absolute; right: -24px; bottom: -44px; color: rgba(255,255,255,.055); font: 850 clamp(110px, 18vw, 260px)/.8 var(--display); letter-spacing: -.08em; pointer-events: none; }
+    .evaluator .section-kicker { color: var(--lime); }
+    .evaluator-layout { position: relative; z-index: 1; display: grid; grid-template-columns: .82fr 1.18fr; gap: 78px; align-items: start; }
+    .evaluator-lead h2 { margin: 16px 0 28px; font: 770 clamp(44px, 5.6vw, 76px)/.98 var(--display); letter-spacing: -.06em; }
+    .evaluator-lead h2 em { color: var(--lime); font-style: normal; }
+    .evaluator-lead p { max-width: 500px; margin: 0; color: rgba(255,255,255,.74); font-size: 14px; }
+    .evaluator-principle { margin-top: 35px; padding: 21px 0; border-top: 1px solid rgba(255,255,255,.45); border-bottom: 1px solid rgba(255,255,255,.45); color: var(--white); font: 720 20px/1.45 var(--display); }
+    .evaluator-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid rgba(255,255,255,.42); border-left: 1px solid rgba(255,255,255,.42); }
+    .evaluator-card { min-height: 220px; padding: 25px; border-right: 1px solid rgba(255,255,255,.42); border-bottom: 1px solid rgba(255,255,255,.42); background: rgba(4,25,26,.12); }
+    .evaluator-card span { color: var(--lime); font: 800 9px/1 var(--mono); letter-spacing: .1em; }
+    .evaluator-card h3 { margin: 48px 0 11px; font: 740 22px/1.22 var(--display); letter-spacing: -.035em; }
+    .evaluator-card p { margin: 0; color: rgba(255,255,255,.68); font-size: 12px; }
+
+    .lectures { background: var(--paper-2); }
+    .lecture-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+    .lecture { min-height: 205px; padding: 23px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); background: rgba(255,255,255,.22); }
+    .lecture-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--teal); font: 750 9px/1.35 var(--mono); letter-spacing: .06em; }
+    .lecture h3 { margin: 35px 0 8px; font: 730 21px/1.3 var(--display); letter-spacing: -.03em; }
+    .lecture p { margin: 0; color: var(--muted); font-size: 12px; }
+
+    .public-brief { background: var(--ink); color: var(--paper); }
+    .public-brief .section-kicker { color: var(--lime); }
+    .public-brief .section-title { margin-bottom: 24px; }
+    .public-brief-intro { max-width: 780px; color: rgba(255,255,255,.72); font-size: 14px; }
+    .public-brief-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 42px; border-top: 1px solid rgba(255,255,255,.36); border-left: 1px solid rgba(255,255,255,.36); }
+    .public-brief-card { min-height: 230px; padding: 25px; border-right: 1px solid rgba(255,255,255,.36); border-bottom: 1px solid rgba(255,255,255,.36); }
+    .public-brief-card span { color: var(--lime); font: 800 9px/1 var(--mono); letter-spacing: .1em; }
+    .public-brief-card h3 { margin: 48px 0 10px; font: 730 22px/1.25 var(--display); }
+    .public-brief-card p { margin: 0; color: rgba(255,255,255,.68); font-size: 12px; }
+
+    .recognition-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; }
+    .award-stack { border-top: 3px solid var(--ink); }
+    .award { display: grid; grid-template-columns: 86px 1fr; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .award-year { color: var(--teal); font: 800 11px/1.4 var(--mono); }
+    .award strong { font-size: 14px; }
+    .activity-panel { padding: 34px; background: var(--white); border: 1px solid var(--ink); box-shadow: 9px 9px 0 var(--lime); }
+    .activity-panel h3 { margin: 0 0 24px; font: 750 28px/1.2 var(--display); letter-spacing: -.04em; }
+    .activity-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
+    .activity { padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .credential-note { margin-top: 25px; padding: 18px; background: var(--ink); color: var(--paper); font-size: 12px; }
+    .credential-note a { color: var(--lime); font-weight: 800; }
+
+    .contact { padding: 95px 28px 34px; background: var(--teal); color: var(--white); }
+    .contact-inner { max-width: var(--max); margin: auto; }
+    .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: end; }
+    .contact h2 { margin: 0; font: 760 clamp(45px, 6vw, 78px)/1 var(--display); letter-spacing: -.055em; }
+    .contact-panel p { max-width: 560px; margin: 0 0 28px; color: rgba(255,255,255,.75); }
+    .contact-mail { display: inline-flex; align-items: center; gap: 12px; font: 700 20px/1 var(--mono); }
+    .footer { margin-top: 75px; display: flex; justify-content: space-between; color: rgba(255,255,255,.64); font: 650 10px/1.4 var(--mono); }
+
+    @media (max-width: 920px) {
+      .nav-inner { grid-template-columns: 1fr auto; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-main { min-height: 610px; }
+      .hero-side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .thesis-grid { grid-template-columns: 1fr; }
+      .thesis { min-height: 240px; }
+      .career-intro, .recognition-layout, .contact-grid { grid-template-columns: 1fr; }
+      .evaluator-layout { grid-template-columns: 1fr; gap: 50px; }
+      .timeline-item { grid-template-columns: 120px 1fr; }
+      .timeline-detail { grid-column: 2; }
+    }
+    @media (max-width: 640px) {
+      .nav-inner { min-height: 62px; padding: 0 18px; }
+      .brand { font-size: 12px; }
+      .pill { padding: 9px 12px; font-size: 10px; }
+      .hero { padding: 34px 18px 0; }
+      .hero-main { min-height: 570px; padding: 28px 23px; box-shadow: 8px 8px 0 var(--teal); }
+      h1 { margin-top: 60px; font-size: 49px; }
+      .hero-lead { font-size: 14px; }
+      .button { width: 100%; }
+      .hero-side { grid-template-columns: 1fr; }
+      .career-axis strong { margin-top: 45px; }
+      .section { padding: 80px 18px; }
+      .section-title { margin-bottom: 36px; font-size: 43px; }
+      .thesis h3 { margin-top: 45px; }
+      .timeline-item { grid-template-columns: 1fr; gap: 8px; }
+      .timeline-detail { grid-column: auto; }
+      .expertise-grid, .lecture-grid, .public-brief-grid { grid-template-columns: 1fr; }
+      .evaluator-grid { grid-template-columns: 1fr; }
+      .evaluator-card { min-height: 190px; }
+      .expertise-item:nth-child(odd), .expertise-item:nth-child(even) { padding: 24px 0; border-right: 0; }
+      .lecture { min-height: 190px; }
+      .recognition-layout { gap: 45px; }
+      .activity-panel { padding: 25px; box-shadow: 7px 7px 0 var(--lime); }
+      .contact { padding: 80px 18px 28px; }
+      .contact-mail { font-size: 16px; }
+      .footer { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="프로젝트 소개 홈으로"><span class="brand-mark" aria-hidden="true"></span>윤영식</a>
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a class="active" href="#about">소개</a>
+        <a href="#career">커리어</a>
+        <a href="#lectures">강의</a>
+        <a href="#public-project">공공과제</a>
+        <a href="index.html#all-projects">프로젝트</a>
+        <a href="index.html#credentials">자격·수료</a>
+        <a href="assets/downloads/yoon-young-sik-ai-ax-portfolio-mobile.pdf" download>PDF 다운로드</a>
+      </nav>
+      <div class="nav-cta"><a class="pill" href="index.html">프로젝트 소개 홈 <span>↗</span></a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about" aria-labelledby="about-title">
+      <div class="hero-main">
+        <div class="eyebrow">ABOUT / CAREER</div>
+        <h1 id="about-title">기술을 <em>업무로</em>,<br />경험을 실행 구조로</h1>
+        <p class="hero-lead">2002 FIFA 한일 월드컵 운영 시스템 컨설팅에서 출발해 포털·통신·방송·언론·콘텐츠 경영을 거쳤습니다. 공공기관의 사업·기술·콘텐츠를 심사해 온 평가 기준으로, 생성형 AI와 에이전틱 AI를 조직의 실제 업무와 검증 가능한 산출물에 연결합니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#career">커리어 연표 <span>↘</span></a>
+          <a class="button" href="index.html#all-projects">프로젝트 <span>↗</span></a>
+          <a class="button" href="assets/downloads/yoon-young-sik-ai-ax-portfolio-mobile.pdf" download>프로젝트 소개 PDF <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <article class="identity-card">
+          <div class="label">PROFILE / CURRENT</div>
+          <h2>윤영식</h2>
+          <p>검색·네트워크·콘텐츠 실무 경험을 AI·AX 전환의 언어와 실행 구조로 번역하는 강사·컨설턴트입니다.</p>
+          <div class="identity-facts">
+            <div class="identity-fact"><strong>주요 커리어</strong><span>2002년 FIFA 한일 월드컵 컨설턴트 · 포털 전략기획 및 검색컨텐츠 팀장 · 머니투데이·뉴스1 전략기획실장·CIO · SkylifeTV(현 ENA) ICT팀장 · 메디게이트뉴스 대표·편집인 · 무비스트 발행인·편집인</span></div>
+            <div class="identity-fact"><strong>학력</strong><span>중앙대학교 경영학과 졸업</span></div>
+            <div class="identity-fact"><strong>전문 역할</strong><span>AI 전략 강의·컨설팅 · 소상공인 현장 컨설팅 · 뉴스룸 Video-First 전환 · 콘텐츠 IP</span></div>
+            <div class="identity-fact"><strong>공공 전문성</strong><span>한국콘텐츠진흥원·한국언론진흥재단 등 공공기관 심사·평가위원 · 한국인터넷전문가협회 최고평가위원·AI혁신서비스 전문위원</span></div>
+          </div>
+        </article>
+        <aside class="career-axis">
+          <span class="year">2000 → NOW</span>
+          <div><strong>ICT<br />MEDIA<br />AI·AX</strong><p>운영 시스템에서 뉴스 빅데이터, 콘텐츠 제작, 에이전틱 업무 자동화까지 이어진 커리어 축.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-kicker">How Experience Connects</div>
+        <h2 class="section-title">세 분야의 경험이<br />하나의 방법론이 됩니다</h2>
+        <div class="thesis-grid">
+          <article class="thesis"><span class="thesis-num">01 / SYSTEM</span><h3>복잡한 운영을<br />구조로 바꿉니다</h3><p>월드컵 운영 시스템, 포털·통신 서비스, 방송 ICT의 경험을 바탕으로 자료·도구·사람의 역할을 실행 흐름으로 설계합니다.</p></article>
+          <article class="thesis"><span class="thesis-num">02 / CONTENT</span><h3>콘텐츠를 데이터와<br />사업으로 읽습니다</h3><p>언론사 CIO·전략기획, 미디어 경영, 드라마·영화 제작 경험을 통해 콘텐츠의 품질과 유통, 수익 구조를 함께 봅니다.</p></article>
+          <article class="thesis"><span class="thesis-num">03 / AI·AX</span><h3>AI를 결과물과<br />책임으로 연결합니다</h3><p>Claude Code·Codex·MCP·스킬을 활용해 조사, 작성, 검증, 문서화, 사람 승인까지 재사용 가능한 업무 체계를 만듭니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section career" id="career">
+      <div class="section-inner">
+        <div class="career-intro">
+          <div><div class="section-kicker">Career Timeline</div><h2 class="section-title">운영·서비스·미디어를<br />거쳐 AI·AX로</h2></div>
+          <p>기술 자체보다 기술이 조직과 고객에게 어떤 결과를 만드는지를 중심으로 역할을 확장해 왔습니다.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-time">2022.12~현재</div><div class="timeline-role">NextAI · 아이피플래닛 대표</div><div class="timeline-detail">AI 전략 강의·컨설팅, 소상공인 현장 컨설팅, 뉴스룸 Video-First 전환, 콘텐츠 IP 사업</div></article>
+          <article class="timeline-item"><div class="timeline-time">2023.07~현재</div><div class="timeline-role">더바이오 경영고문</div><div class="timeline-detail">의료·제약·바이오 미디어 경영 및 AI 전략 자문</div></article>
+          <article class="timeline-item"><div class="timeline-time">2018~2022</div><div class="timeline-role">마이지놈박스 스튜디오 대표이사</div><div class="timeline-detail">KT Seezn 오리지널 드라마 5편·영화 2편, 무비툰 제작·연재</div></article>
+          <article class="timeline-item"><div class="timeline-time">2018~2021</div><div class="timeline-role">무비스트 발행인</div><div class="timeline-detail">영화 전문 미디어 경영, AI 영화 흥행 예측 솔루션 개발·도입</div></article>
+          <article class="timeline-item"><div class="timeline-time">2017~2018</div><div class="timeline-role">메디게이트뉴스 편집인 겸 대표</div><div class="timeline-detail">의료·의학 미디어 운영과 콘텐츠 전략</div></article>
+          <article class="timeline-item"><div class="timeline-time">2015~2017</div><div class="timeline-role">머니투데이그룹·뉴스1코리아 전략기획실장·CIO</div><div class="timeline-detail">그룹 전략기획, 최고정보책임, 뉴스 빅데이터 서비스 기획</div></article>
+          <article class="timeline-item"><div class="timeline-time">2011~2015</div><div class="timeline-role">SkylifeTV ICT팀장</div><div class="timeline-detail">KT Olleh tv 채널IT 론칭 및 방송 프로그램 제작 기획</div></article>
+          <article class="timeline-item"><div class="timeline-time">2003~2011</div><div class="timeline-role">SK그룹사 서비스·DB사업 본부장</div><div class="timeline-detail">SK컴즈 포털·검색·싸이월드 전략, SKT Nate·SK에너지·SK브로드밴드 서비스 기획</div></article>
+          <article class="timeline-item"><div class="timeline-time">2000~2003</div><div class="timeline-role">2002 FIFA 한일 월드컵 SSIC 컨설턴트</div><div class="timeline-detail">대회 운영·자원봉사 시스템 기획, 한국관광공사·16개 광역지자체 콘텐츠 제휴</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="section-inner">
+        <div class="section-kicker">Expertise</div>
+        <h2 class="section-title">현재 설계하고<br />가르치는 영역</h2>
+        <div class="expertise-grid">
+          <article class="expertise-item"><span class="expertise-num">01</span><div><h3>생성형 AI 업무 활용</h3><p>ChatGPT·Claude 실무, Claude Code·Codex 에이전틱 업무 자동화, 바이브코딩</p></div></article>
+          <article class="expertise-item"><span class="expertise-num">02</span><div><h3>GEO·AI 검색 전략</h3><p>AI 검색 유입 분석, 인용 전략, 뉴스룸·마케팅 적용, 네이버 AI 인용 가이드</p></div></article>
+          <article class="expertise-item"><span class="expertise-num">03</span><div><h3>데이터 분석·서비스 기획</h3><p>GA4, 뉴스 빅데이터, 공공데이터 수집·분석, 데이터 기반 서비스 기획</p></div></article>
+          <article class="expertise-item"><span class="expertise-num">04</span><div><h3>저널리즘·콘텐츠·전자출판</h3><p>데이터·팩트체크 저널리즘, AI 기사 작성, 한국어 문서 자동화와 상업도서급 PDF 조판</p></div></article>
+          <article class="expertise-item"><span class="expertise-num">05</span><div><h3>AI 조직·품질 운영</h3><p>다중 에이전트 역할 설계, 스키마·검증 루프·시각 회귀, 보안·책임 기준, MCP·스킬·플러그인</p></div></article>
+          <article class="expertise-item"><span class="expertise-num">06</span><div><h3>중소기업·스타트업·소상공인 AI교육 및 컨설팅</h3><p>조직의 규모와 현장 업무에 맞춰 AI 활용법을 교육합니다. 문제를 정리하고 우선 실행 과제를 정한 뒤 성과를 확인할 수 있는 문서와 자동화 체계를 함께 마련합니다.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evaluator" id="public-review" aria-labelledby="public-review-title">
+      <div class="section-inner evaluator-layout">
+        <div class="evaluator-lead">
+          <div class="section-kicker">Public Review / Teaching Authority</div>
+          <h2 id="public-review-title">검증 기준을 적용해<br /><em>현장에 맞게 가르칩니다.</em></h2>
+          <p>다수의 공공기관에서 사업·기술·콘텐츠·정부포상 후보를 검토하고 평가해 왔습니다. 강의에서도 유행하는 도구 소개에 머물지 않고, 실제 심사 현장에서 요구되는 타당성·실행 가능성·증거·책임 기준을 적용합니다.</p>
+          <div class="evaluator-principle">“잘 만든 결과물”을 넘어<br />“검증과 평가를 통과할 결과물”로.</div>
+        </div>
+        <div class="evaluator-grid" aria-label="주요 공공 심사 및 평가 활동">
+          <article class="evaluator-card"><span>01 / CONTENT</span><h3>한국콘텐츠진흥원</h3><p>대한민국 콘텐츠대상 정부포상과 만화·웹툰·이야기산업·신기술 활용 관련 사업 및 연구의 전문가 평가.</p></article>
+          <article class="evaluator-card"><span>02 / JOURNALISM</span><h3>한국언론진흥재단</h3><p>뉴스 빅데이터 분석시스템과 업무전산 고도화 사업의 기술평가·감리 심사, 디지털저널리즘 연수 자문.</p></article>
+          <article class="evaluator-card"><span>03 / DIGITAL INNOVATION</span><h3>한국인터넷전문가협회</h3><p>이사·최고평가위원으로 디지털 서비스 품질을 평가하고, AI혁신서비스 전문위원으로 AI 서비스의 혁신성과 완성도를 검토.</p></article>
+          <article class="evaluator-card"><span>04 / PUBLIC SECTOR</span><h3>중앙·지방 공공기관</h3><p>과학기술·콘텐츠·관광·창업·지역산업 분야의 사업 선정, 기술 검토, 성과 평가와 자문 활동.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lectures" id="lectures">
+      <div class="section-inner">
+        <div class="section-kicker">Recent Lectures / 2025—2026</div>
+        <h2 class="section-title">교육이 끝난 뒤에도<br />업무에 남는 결과를 만듭니다</h2>
+        <div class="lecture-grid">
+          <article class="lecture"><div class="lecture-meta"><span>2026.08</span><span>하나 파워온 스토어 소상공인 AI 활용 컨설턴트 발대식</span></div><h3>사장님을 움직이는 컨설팅은 무엇이 다른가</h3><p>현장에서 신뢰를 만들고 문제를 정리한 뒤 우선 실행 과제와 성과지표를 정하는 30쪽 사례 특강</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026.08</span><span>한국언론진흥재단 대구지사</span></div><h3>언론사의 AI 공존화와 Video-First 전략</h3><p>뉴스 소비의 영상화, AI 숏폼 제작, 해외 뉴스룸 사례와 국내 전환 전략</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026.07</span><span>NEXTAI</span></div><h3>Korean Humanize 5차 고도화 실전기</h3><p>리뷰가 스킬을 키운다 · 120분 실습 2트랙</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026.06</span><span>한국언론진흥재단 부산지사</span></div><h3>AI 시대의 데이터 수집: 바이브코딩 1day</h3><p>기자 대상 8시간 데이터 수집·분석·시각화 실습</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026.06</span><span>한국언론진흥재단 미디어교육원</span></div><h3>1day 바이브코딩 실습 과정</h3><p>Claude Code와 공공데이터 기반 취재 산출물 제작</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>한국언론진흥재단</span></div><h3>AI 미디어 하네스</h3><p>조사·출처 검증·작성·평가·사람 승인 기반 콘텐츠 제작</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>한국기자협회 AXIO</span></div><h3>기사 쓰기 스킬 3종</h3><p>GEO 관점을 반영해 기사 한 편을 완성하는 실습</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026.04</span><span>언론인 대상</span></div><h3>GEO 전략과 기사·콘텐츠 작성</h3><p>AI 검색 인용 구조와 콘텐츠 개선 실무</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>하나 파워온</span></div><h3>AI 활용 마케팅 컨설턴트 양성과정</h3><p>13차시·52시간 강의안·프롬프트북과 현장실습 설계·강의</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>고양산업진흥원</span></div><h3>소상공인 AI 더하기</h3><p>쇼핑몰 비교·장바구니 준비·결제 전 안전 확인 실습</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>NEXTAI</span></div><h3>GEO 실행형 분석 대시보드</h3><p>GA4 데이터를 개선 액션으로 연결하는 1일·8시간 기술 강의</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>기업·기관</span></div><h3>ChatGPT Codex 에이전틱 업무자동화</h3><p>업무 자동화와 PPT 발표자료 제작 통합 과정</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>기업·기관</span></div><h3>클로드 7가지 도구</h3><p>채팅을 넘어 Claude Code·Cowork·MCP 업무 자동화로</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2026</span><span>공공·기업</span></div><h3>AI 활용 정부과제 제안서 작성</h3><p>자료 분석·작성·검증·문서 산출물까지 이어지는 실무</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2025.12</span><span>동국대·남서울대</span></div><h3>생성형 AI 검색과 뉴스룸 혁신</h3><p>AI 검색 Infotrend와 뉴스룸 전략 초청강연</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2025~2026</span><span>한국언론진흥재단</span></div><h3>기자 대상 Claude Code 바이브코딩</h3><p>4세션 · 139페이지 배포 교안 자체 개발</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2025.12</span><span>빅데이터 러닝센터</span></div><h3>생성형AI와 AI에이전트로 연구 기획</h3><p>AI·LLM 원리, 고급 프롬프팅, 데이터 분석·시각화, RAG 문서작성과 최종 프로젝트</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2025.10 · DAY 2</span><span>빅데이터 러닝센터</span></div><h3>AI에이전트 기반 연구기획·보고·제안</h3><p>API 연동·바이브코딩, 데이터 수집·분석, Claude Code·Gemini CLI·Codex CLI와 MCP 활용</p></article>
+          <article class="lecture"><div class="lecture-meta"><span>2025.10</span><span>AI 사업계획서 실습</span></div><h3>AI와 함께 보고서와 사업계획서 작성하기</h3><p>검색·시장조사·데이터 분석부터 전략·프레임워크·문서 산출물까지 이어지는 AI 협업 워크플로우</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section public-brief" id="public-project" aria-labelledby="public-project-title">
+      <div class="section-inner">
+        <div class="section-kicker">Public Project / AI Business Planning</div>
+        <h2 class="section-title" id="public-project-title">공공과제 AI 사업계획서,<br />기획부터 검증 가능한 문서로</h2>
+        <p class="public-brief-intro">공공과제의 목적·수요·성과지표·예산·추진체계를 구조화하고, AI를 검색과 분석의 조수에서 전략 파트너로 확장합니다. 자료의 출처와 근거를 확인하면서 평가자가 읽고 판단할 수 있는 사업계획서와 보고서 산출물을 설계합니다.</p>
+        <div class="public-brief-grid">
+          <article class="public-brief-card"><span>01 / FRAME</span><h3>과제 구조화</h3><p>공고문과 기관 자료에서 사업 목적, 대상, 문제 정의, 추진 범위를 추출하고 논리모형으로 정리합니다.</p></article>
+          <article class="public-brief-card"><span>02 / EVIDENCE</span><h3>근거 기반 전략</h3><p>시장·정책·공공데이터를 수집·분석해 필요성, 차별성, 실행 가능성과 성과지표를 연결합니다.</p></article>
+          <article class="public-brief-card"><span>03 / DELIVER</span><h3>평가 대응 산출물</h3><p>목차 설계, 초안 작성, 표·예산·일정 정리, 출처 검증과 문서 품질 점검까지 반복 가능한 흐름으로 만듭니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recognition">
+      <div class="section-inner">
+        <div class="section-kicker">Awards / Public Contribution</div>
+        <h2 class="section-title">현장 경험을<br />평가와 생태계로 확장합니다</h2>
+        <div class="recognition-layout">
+          <div class="award-stack">
+            <div class="award"><span class="award-year">2019</span><strong>인터넷에코어워드 개인부문 비즈니스 분야 대상</strong></div>
+            <div class="award"><span class="award-year">2018</span><strong>IoT이노베이션어워드 기획 분야 대상</strong></div>
+            <div class="award"><span class="award-year">2008</span><strong>웹어워드코리아 전문포털 분야 대상</strong></div>
+            <div class="award"><span class="award-year">5회</span><strong>웹어워드코리아 최우수평가위원상 3회·우수평가위원상 2회</strong></div>
+          </div>
+          <aside class="activity-panel">
+            <h3>주요 대외활동</h3>
+            <div class="activity-list">
+              <div class="activity">문체부·한국콘텐츠진흥원 대한민국 콘텐츠대상 정부포상 및 콘텐츠산업 전문가 평가</div>
+              <div class="activity">한국언론진흥재단 기술평가·감리 심사 및 디지털저널리즘 연수 자문</div>
+              <div class="activity">한국인터넷전문가협회 이사·최고평가위원·AI혁신서비스 전문위원</div>
+              <div class="activity">한국웹툰산업협회 미디어 고문·메타버스 TF 단장</div>
+              <div class="activity">경북콘텐츠기업지원센터·경북웹툰캠퍼스·대구관광재단 자문·심사</div>
+              <div class="activity">한국인공지능연구소 발기인 겸 이사</div>
+              <div class="activity">고용노동부 K-Digital 데이터 애널리스트 멘토</div>
+              <div class="activity">과기부 혁신성장 청년인재 평가위원</div>
+            </div>
+            <div class="credential-note">Google 8종·Anthropic 21종·Microsoft 4종·국내 전문자격 3종, 총 36종의 자격·수료 이력을 보유하고 있습니다. <a href="index.html#credentials">자격·수료 원본 보기 ↗</a></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-grid">
+        <h2>필요한 변화를<br />다음 업무로</h2>
+        <div class="contact-panel"><p>현재 상황과 필요한 결과물을 알려주시면 교육이나 컨설팅의 범위와 진행 방식을 제안합니다.</p><a class="contact-mail" href="mailto:osiki999@gmail.com">osiki999@gmail.com <span>↗</span></a></div>
+      </div>
+      <div class="footer"><span>윤영식 / AI · AX STRATEGY & CONSULTING</span><span>SEOUL, KOREA · 2026</span></div>
+    </div>
+  </footer>
+</body>
+</html>
