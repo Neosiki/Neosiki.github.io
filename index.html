@@ -919,7 +919,24 @@
 
     .brand-logo { display:block; width:138px; height:58px; object-fit:contain; object-position:center; }
     @media (max-width:640px) { .brand-logo { width:104px; height:46px; } }
-`r`n    @media (min-width: 981px) { .hero-copy h1, .english-feature .section-title, .public-project .section-title, .service-note .section-title { text-wrap: nowrap; } }`r`n</style>
+`r`n    @media (min-width: 981px) { .hero-copy h1, .english-feature .section-title, .public-project .section-title, .service-note .section-title { text-wrap: nowrap; } }`r`n    .sales-section { padding: 96px 0; border-top: 1px solid var(--line); }
+    .sales-intro { max-width: 920px; }
+    .sales-intro .section-title { max-width: 100%; }
+    .sales-intro p { max-width: 780px; margin: 24px 0 0; color: var(--muted); line-height: 1.8; }
+    .sales-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 58px; border-top: 1px solid var(--line); }
+    .sales-point { padding: 24px 28px 0 0; border-right: 1px solid var(--line); }
+    .sales-point + .sales-point { padding-left: 28px; }
+    .sales-point:last-child { border-right: 0; }
+    .sales-point strong, .sales-service strong { display: block; font-size: 18px; color: var(--ink); }
+    .sales-point span, .sales-service span { display: block; margin-top: 10px; color: var(--muted); line-height: 1.65; }
+    .sales-service-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 52px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .sales-service { min-width: 0; padding: 22px 24px 26px 0; border-right: 1px solid var(--line); }
+    .sales-service + .sales-service { padding-left: 24px; }
+    .sales-service:last-child { border-right: 0; }
+    .sales-service b { display: block; margin-bottom: 32px; color: var(--teal-dark); font: 700 12px/1 var(--mono); }
+    .mobile-break { display: none; }
+    @media (max-width: 980px) { .sales-service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sales-service:nth-child(2) { border-right: 0; } .sales-service:nth-child(3) { border-top: 1px solid var(--line); padding-left: 0; } .sales-service:nth-child(4) { border-top: 1px solid var(--line); } }
+    @media (max-width: 640px) { .sales-section { padding: 64px 0; } .sales-points, .sales-service-list { grid-template-columns: 1fr; margin-top: 36px; } .sales-point, .sales-point + .sales-point, .sales-service, .sales-service + .sales-service { padding: 18px 0; border-right: 0; border-top: 1px solid var(--line); } .sales-point:first-child, .sales-service:first-child { border-top: 0; } .sales-service:nth-child(3), .sales-service:nth-child(4) { padding-left: 0; } }</style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -1075,34 +1092,31 @@
 
     
 
-    <section class="public-project" id="public-project">
+        <section class="sales-section sales-public" id="public-project" aria-labelledby="public-project-title">
       <div class="section-inner">
-        <div class="section-kicker">Public Project / AI Business Planning</div>
-        <h2 class="section-title">공공과제 AI 사업계획서 근거와 실행 구조를 함께 씁니다</h2>
-        <p class="public-project-intro">공고문·정책·시장·공공데이터를 바탕으로 과제의 필요성과 목표를 구조화하고 평가자가 확인할 수 있는 성과지표와 실행계획으로 연결합니다. 아래 네 개의 실무·교육 프로젝트를 클릭하면 관련 자료와 프로젝트로 이동할 수 있습니다.</p>
-        <div class="public-project-grid">
-          <a class="public-project-lead" href="#all-projects"><h3>AI 활용 정부과제 제안서 작성</h3><p>자료 분석·작성·검증·문서 산출물까지 이어지는 실무.</p><span class="public-project-link">PROJECT ARCHIVE ↘</span></a>
-          <a class="public-project-lead" href="#all-projects"><h3>AI와 함께 보고서와 사업계획서 작성하기</h3><p>검색·시장조사·데이터 분석부터 전략·프레임워크·문서 산출물까지 이어지는 AI 협업 워크플로우.</p><span class="public-project-link">PROJECT ARCHIVE ↘</span></a>
-          <a class="public-project-lead" href="https://github.com/Neosiki/codex-agentic-training" target="_blank" rel="noreferrer"><h3>AI에이전트 기반 연구기획·보고·제안</h3><p>API 연동·바이브코딩 데이터 수집·분석 Claude Code·Gemini CLI·Codex CLI와 MCP 활용.</p><span class="public-project-link">RELATED PROJECT ↗</span></a>
-          <a class="public-project-lead" href="https://github.com/Neosiki/vibe-coding-1day-kpf" target="_blank" rel="noreferrer"><h3>생성형AI와 AI에이전트로 연구 기획</h3><p>AI·LLM 원리 고급 프롬프팅 데이터 분석·시각화 RAG 문서작성과 최종 프로젝트.</p><span class="public-project-link">RELATED COURSE ↗</span></a>
+        <div class="sales-intro">
+          <div class="section-kicker">PUBLIC PROJECT / BUSINESS PLANNING</div>
+          <h2 class="section-title" id="public-project-title">怨듦났怨쇱젣? ?곌뎄湲고쉷???쒖텧 媛?ν븳 寃곌낵濡??곌껐?⑸땲??/h2>
+          <p>蹂듭옟??怨듦퀬? ?먮즺瑜?議곗쭅???ㅽ뻾 怨쇱젣濡?諛붽씀怨??대떦?먭? 寃?좏븷 ???덈뒗 洹쇨굅? ?곗텧臾쇰줈 ?뺣━?⑸땲?? 湲고쉷??諛⑺뼢遺???쒖텧 ???덉쭏 ?먭?源뚯? ???먮쫫?쇰줈 ?ㅺ퀎?⑸땲??</p>
         </div>
-        <div class="public-project-steps">
-          <div class="public-project-step"><span>01</span><div><strong>자료와 공고문 분석</strong><small>핵심 요구사항·대상·제약조건·평가항목을 추출하고 근거를 정리</small></div></div>
-          <div class="public-project-step"><span>02</span><div><strong>전략과 성과지표 설계</strong><small>문제정의·차별성·추진체계·성과지표를 사업 구조에 연결</small></div></div>
-          <div class="public-project-step"><span>03</span><div><strong>검증 가능한 문서화</strong><small>출처·표·예산·일정·리스크를 점검한 최종 산출물로 변환</small></div></div>
+        <div class="sales-points">
+          <div class="sales-point"><strong>湲고쉷 援ъ“??/strong><span>紐⑺몴쨌??겶룹텛吏꾩껜怨꽷룹꽦怨쇱??쒕? ?섎굹???ъ뾽 援ъ“濡??뺣━?⑸땲??</span></div>
+          <div class="sales-point"><strong>洹쇨굅 湲곕컲 ?묒꽦</strong><span>?뺤콉쨌?쒖옣쨌怨듦났?곗씠?곕? 寃?좏빐 ?쒖븞 ?쇰━? ?ㅽ뻾 洹쇨굅瑜?留뚮벊?덈떎.</span></div>
+          <div class="sales-point"><strong>?쒖텧 ?덉쭏 ?먭?</strong><span>異쒖쿂쨌?덉궛쨌?쇱젙쨌由ъ뒪?ъ? ?됯? ??ぉ???뺤씤???쒖텧 ?꾩꽦?꾨? ?믪엯?덈떎.</span></div>
         </div>
       </div>
     </section>
-    <section class="vibe-coding-case" id="vibe-coding" aria-labelledby="vibe-coding-title">
+        <section class="sales-section sales-vibe" id="vibe-coding" aria-labelledby="vibe-coding-title">
       <div class="section-inner">
-        <div class="section-kicker">Vibe Coding / Build With AI</div>
-        <h2 class="section-title" id="vibe-coding-title">아이디어를 실행 가능한 서비스로 AI와 함께 만듭니다</h2>
-        <p class="public-project-intro">바이브 코딩은 업무 아이디어를 말로 정리하고 AI와 함께 작동하는 결과물로 만드는 방법입니다. 데이터저널리즘 실습부터 업무자동화 3D 영어 학습앱 문서 처리까지 실제 적용 사례를 확인할 수 있습니다.</p>
-        <div class="public-project-grid">
-          <a class="public-project-lead" href="https://github.com/Neosiki/vibe-coding-1day-kpf" target="_blank" rel="noreferrer"><h3>1-Day 데이터 바이브코딩</h3><p>공공데이터를 수집하고 분석·시각화해 취재 문서까지 완성하는 실습.</p><span class="public-project-link">VIEW PROJECT ↗</span></a>
-          <a class="public-project-lead" href="https://github.com/Neosiki/codex-agentic-training" target="_blank" rel="noreferrer"><h3>Codex 에이전틱 업무자동화</h3><p>보고서·메일·PPT를 AI와 함께 만들고 검수까지 연결하는 교육.</p><span class="public-project-link">VIEW PROJECT ↗</span></a>
-          <a class="public-project-lead" href="english-learning.html"><h3>3D 영어 학습앱</h3><p>Three.js 공간·학습 팝업·복습·PWA를 하나의 작동형 앱으로 구현.</p><span class="public-project-link">OPEN APP ↗</span></a>
-          <a class="public-project-lead" href="https://github.com/Neosiki/design-studio" target="_blank" rel="noreferrer"><h3>Design Studio</h3><p>작업 상태·증분 렌더링·QA 제안·재시도를 연결한 AI 제작 운영 시스템.</p><span class="public-project-link">VIEW PROJECT ↗</span></a>
+        <div class="sales-intro">
+          <div class="section-kicker">VIBE CODING / BUILD WITH AI</div>
+          <h2 class="section-title" id="vibe-coding-title">?꾩씠?붿뼱瑜??묐룞?섎뒗 ?낅Т 寃곌낵濡??꾪솚?⑸땲??/h2>
+          <p>?낅Т ?꾩옣???꾩씠?붿뼱瑜??ㅼ젣濡??뺤씤?????덈뒗 ?뱀빋쨌?먮룞?붋룸Ц???먮쫫?쇰줈 援ы쁽?⑸땲?? ?꾩슂??踰붿쐞瑜??묎쾶 寃利앺븳 ??議곗쭅??留욊쾶 ?뺤옣?⑸땲??</p>
+        </div>
+        <div class="sales-points">
+          <div class="sales-point"><strong>臾몄젣 ?뺤쓽</strong><span>?꾩옱 ?낅Т? 諛섎났 怨쇱젙??遺꾩꽍???먮룞?뷀븷 踰붿쐞? ?곗꽑?쒖쐞瑜??뺥빀?덈떎.</span></div>
+          <div class="sales-point"><strong>鍮좊Ⅸ ?묐룞 寃利?/strong><span>?곗씠?걔룸Ц?쑣룹쎒??以??꾩슂???뺥깭濡??묐룞 媛?ν븳 ?쒖젣?덉쓣 留뚮벊?덈떎.</span></div>
+          <div class="sales-point"><strong>議곗쭅 ?곸슜</strong><span>?ъ슜 諛⑸쾿怨?寃??湲곗????뺣━??援먯쑁怨??ㅼ젣 ?낅Т ?곸슜?쇰줈 ?곌껐?⑸땲??</span></div>
         </div>
       </div>
     </section>
@@ -1131,19 +1145,18 @@
       </div>
     </section>
 
-    <section id="service">
-      <div class="section-inner service-layout">
-        <div class="service-note">
-          <div class="section-kicker">Client Services</div>
-          <h2 class="section-title">교육에서 실제 적용까지 이어집니다</h2>
-          <p>현재 사용하는 도구와 보안 기준을 먼저 확인합니다. 실제 업무 자료를 바탕으로 교육 내용을 구성하고 바로 적용할 수 있는 방법과 산출물을 제안합니다.</p>
+        <section class="sales-section sales-services" id="service" aria-labelledby="service-title">
+      <div class="section-inner">
+        <div class="sales-intro">
+          <div class="section-kicker">CLIENT SERVICES / FROM TRAINING TO DELIVERY</div>
+          <h2 class="section-title" id="service-title">?꾩슂???낅Т遺???ㅼ젣 ?곸슜源뚯? ?곌껐?⑸땲??/h2>
+          <p>議곗쭅???꾩옱 ?꾧뎄? 蹂댁븞 湲곗???癒쇱? ?뺤씤?섍퀬 ?낅Т ?먮즺瑜?諛뷀깢?쇰줈 援먯쑁쨌而⑥꽕?끒룻봽濡쒗넗??낆쓽 踰붿쐞瑜??ㅺ퀎?⑸땲?? ?ㅻ챸?쇰줈 ?앸궡吏 ?딄퀬 ?꾩옣?먯꽌 ?ъ슜?????덈뒗 ?덉감? 寃곌낵臾쇰줈 留덈Т由ы빀?덈떎.</p>
         </div>
-        <div class="service-list">
-          <div class="service-item"><span class="service-num">01</span><span class="service-name">AI·AX 교육</span><span class="service-use">특강 · 임직원 교육 · 리더 워크숍</span></div>
-          <div class="service-item"><span class="service-num">02</span><span class="service-name">업무 자동화 설계</span><span class="service-use">업무진단 · PoC · 프로세스 설계</span></div>
-          <div class="service-item"><span class="service-num">03</span><span class="service-name">문서·보고서 자동화</span><span class="service-use">PDF · Excel · Word · PPT · HWPX</span></div>
-          <div class="service-item"><span class="service-num">04</span><span class="service-name">AI 품질·검증 체계</span><span class="service-use">하네스 · 승인 게이트 · 운영 기준</span></div>
-          <div class="service-item"><span class="service-num">05</span><span class="service-name">프로토타입 제작</span><span class="service-use">AI 검색 · 데이터 · 문서 애플리케이션</span></div>
+        <div class="sales-service-list">
+          <div class="sales-service"><b>01</b><strong>AI ?낅Т ?꾪솚 援먯쑁</strong><span>?꾩쭅?먃룸━?붋룹떎臾댄? ???留욎땄 援먯쑁怨??곸슜 怨쇱젣</span></div>
+          <div class="sales-service"><b>02</b><strong>?낅Т ?먮룞??而⑥꽕??/strong><span>?낅Т 吏꾨떒쨌?곗꽑?쒖쐞 ?ㅼ젙쨌PoC쨌?ㅽ뻾 濡쒕뱶留?/span></div>
+          <div class="sales-service"><b>03</b><strong>臾몄꽌? ?곗씠???쒖슜</strong><span>?먮즺 ?섏쭛쨌遺꾩꽍쨌蹂닿퀬?쑣룹궗?낃퀎?띿꽌쨌臾몄꽌 ?곗텧臾?/span></div>
+          <div class="sales-service"><b>04</b><strong>寃??媛?ν븳 ?쒖뒪???ㅺ퀎</strong><span>?뱀씤 湲곗?쨌?덉쭏 ?먭?쨌?댁쁺 ?덉감쨌?ы쁽 媛?ν븳 湲곕줉</span></div>
         </div>
       </div>
     </section>
