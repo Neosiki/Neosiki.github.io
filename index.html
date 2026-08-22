@@ -907,7 +907,16 @@
       .hero-aside { min-height: 300px; border-left: 0; }
       .credentials-top { padding-bottom: 28px; }
     }
-      /* Unified hover treatment for existing featured and archive cards */`r`n    .project, .archive-card { transition: transform .22s ease, background-color .22s ease, color .22s ease, box-shadow .22s ease; }`r`n    .project-image, .archive-image { transition: transform .28s ease, filter .22s ease; transform-origin: center; }`r`n    .project:hover, a.archive-card:hover { position: relative; z-index: 2; transform: translateY(-5px); background: #eef8f4; box-shadow: 0 7px 0 var(--teal); }`r`n    .project:hover .project-image, .archive-card:hover .archive-image { transform: scale(1.025); filter: saturate(1.08) contrast(1.02); }`r`n    .project-arrow, .archive-open { transition: color .22s ease, transform .22s ease; }`r`n    .project:hover .project-arrow, .archive-card:hover .archive-open { color: var(--teal-dark); transform: translateX(3px); }`r`n    .project:focus-visible, .archive-card:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }`r`n    @media (prefers-reduced-motion: reduce) { .project, .archive-card, .project-image, .archive-image, .project-arrow, .archive-open { transition: none; } .project:hover, a.archive-card:hover, .project:hover .project-image, .archive-card:hover .archive-image, .project:hover .project-arrow, .archive-card:hover .archive-open { transform: none; } }`r`n</style>
+      /* Unified hover treatment for existing featured and archive cards */
+    .project, .archive-card { transition: transform .22s ease, background-color .22s ease, color .22s ease, box-shadow .22s ease; }
+    .project-image, .archive-image { transition: transform .28s ease, filter .22s ease; transform-origin: center; }
+    .project:hover, a.archive-card:hover { position: relative; z-index: 2; transform: translateY(-5px); background: #eef8f4; box-shadow: 0 7px 0 var(--teal); }
+    .project:hover .project-image, .archive-card:hover .archive-image { transform: scale(1.025); filter: saturate(1.08) contrast(1.02); }
+    .project-arrow, .archive-open { transition: color .22s ease, transform .22s ease; }
+    .project:hover .project-arrow, .archive-card:hover .archive-open { color: var(--teal-dark); transform: translateX(3px); }
+    .project:focus-visible, .archive-card:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { .project, .archive-card, .project-image, .archive-image, .project-arrow, .archive-open { transition: none; } .project:hover, a.archive-card:hover, .project:hover .project-image, .archive-card:hover .archive-image, .project:hover .project-arrow, .archive-card:hover .archive-open { transform: none; } }
+</style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
