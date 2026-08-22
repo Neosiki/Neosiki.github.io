@@ -916,6 +916,30 @@
       .archive-image { height: 150px; margin: -19px -19px 18px; width: calc(100% + 38px); }
     }
     /* KIPFA refinement: editorial hierarchy for hero, proof and credentials */
+    .hero { position: relative; isolation: isolate; overflow: hidden; background: #f7fbfa; }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .46;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(111,153,149,.22), transparent 24%),
+        radial-gradient(circle at 20% 78%, rgba(237,180,154,.16), transparent 22%),
+        linear-gradient(rgba(65,111,107,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(65,111,107,.08) 1px, transparent 1px),
+        linear-gradient(135deg, transparent 0 48%, rgba(111,153,149,.11) 48.2% 48.5%, transparent 48.7%);
+      background-size: auto, auto, 42px 42px, 42px 42px, auto;
+      mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,.65) 58%, transparent 100%);
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero-copy { align-self: start; max-width: 850px; }
+    .hero h1 { font-size: clamp(44px, 5.7vw, 84px); line-height: 1.04; text-wrap: balance; }
+    .hero h1 .line { max-width: 100%; }
+    .hero-intro { max-width: 680px; text-wrap: pretty; }
+    .hero-aside { align-self: stretch; }
+
     .hero { min-height: 640px; align-items: stretch; border-top: 1px solid var(--line); }
     .hero-copy { padding-top: clamp(24px, 5vw, 76px); }
     .hero-copy::before { content: 'AI·AX WORK TRANSFORMATION / SERVICE OVERVIEW'; display: block; margin-bottom: 22px; color: var(--teal-dark); font: 800 10px/1 var(--mono); letter-spacing: .14em; }
