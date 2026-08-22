@@ -1005,7 +1005,7 @@
         <a href="about.html">소개·커리어</a>
         <a href="#work">프로젝트</a>
         <a href="#service">전문영역</a>
-        <a href="#credentials">자격·수료</a>
+        <a href="about.html#credentials">자격·수료</a>
       </nav>
       <div class="nav-cta"><a class="pill-link" href="#contact">협업 문의 <span>↗</span></a></div>
     </div>
@@ -1166,34 +1166,6 @@
       </div>
     </section>
 
-    <section class="credentials" id="credentials">
-      <div class="section-inner">
-        <div class="credentials-top">
-          <div>
-            <div class="section-kicker">Professional Record / Verified Learning</div>
-            <h2 class="section-title">교육과 자격 이력을<br />확인 가능한 자료로 남깁니다</h2>
-          </div>
-          <div>
-            <p class="credentials-copy">AI 활용과 업무 전환에 필요한 교육 이력, 시스템·데이터베이스 자격, 국내 AI·디지털 전문자격을 발급기관과 원본 자료 기준으로 정리했습니다. 프로젝트와 교육·컨설팅 범위를 검토할 때 참고할 수 있습니다.</p>
-            <div class="credential-counts" aria-label="자격·수료 현황">
-              <div class="credential-stat"><strong>36</strong><span>TOTAL</span></div>
-              <div class="credential-stat"><strong>8</strong><span>GOOGLE</span></div>
-              <div class="credential-stat"><strong>21</strong><span>ANTHROPIC</span></div>
-              <div class="credential-stat"><strong>4</strong><span>MICROSOFT</span></div>
-              <div class="credential-stat"><strong>3</strong><span>국내 전문자격</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="cert-filter-row" role="group" aria-label="자격증 발급기관 필터">
-          <button class="cert-filter active" data-cert-filter="all">전체 36</button>
-          <button class="cert-filter" data-cert-filter="google">Google 8</button>
-          <button class="cert-filter" data-cert-filter="anthropic">Anthropic 21</button>
-          <button class="cert-filter" data-cert-filter="microsoft">Microsoft 4</button>
-          <button class="cert-filter" data-cert-filter="professional">국내 전문자격 3</button>
-        </div>
-        <div class="credential-grid" id="credential-grid" aria-live="polite"></div>
-      </div>
-    </section>
 
     <section class="public-project" id="public-project">
       <div class="section-inner">
@@ -1364,18 +1336,6 @@
     </section>
   </main>
 
-  <dialog class="cert-dialog" id="cert-dialog" aria-labelledby="cert-dialog-title">
-    <div class="cert-dialog-shell">
-      <button class="cert-close" id="cert-close" type="button" aria-label="자격증 확대 화면 닫기">×</button>
-      <div class="cert-dialog-image"><img id="cert-dialog-image" alt="" /></div>
-      <div class="cert-dialog-meta">
-        <span class="credential-provider" id="cert-dialog-provider"></span>
-        <h3 id="cert-dialog-title"></h3>
-        <p id="cert-dialog-date"></p>
-        <a class="cert-verify" id="cert-dialog-verify" target="_blank" rel="noreferrer" hidden>Credly에서 검증 ↗</a>
-      </div>
-    </div>
-  </dialog>
 
   <script>
     const filters = document.querySelectorAll('.filter');
@@ -1392,107 +1352,6 @@
       });
     });
 
-    const credentials = [
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI Professional Certificate', date: '2026.03.02', image: 'assets/certificates/cert-09.png', verify: 'https://www.credly.com/go/b872jm8g' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI Fundamentals', date: '2026.03.02', image: 'assets/certificates/cert-08.png', verify: 'https://www.credly.com/go/GZUFMTvK' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Writing and Communicating', date: '2026.03.02', image: 'assets/certificates/cert-07.png', verify: 'https://www.credly.com/go/CHMq8kOK' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Research and Insights', date: '2026.03.02', image: 'assets/certificates/cert-06.png', verify: 'https://www.credly.com/go/45b390GH' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Data Analysis', date: '2026.03.02', image: 'assets/certificates/cert-05.png', verify: 'https://www.credly.com/go/FS8Q9zOQ' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Content Creation', date: '2026.03.02', image: 'assets/certificates/cert-04.png', verify: 'https://www.credly.com/go/0DwJXpce' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Brainstorming and Planning', date: '2026.03.02', image: 'assets/certificates/cert-03.png', verify: 'https://www.credly.com/go/11EeTmHN' },
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for App Building', date: '2026.03.02', image: 'assets/certificates/cert-02.png', verify: 'https://www.credly.com/go/uSO5iAgJ' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude Code 101', date: '2026.08.06', image: 'assets/certificates/cert-01.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude 101', date: '2026.08.06', image: 'assets/certificates/cert-10.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Model Context Protocol: Advanced Topics', date: '2026.08.08', image: 'assets/certificates/cert-11.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency for Builders', date: '2026.08.12', image: 'assets/certificates/cert-12.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency for Small Businesses', date: '2026.08.11', image: 'assets/certificates/cert-13.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Teaching the AI Fluency Framework', date: '2026.08.11', image: 'assets/certificates/cert-14.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Introduction to Model Context Protocol', date: '2026.08.07', image: 'assets/certificates/cert-15.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency for nonprofits', date: '2026.08.11', image: 'assets/certificates/cert-16.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency for students', date: '2026.08.08', image: 'assets/certificates/cert-17.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Introduction to agent skills', date: '2026.08.11', image: 'assets/certificates/cert-18.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Introduction to subagents', date: '2026.08.11', image: 'assets/certificates/cert-19.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude Platform 101', date: '2026.08.07', image: 'assets/certificates/cert-20.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Introduction to Claude Cowork', date: '2026.08.07', image: 'assets/certificates/cert-21.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency: AI Capabilities & Limitations', date: '2026.08.11', image: 'assets/certificates/cert-22.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude with Amazon Bedrock', date: '2026.08.09', image: 'assets/certificates/cert-23.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude Code in Action', date: '2026.08.06', image: 'assets/certificates/cert-24.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency for educators', date: '2026.08.08', image: 'assets/certificates/cert-25.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude with Google Vertex AI', date: '2026.08.11', image: 'assets/certificates/cert-26.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency: Framework & Foundations', date: '2026.08.07', image: 'assets/certificates/cert-27.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'AI Fluency for K-12 Educators', date: '2026.08.12', image: 'assets/certificates/cert-28.png' },
-      { provider: 'anthropic', providerLabel: 'Anthropic Education', title: 'Claude with the Anthropic API', date: '2026.08.06', image: 'assets/certificates/cert-29.png' },
-      { provider: 'microsoft', providerLabel: 'Microsoft', title: 'MCSE · Microsoft Certified Systems Engineer', dateLabel: '취득일', date: '원본 미표기', image: 'assets/certificates/cert-30-mcse.jpg' },
-      { provider: 'microsoft', providerLabel: 'Microsoft', title: 'MCP · Microsoft Certified Professional', dateLabel: '취득일', date: '원본 미표기', image: 'assets/certificates/cert-31-mcp.jpg' },
-      { provider: 'microsoft', providerLabel: 'Microsoft', title: 'MCP+Internet · Microsoft Certified Professional + Internet', dateLabel: '취득일', date: '원본 미표기', image: 'assets/certificates/cert-32-mcp-internet.jpg' },
-      { provider: 'microsoft', providerLabel: 'Microsoft', title: 'MCDBA · Microsoft Certified Database Administrator', dateLabel: '취득일', date: '원본 미표기', image: 'assets/certificates/cert-33-mcdba.jpg' },
-      { provider: 'professional', providerLabel: '한국NCS자격개발원', title: '인공지능데이터전문가 1급', dateLabel: '취득일', date: '2026.02.14', image: 'assets/certificates/cert-34-ai-data-level1.jpg' },
-      { provider: 'professional', providerLabel: '한국NCS자격개발원', title: '디지털리터러시지도사 1급', dateLabel: '취득일', date: '2026.02.12', image: 'assets/certificates/cert-35-digital-literacy-level1.jpg' },
-      { provider: 'professional', providerLabel: '한국NCS자격개발원', title: '프롬프트엔지니어 1급', dateLabel: '취득일', date: '2026.02.10', image: 'assets/certificates/cert-36-prompt-engineer-level1.jpg' }
-    ];
-
-    const credentialGrid = document.querySelector('#credential-grid');
-    const certFilters = document.querySelectorAll('.cert-filter');
-    const certDialog = document.querySelector('#cert-dialog');
-    const certDialogImage = document.querySelector('#cert-dialog-image');
-    const certDialogProvider = document.querySelector('#cert-dialog-provider');
-    const certDialogTitle = document.querySelector('#cert-dialog-title');
-    const certDialogDate = document.querySelector('#cert-dialog-date');
-    const certDialogVerify = document.querySelector('#cert-dialog-verify');
-
-    function renderCredentials(provider = 'all') {
-      const visible = credentials.filter(item => provider === 'all' || item.provider === provider);
-      credentialGrid.innerHTML = visible.map(item => {
-        const index = credentials.indexOf(item);
-        return `<button class="credential-card" type="button" data-credential-index="${index}" aria-label="${item.title} 수료증 확대 보기">
-          <span class="credential-image"><img src="${item.image}" alt="${item.title} 자격·수료증" loading="lazy" /></span>
-          <span class="credential-body">
-            <span class="credential-provider">${item.providerLabel}</span>
-            <span class="credential-title">${item.title}</span>
-            <span class="credential-date">${item.date}</span>
-          </span>
-        </button>`;
-      }).join('');
-    }
-
-    certFilters.forEach(button => {
-      button.addEventListener('click', () => {
-        certFilters.forEach(item => item.classList.remove('active'));
-        button.classList.add('active');
-        renderCredentials(button.dataset.certFilter);
-      });
-    });
-
-    credentialGrid.addEventListener('click', event => {
-      const card = event.target.closest('.credential-card');
-      if (!card) return;
-      const item = credentials[Number(card.dataset.credentialIndex)];
-      certDialogImage.src = item.image;
-      certDialogImage.alt = `${item.title} 자격·수료증 원본`;
-      certDialogProvider.textContent = item.providerLabel;
-      certDialogTitle.textContent = item.title;
-      certDialogDate.textContent = `${item.dateLabel || '수료일'} ${item.date}`;
-      if (item.verify) {
-        certDialogVerify.href = item.verify;
-        certDialogVerify.hidden = false;
-      } else {
-        certDialogVerify.removeAttribute('href');
-        certDialogVerify.hidden = true;
-      }
-      certDialog.showModal();
-    });
-
-    document.querySelector('#cert-close').addEventListener('click', () => certDialog.close());
-    certDialog.addEventListener('click', event => {
-      if (event.target === certDialog) certDialog.close();
-    });
-    certDialog.addEventListener('close', () => {
-      certDialogImage.removeAttribute('src');
-      certDialogImage.alt = '';
-    });
-
-    renderCredentials();
-  </script>
   <script>
     // 공개 사이트 코드가 준비되면 이 값만 입력합니다. 비워 두면 추적을 시작하지 않습니다.
     const ANALYTICS_CONFIG = { goatCounterCode: '' };
