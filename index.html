@@ -940,6 +940,22 @@
     .footer-brand { display: inline-flex; align-items: center; min-height: 32px; }
     .footer-logo { display: block; width: 132px; height: auto; max-height: 42px; object-fit: contain; object-position: left center; }
     @media (max-width: 640px) { .footer-logo { width: 112px; max-height: 36px; } }
+
+    /* Compact layout: reduce vertical scroll while preserving responsive readability */
+    .sales-section { padding: 48px 0; }
+    .sales-intro p { margin-top: 14px; line-height: 1.6; }
+    .sales-points { margin-top: 28px; }
+    .sales-point { padding-top: 18px; }
+    .sales-point + .sales-point { padding-left: 22px; }
+    .sales-service-list { margin-top: 28px; }
+    .sales-service { padding-top: 16px; padding-bottom: 18px; }
+    .sales-service + .sales-service { padding-left: 20px; }
+    .sales-service b { margin-bottom: 18px; }
+    .section-title { margin-bottom: 28px; }
+    .english-feature .section-title { margin-bottom: 24px; }
+    .archive-head { margin-bottom: 26px; }
+    @media (max-width: 980px) { .sales-section { padding: 42px 0; } }
+    @media (max-width: 640px) { .sales-section { padding: 36px 0; } .sales-intro p { margin-top: 12px; line-height: 1.55; } .sales-points, .sales-service-list { margin-top: 22px; } .sales-point, .sales-point + .sales-point, .sales-service, .sales-service + .sales-service { padding-top: 14px; padding-bottom: 14px; } .sales-service b { margin-bottom: 12px; } .section-title { margin-bottom: 20px; } .archive-head { margin-bottom: 18px; } }
 </style>
 </head>
 <body>
