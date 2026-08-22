@@ -44,7 +44,7 @@
     .brand-logo { display: block; width: 224px; height: 78px; object-fit: contain; object-position: center; }
     .identity-logo { display: block; width: 184px; height: 82px; object-fit: contain; object-position: left center; }
     .footer-logo { display: block; width: 154px; height: 58px; object-fit: contain; object-position: left center; }
-    .footer > span:first-child { display: inline-flex; align-items: center; background: #fff; padding: 3px 8px; }
+    .footer > span:first-child { display: inline-flex; align-items: center; padding: 3px 8px; }
     .nav-links { grid-column: 1; grid-row: 1; display: flex; gap: 28px; font-size: 13px; font-weight: 700; }
     .nav-links a { position: relative; }
     .nav-links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -7px; height: 2px; background: var(--teal); transition: right .25s ease; }
@@ -162,7 +162,8 @@
     .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: end; }
     .contact h2 { margin: 0; font: 760 clamp(45px, 6vw, 78px)/1 var(--display); letter-spacing: -.055em; }
     .contact-panel p { max-width: 560px; margin: 0 0 28px; color: rgba(255,255,255,.75); }
-    .contact-mail { display: inline-flex; align-items: center; gap: 12px; font: 700 20px/1 var(--mono); }
+    .contact-mail { display: block; margin-bottom: 20px; color: var(--lime); font: 700 20px/1.35 var(--mono); overflow-wrap: anywhere; }
+    .contact-panel .pill { border-color: var(--lime); color: var(--lime); }
     .footer { margin-top: 75px; display: flex; justify-content: space-between; color: rgba(255,255,255,.64); font: 650 10px/1.4 var(--mono); }
 
     @media (max-width: 920px) {
@@ -217,7 +218,7 @@
 
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="NextAI 프로젝트 소개 홈"><img class="brand-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></a>
+      <a class="brand" href="index.html" aria-label="NextAI 프로젝트 소개 홈"><img class="brand-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></a>
       <nav class="nav-links" aria-label="주요 메뉴">
         <a class="active" href="#about">소개</a>
         <a href="#career">커리어</a>
@@ -246,7 +247,7 @@
       <div class="hero-side">
         <article class="identity-card">
           <div class="label">PROFILE / CURRENT</div>
-          <h2><img class="identity-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></h2>
+          <h2><img class="identity-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></h2>
           <p>검색·네트워크·콘텐츠 실무 경험을 AI·AX 전환의 언어와 실행 구조로 번역하는 강사·컨설턴트입니다.</p>
           <div class="identity-facts">
             <div class="identity-fact"><strong>주요 커리어</strong><span>2002년 FIFA 한일 월드컵 컨설턴트 · 포털 전략기획 및 검색컨텐츠 팀장 · 머니투데이·뉴스1 전략기획실장·CIO · SkylifeTV(현 ENA) ICT팀장 · 메디게이트뉴스 대표·편집인 · 무비스트 발행인·편집인</span></div>
@@ -401,9 +402,9 @@
     <div class="contact-inner">
       <div class="contact-grid">
         <h2>필요한 변화를<br />다음 업무로</h2>
-        <div class="contact-panel"><p>현재 상황과 필요한 결과물을 알려주시면 교육이나 컨설팅의 범위와 진행 방식을 제안합니다.</p><a class="contact-mail" href="mailto:osiki999@gmail.com">osiki999@gmail.com <span>↗</span></a></div>
+        <div class="contact-panel"><p>현재 상황과 필요한 결과물을 알려주시면 교육이나 컨설팅의 범위와 진행 방식을 제안합니다.</p><a class="contact-mail" href="mailto:osiki999@gmail.com">osiki999@gmail.com</a><a class="pill" href="index.html#inquiry">상담 문의 폼 작성 ↗</a></div>
       </div>
-      <div class="footer"><span><img class="footer-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></span><span>SEOUL, KOREA · 2026</span></div>
+      <div class="footer"><span><img class="footer-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></span><span>SEOUL, KOREA · 2026</span></div>
     </div>
   </footer>
 </body>
