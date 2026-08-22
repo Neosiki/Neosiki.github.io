@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640">
+<rect width="960" height="640" fill="#F4F0E6"/>
+<rect x="80" y="200" width="150" height="150" rx="10" fill="#2C4A4A"/>
+<rect x="290" y="200" width="150" height="150" rx="10" fill="#C97A63"/>
+<rect x="500" y="200" width="150" height="150" rx="10" fill="#8AA39A"/>
+<rect x="710" y="200" width="150" height="150" rx="10" fill="#2C4A4A"/>
+<polygon points="240,275 280,255 280,295" fill="#F4F0E6"/>
+<polygon points="450,275 490,255 490,295" fill="#F4F0E6"/>
+<polygon points="660,275 700,255 700,295" fill="#F4F0E6"/>
+</svg>
