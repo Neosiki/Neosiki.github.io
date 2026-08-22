@@ -146,7 +146,11 @@
     .public-brief-card { min-height: 230px; padding: 25px; border-right: 1px solid rgba(255,255,255,.36); border-bottom: 1px solid rgba(255,255,255,.36); }
     .public-brief-card span { color: var(--lime); font: 800 9px/1 var(--mono); letter-spacing: .1em; }
     .public-brief-card h3 { margin: 48px 0 10px; font: 730 22px/1.25 var(--display); }
-    .public-brief-card p { margin: 0; color: rgba(255,255,255,.68); font-size: 12px; }
+    .public-brief-card p { margin: 0; color: rgba(255,255,255,.68); font-size: 12px; line-height: 1.7; }
+    .public-brief-detail { display: grid; gap: 0; margin: 24px 0 0; border-top: 1px solid rgba(255,255,255,.25); }
+    .public-brief-detail-row { display: grid; grid-template-columns: 72px 1fr; gap: 12px; padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+    .public-brief-detail-row dt { color: var(--lime); font: 800 9px/1.35 var(--mono); letter-spacing: .08em; }
+    .public-brief-detail-row dd { margin: 0; color: rgba(255,255,255,.76); font-size: 11px; line-height: 1.55; }
 
     .recognition-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; }
     .award-stack { border-top: 3px solid var(--ink); }
@@ -394,9 +398,9 @@
 <h2 class="section-title" id="public-project-title">공공과제 AI 사업계획서<br/>기획부터 검증 가능한 문서로</h2>
 <p class="public-brief-intro">공공과제의 목적·수요·성과지표·예산·추진체계를 구조화하고 AI를 검색과 분석의 조수에서 전략 파트너로 확장합니다. 자료의 출처와 근거를 확인하면서 평가자가 읽고 판단할 수 있는 사업계획서와 보고서 산출물을 설계합니다.</p>
 <div class="public-brief-grid">
-<article class="public-brief-card"><span>01 / FRAME</span><h3>과제 구조화</h3><p>공고문과 기관 자료에서 사업 목적 대상 문제 정의 추진 범위를 추출하고 논리모형으로 정리합니다.</p></article>
-<article class="public-brief-card"><span>02 / EVIDENCE</span><h3>근거 기반 전략</h3><p>시장·정책·공공데이터를 수집·분석해 필요성 차별성 실행 가능성과 성과지표를 연결합니다.</p></article>
-<article class="public-brief-card"><span>03 / DELIVER</span><h3>평가 대응 산출물</h3><p>목차 설계 초안 작성 표·예산·일정 정리 출처 검증과 문서 품질 점검까지 반복 가능한 흐름으로 만듭니다.</p></article>
+<article class="public-brief-card"><span>01 / FRAME</span><h3>과제 구조화</h3><p>공고문과 기관 자료에서 사업 목적 대상 문제 정의 추진 범위를 추출하고 논리모형으로 정리합니다.</p><dl class="public-brief-detail"><div class="public-brief-detail-row"><dt>대상</dt><dd>정부·지자체 과제에 지원하는 기관과 기업</dd></div><div class="public-brief-detail-row"><dt>범위</dt><dd>공고 분석 · 문제 정의 · 목표 · 추진체계 · 역할 설계</dd></div><div class="public-brief-detail-row"><dt>산출물</dt><dd>과제 구조표 · 논리모형 · 세부 목차 · 작성 체크리스트</dd></div><div class="public-brief-detail-row"><dt>적용</dt><dd>초기 기획 단계에서 평가 기준에 맞는 제안 방향을 정할 때 활용합니다.</dd></div></dl></article>
+<article class="public-brief-card"><span>02 / EVIDENCE</span><h3>근거 기반 전략</h3><p>시장·정책·공공데이터를 수집·분석해 필요성 차별성 실행 가능성과 성과지표를 연결합니다.</p><dl class="public-brief-detail"><div class="public-brief-detail-row"><dt>대상</dt><dd>사업 필요성과 차별성을 근거로 설명해야 하는 기획팀</dd></div><div class="public-brief-detail-row"><dt>범위</dt><dd>정책·시장·경쟁 환경 · 공공데이터 · 수요자 자료 조사</dd></div><div class="public-brief-detail-row"><dt>산출물</dt><dd>근거 목록 · 출처표 · 성과지표 체계 · 예산·일정 초안</dd></div><div class="public-brief-detail-row"><dt>적용</dt><dd>평가자가 사업의 필요성과 실행 가능성을 빠르게 검토해야 할 때 사용합니다.</dd></div></dl></article>
+<article class="public-brief-card"><span>03 / DELIVER</span><h3>평가 대응 산출물</h3><p>목차 설계 초안 작성 표·예산·일정 정리 출처 검증과 문서 품질 점검까지 반복 가능한 흐름으로 만듭니다.</p><dl class="public-brief-detail"><div class="public-brief-detail-row"><dt>대상</dt><dd>제안서와 보고서를 제출하고 검수해야 하는 조직</dd></div><div class="public-brief-detail-row"><dt>범위</dt><dd>초안 작성 · 표·예산·일정 정리 · 출처 검증 · 최종 검수</dd></div><div class="public-brief-detail-row"><dt>산출물</dt><dd>사업계획서 원고 · 검증 기록 · 제출용 문서 · 발표용 요약본</dd></div><div class="public-brief-detail-row"><dt>적용</dt><dd>작성자와 검토자가 동일한 기준으로 문서를 반복 개선해야 할 때 적합합니다.</dd></div></dl></article>
 </div>
 </div>
 </section>
