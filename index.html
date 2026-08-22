@@ -936,7 +936,11 @@
     .sales-service b { display: block; margin-bottom: 32px; color: var(--teal-dark); font: 700 12px/1 var(--mono); }
     .mobile-break { display: none; }
     @media (max-width: 980px) { .sales-service-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sales-service:nth-child(2) { border-right: 0; } .sales-service:nth-child(3) { border-top: 1px solid var(--line); padding-left: 0; } .sales-service:nth-child(4) { border-top: 1px solid var(--line); } }
-    @media (max-width: 640px) { .sales-section { padding: 64px 0; } .sales-points, .sales-service-list { grid-template-columns: 1fr; margin-top: 36px; } .sales-point, .sales-point + .sales-point, .sales-service, .sales-service + .sales-service { padding: 18px 0; border-right: 0; border-top: 1px solid var(--line); } .sales-point:first-child, .sales-service:first-child { border-top: 0; } .sales-service:nth-child(3), .sales-service:nth-child(4) { padding-left: 0; } }</style>
+    @media (max-width: 640px) { .sales-section { padding: 64px 0; } .sales-points, .sales-service-list { grid-template-columns: 1fr; margin-top: 36px; } .sales-point, .sales-point + .sales-point, .sales-service, .sales-service + .sales-service { padding: 18px 0; border-right: 0; border-top: 1px solid var(--line); } .sales-point:first-child, .sales-service:first-child { border-top: 0; } .sales-service:nth-child(3), .sales-service:nth-child(4) { padding-left: 0; } }
+    .footer-brand { display: inline-flex; align-items: center; min-height: 32px; }
+    .footer-logo { display: block; width: 132px; height: auto; max-height: 42px; object-fit: contain; object-position: left center; }
+    @media (max-width: 640px) { .footer-logo { width: 112px; max-height: 36px; } }
+</style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -1235,7 +1239,7 @@
             <p class="inquiry-status" id="inquiry-status" role="status" aria-live="polite"></p>
           </form>
         </div>
-        <div class="footer"><span>윤영식 / AI · AX STRATEGY & CONSULTING</span><span>SEOUL KOREA · 2026</span></div>
+        <div class="footer"><span class="footer-brand"><img class="footer-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI" /></span><span>SEOUL KOREA · 2026</span></div>
       </div>
     </section>
   </main>
