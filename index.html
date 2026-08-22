@@ -81,6 +81,27 @@ ff<!doctype html>
       transform: rotate(45deg);
       box-shadow: 5px 5px 0 var(--lime);
     }
+    .brand-logo {
+      display: block;
+      width: 142px;
+      height: 48px;
+      object-fit: contain;
+      object-position: left center;
+    }
+    .footer-logo {
+      display: block;
+      width: 154px;
+      height: 58px;
+      object-fit: contain;
+      object-position: left center;
+      opacity: .92;
+    }
+    .footer > span:first-child {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      padding: 3px 8px;
+    }
     .nav-links { display: flex; gap: 30px; font-size: 13px; font-weight: 700; }
     .nav-links a { position: relative; }
     .nav-links a::after {
@@ -631,6 +652,7 @@ ff<!doctype html>
 
     @media (max-width: 920px) {
       .nav-inner { grid-template-columns: 1fr auto; }
+      .brand-logo { width: 116px; height: 40px; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; padding-top: 44px; }
       .system-card { min-height: 500px; }
@@ -723,6 +745,7 @@ ff<!doctype html>
       .inquiry-form .full, .inquiry-submit, .inquiry-status { grid-column: auto; }
       .inquiry-submit { align-items: stretch; flex-direction: column; }
       .footer { flex-direction: column; gap: 12px; margin-top: 55px; }
+      .footer-logo { width: 132px; height: 50px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -933,9 +956,8 @@ ff<!doctype html>
 
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#top" aria-label="AI·AX 업무 전환 서비스 홈">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-label">AI·AX 업무 전환</span>
+      <a class="brand" href="#top" aria-label="NextAI 홈">
+        <img class="brand-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" />
       </a>
       <nav class="nav-links" aria-label="주요 메뉴">
         <a href="about.html">소개·커리어</a>
@@ -1275,7 +1297,7 @@ ff<!doctype html>
             <p class="inquiry-status" id="inquiry-status" role="status" aria-live="polite"></p>
           </form>
         </div>
-        <div class="footer"><span>윤영식 / AI · AX STRATEGY & CONSULTING</span><span>SEOUL, KOREA · 2026</span></div>
+        <div class="footer"><span><img class="footer-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></span><span>SEOUL, KOREA · 2026</span></div>
       </div>
     </section>
   </main>
