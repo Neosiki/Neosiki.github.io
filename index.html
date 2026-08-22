@@ -11,10 +11,8 @@
   const src = 'https://raw.githubusercontent.com/Neosiki/Neosiki.github.io/407b13537c522b82949332b4d74b72afe1559f45/index.html';
   const res = await fetch(src);
   let html = await res.text();
-  html = html.replace('assets/projects.js?v=013d0b1', 'assets/projects.js?v=013d0b2');
-  if (!html.includes('archive-images-fix.js')) {
-    html = html.replace('</body>', '<script src="assets/archive-images-fix.js?v=2"><\/script></body>');
-  }
+  html = html.replace('assets/projects.js?v=013d0b1', 'assets/projects.js?v=013d0b3');
+  html = html.replace('</body>', '<script src="assets/archive-runtime.js?v=1"><\/script><script src="assets/archive-images-fix.js?v=2"><\/script></body>');
   document.open();
   document.write(html);
   document.close();
