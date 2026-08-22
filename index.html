@@ -102,7 +102,6 @@
     .footer > span:first-child {
       display: inline-flex;
       align-items: center;
-      background: #fff;
       padding: 3px 8px;
     }
     .nav-links { grid-column: 1; grid-row: 1; display: flex; gap: 30px; font-size: 13px; font-weight: 700; }
@@ -1000,7 +999,7 @@
   <header class="nav">
     <div class="nav-inner">
       <a class="brand" href="#top" aria-label="NextAI 홈">
-        <img class="brand-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" />
+        <img class="brand-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" />
       </a>
       <nav class="nav-links" aria-label="주요 메뉴">
         <a href="about.html">소개·커리어</a>
@@ -1342,9 +1341,10 @@
               <div class="inquiry-point"><span>03</span><strong>문의 내용을 이메일로 접수</strong></div>
             </div>
           </div>
-          <form class="inquiry-form" id="inquiry-form" action="https://formsubmit.co/osiki999@gmail.com" method="POST">
+          <form class="inquiry-form" id="inquiry-form" action="https://formsubmit.co/osiki999@gmail.com" method="POST" aria-label="NextAI 상담 문의 이메일 전송 폼">
             <input type="hidden" name="_subject" value="홈페이지 AI·AX 상담 문의" />
             <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
             <input type="hidden" name="_next" value="https://neosiki.github.io/index.html?inquiry=sent#inquiry" />
             <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honey" />
             <label>성명 또는 담당자명<input name="name" type="text" autocomplete="name" placeholder="홍길동" required /></label>
@@ -1359,7 +1359,7 @@
             <p class="inquiry-status" id="inquiry-status" role="status" aria-live="polite"></p>
           </form>
         </div>
-        <div class="footer"><span><img class="footer-logo" src="assets/brand/nextai-logo.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></span><span>SEOUL, KOREA · 2026</span></div>
+        <div class="footer"><span><img class="footer-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI · Agentic Engineering & Enterprise AI Solutions" /></span><span>SEOUL, KOREA · 2026</span></div>
       </div>
     </section>
   </main>
