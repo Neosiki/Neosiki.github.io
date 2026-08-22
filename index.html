@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>AI·AX 업무 전환 서비스</title>
-<style>body{margin:40px;font-family:sans-serif;background:#f7faf9;color:#1f2d40}a{color:#416f6b}</style>
-</head><body>
-<p>홈페이지 복구 중입니다. 잠시 후 기타허브 웹에서 직전 전 커밋 <code>3b17237</code> 을 revert 하면 원본이 바로 동닙니다.</p>
-<p><a href="about.html">소개 페이지로 이동</a></p>
-<script src="assets/projects.js?v=013d0b1"></script>
-<script src="assets/archive-images-fix.js?v=1"></script>
-</body></html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>AI·AX 업무 전환 서비스</title>
+</head>
+<body>
+<script>
+(async function () {
+  const src = 'https://raw.githubusercontent.com/Neosiki/Neosiki.github.io/407b13537c522b82949332b4d74b72afe1559f45/index.html';
+  const res = await fetch(src);
+  let html = await res.text();
+  html = html.replace('assets/projects.js?v=013d0b1', 'assets/projects.js?v=013d0b2');
+  if (!html.includes('archive-images-fix.js')) {
+    html = html.replace('</body>', '<script src="assets/archive-images-fix.js?v=2"><\/script></body>');
+  }
+  document.open();
+  document.write(html);
+  document.close();
+})();
+</script>
+</body>
+</html>
