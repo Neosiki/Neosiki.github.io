@@ -3,11 +3,11 @@ const portfolioProjects = [
   { title: 'AI와 함께 보고서와 사업계획서 작성하기', category: 'public', categoryLabel: '공공과제·연구기획', description: '시장과 고객을 살펴 사업 목표와 실행 계획을 정리합니다. 조사 결과는 사업계획서와 발표 자료로 완성합니다.', language: 'RESEARCH · STRATEGY · DOCS', featured: true, url: '#public-project' , image: 'archive-02-report-business-plan.png'},
   { title: 'AI에이전트 기반 연구기획·보고·제안', category: 'public', categoryLabel: '공공과제·연구기획', description: '연구 질문을 조사와 분석, 보고서 작성 단계로 나눕니다. 필요한 도구를 연결해 팀이 같은 방식으로 반복해서 사용할 수 있는 기획 절차를 만듭니다.', language: 'AGENTS · API · MCP', featured: true, url: '#public-project' , image: 'archive-03-agent-research.png'},
   { title: '생성형AI와 AI에이전트로 연구 기획', category: 'public', categoryLabel: '공공과제·연구기획', description: 'AI와 LLM의 기본 원리부터 프롬프트 작성, 데이터 분석, 문서 작성까지 실습합니다. 교육이 끝날 때 실제 결과물과 최종 프로젝트가 남도록 구성합니다.', language: 'LLM · RAG · DATA', featured: true, url: '#public-project' , image: 'archive-04-generative-research.png'},
-  { title: 'ChatGPT Codex 에이전틱 업무자동화', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '업무 자료를 읽고 보고서와 메일, 발표 자료를 만드는 과정을 자동화합니다. 사람이 마지막으로 확인하고 수정하는 절차까지 포함해 팀에서 바로 시험해 볼 수 있습니다.', language: 'CODEX · AGENT · COURSE', featured: true, url: 'https://github.com/Neosiki/codex-agentic-training' , image: 'assets/projects/generated/chatgpt-codex-agentic-automation.png'},
+  { title: 'ChatGPT Codex 에이전틱 업무자동화', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '업무 자료를 읽고 보고서와 메일, 발표 자료를 만드는 과정을 자동화합니다. 사람이 마지막으로 확인하고 수정하는 절차까지 포함해 팀에서 바로 시험해 볼 수 있습니다.', language: 'CODEX · AGENT · COURSE', featured: true, url: 'https://github.com/Neosiki/codex-agentic-training' , image: 'assets/projects/generated/chatgpt-codex-agentic-automation.png?project=codex-061d6b6'},
   { title: 'Claude Code 문서 자동화 스킬', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: 'PDF와 Excel, Word, PowerPoint에서 필요한 정보를 읽어 새 문서로 정리합니다. 조직에서 자주 쓰는 양식과 검토 절차를 다시 사용할 수 있게 구성합니다.', language: 'CLAUDE CODE · MCP', featured: true, url: 'https://github.com/Neosiki/claude-doc-skills' , image: 'archive-06-claude-doc-skills.png'},
   { title: '한국언론진흥재단 1-Day 바이브코딩', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '공공데이터를 모아 정리하고 시각화한 뒤 기사와 보고서로 완성합니다. 언론사와 교육기관에서 하루 또는 단기 과정으로 운영할 수 있는 실습 모델입니다.', language: 'VIBE CODING · DATA', featured: true, url: 'https://github.com/Neosiki/vibe-coding-1day-kpf' , image: 'archive-07-vibe-kpf.png'},
   { title: '3D로 배우는 생활 영어', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '3D 공간에서 영어를 익히고 클릭형 학습과 음성 재생, 복습 기능을 이용할 수 있습니다. 앱과 강의안, 모바일 설치 기능을 함께 확인할 수 있는 작동형 사례입니다.', language: 'THREE.JS · PWA · COURSE', featured: true, url: 'english-learning.html' , image: 'archive-08-3d-english.png'},
-  { title: '네오디자인스튜디오 제작 운영 시스템', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '제작 작업의 진행 상태와 실패 원인을 한 화면에서 확인합니다. 필요한 부분만 다시 처리하고 검수 이력까지 남겨 콘텐츠 제작팀의 운영 부담을 줄입니다.', language: 'JOBS · CACHE · QA', featured: true, url: 'https://github.com/Neosiki/neo-design-studio' , image: 'assets/projects/generated/neo-design-studio-operations.png'},
+  { title: '네오디자인스튜디오 제작 운영 시스템', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '제작 작업의 진행 상태와 실패 원인을 한 화면에서 확인합니다. 필요한 부분만 다시 처리하고 검수 이력까지 남겨 콘텐츠 제작팀의 운영 부담을 줄입니다.', language: 'JOBS · CACHE · QA', featured: true, url: 'https://github.com/Neosiki/neo-design-studio' , image: 'assets/projects/generated/neo-design-studio-operations.png?project=neo-061d6b6'},
   { title: 'Bookforge — 상업도서급 전자출판 파이프라인', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '원고와 출판 정보를 확인하고 이미지 권리와 문서 내부 연결을 점검한 뒤 PDF로 편집합니다. 출판사와 교육기관, 기업 보고서 제작팀이 안정적인 편집 절차를 마련할 때 참고할 수 있습니다.', language: 'PYTHON · TYPST', featured: true, caseStudy: true, url: '#bookforge-case' , image: 'archive-10-bookforge.png'},
   { title: '언론사의 AI 공존화와 Video-First 전략', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '뉴스 소비가 영상 중심으로 바뀌는 흐름과 AI 숏폼 제작 방식을 살펴봅니다. 언론사와 미디어 조직이 새로운 제작 방식을 검토할 때 활용할 수 있는 전략 자료입니다.', language: 'VIDEO-FIRST · COURSE' , image: 'archive-11-video-first.png'},
   { title: 'AI 팩트체크·저널리즘 강의자료', category: 'journalism', categoryLabel: '저널리즘·데이터', description: 'AI를 활용해 사실을 확인하고 근거와 출처를 점검하는 과정을 실무 중심으로 정리합니다. 기자와 에디터, 커뮤니케이션 담당자의 검증 교육에 사용할 수 있습니다.', language: 'FACTCHECK · COURSE' , image: 'archive-12-factcheck.png'},
@@ -83,6 +83,7 @@ archiveFilters.forEach(button => {
 });
 
 renderProjectArchive();
+
 
 
 
