@@ -1,7 +1,7 @@
 const portfolioProjects = [
   { title: 'AI 활용 정부과제 제안서 작성', category: 'public', categoryLabel: '공공과제·연구기획', description: '공공과제 공고와 정책 자료를 검토해 제안 방향과 실행 계획을 정리합니다. 본문과 요약본을 작성하고 제출 전 확인할 검토표까지 마련합니다.', language: 'AI · PROPOSAL · DOCS', featured: true, url: '#public-project' , image: 'assets/projects/generated/ai-government-proposal.png'},
   { title: 'AI와 함께 보고서와 사업계획서 작성하기', category: 'public', categoryLabel: '공공과제·연구기획', description: '시장과 고객을 살펴 사업 목표와 실행 계획을 정리합니다. 조사 결과는 사업계획서와 발표 자료로 완성합니다.', language: 'RESEARCH · STRATEGY · DOCS', featured: true, url: '#public-project' , image: 'assets/projects/generated/ai-report-business-plan.png'},
-  { title: 'AI에이전트 기반 연구기획·보고·제안', category: 'public', categoryLabel: '공공과제·연구기획', description: '연구 질문을 조사와 분석, 보고서 작성 단계로 나눔니다. 필요한 도구를 연결해 팀이 같은 방식으로 반복해서 사용할 수 있는 기획 절차를 만듭니다.', language: 'AGENTS · API · MCP', featured: true, url: '#public-project' , image: 'assets/projects/generated/ai-agent-research-planning.png'},
+  { title: 'AI에이전트 기반 연구기획·보고·제안', category: 'public', categoryLabel: '공공과제·연구기획', description: '연구 질문을 조사와 분석, 보고서 작성 단계로 나눕니다. 필요한 도구를 연결해 팀이 같은 방식으로 반복해서 사용할 수 있는 기획 절차를 만듭니다.', language: 'AGENTS · API · MCP', featured: true, url: '#public-project' , image: 'assets/projects/generated/ai-agent-research-planning.png'},
   { title: '생성형AI와 AI에이전트로 연구 기획', category: 'public', categoryLabel: '공공과제·연구기획', description: 'AI와 LLM의 기본 원리부터 프롬프트 작성, 데이터 분석, 문서 작성까지 실습합니다. 교육이 끝날 때 실제 결과물과 최종 프로젝트가 남도록 구성합니다.', language: 'LLM · RAG · DATA', featured: true, url: '#public-project' , image: 'assets/projects/generated/generative-ai-research-planning.png'},
   { title: 'ChatGPT Codex 에이전틱 업무자동화', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '업무 자료를 읽고 보고서와 메일, 발표 자료를 만드는 과정을 자동화합니다. 사람이 마지막으로 확인하고 수정하는 절차까지 포함해 팀에서 바로 시험해 볼 수 있습니다.', language: 'CODEX · AGENT · COURSE', featured: true, url: 'https://github.com/Neosiki/codex-agentic-training' , image: 'assets/projects/generated/chatgpt-codex-agentic-automation.png?project=codex-061d6b6'},
   { title: 'Claude Code 문서 자동화 스킬', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: 'PDF와 Excel, Word, PowerPoint에서 필요한 정보를 읽어 새 문서로 정리합니다. 조직에서 자주 쓰는 양식과 검토 절차를 다시 사용할 수 있게 구성합니다.', language: 'CLAUDE CODE · MCP', featured: true, url: 'https://github.com/Neosiki/claude-doc-skills' , image: 'assets/projects/generated/claude-code-document-automation.png'},
@@ -11,30 +11,113 @@ const portfolioProjects = [
   { title: 'Bookforge — 상업도서급 전자출판 파이프라인', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '원고와 출판 정보를 확인하고 이미지 권리와 문서 내부 연결을 점검한 뒤 PDF로 편집합니다. 출판사와 교육기관, 기업 보고서 제작팀이 안정적인 편집 절차를 마련할 때 참고할 수 있습니다.', language: 'PYTHON · TYPST', featured: true, caseStudy: true, url: '#bookforge-case' , image: 'assets/projects/generated/bookforge-publishing-pipeline.png'},
   { title: '언론사의 AI 공존화와 Video-First 전략', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '뉴스 소비가 영상 중심으로 바뀌는 흐름과 AI 숏폼 제작 방식을 살펴봅니다. 언론사와 미디어 조직이 새로운 제작 방식을 검토할 때 활용할 수 있는 전략 자료입니다.', language: 'VIDEO-FIRST · COURSE' , image: 'assets/projects/generated/media-video-first-strategy.png'},
   { title: 'AI 팩트체크·저널리즘 강의자료', category: 'journalism', categoryLabel: '저널리즘·데이터', description: 'AI를 활용해 사실을 확인하고 근거와 출처를 점검하는 과정을 실무 중심으로 정리합니다. 기자와 에디터, 커뮤니케이션 담당자의 검증 교육에 사용할 수 있습니다.', language: 'FACTCHECK · COURSE' , image: 'assets/projects/generated/ai-factcheck-journalism.png'},
-  { title: '빅카인즈 뉴스데이터 강의자료', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '뉴스 데이터를 검색·분류·비교해 핵심 흐름을 찾고 데이터 스토리텔링으로 구성합니다. 뉴스룸 교육과 기관 연구에서 분석 과정과 검증 근거를 함께 남기고 싶은 팀을 위한 자료입니다.', language: 'NEWS DATA · COURSE' , image: 'assets/projects/generated/photoreal-26/13-bigkinds.jpg'},
-  { title: '한반도 지진 데이터저널리즘', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '장기간 지진 데이터를 CSV와 지도 시각화, 설명형 강의자료로 연결해 지역·시기별 패턴을 확인할 수 있도록 구성합니다. 공공데이터 교육, 지역 이슈 보도, 데이터 기반 캠페인의 실습 레퍼런스로 활용할 수 있습니다.', language: 'DATA · HTML' , image: 'assets/projects/generated/photoreal-26/14-earthquake.jpg'},
-  { title: '국민연금 공시 대시보드', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '공시 자료를 수집·검토·정리하고 핵심 지표를 시각화해 게시 가능한 콘텐츠로 전환합니다. 기관·미디어·연구팀이 공시 기반 정보 서비스를 기획할 때 필요한 검토와 표현 절차를 보여주는 사례입니다.', language: 'DATA · DASHBOARD' , image: 'assets/projects/generated/photoreal-26/15-pension-dashboard.jpg'},
-  { title: '소상공인 AI 컨설턴트 양성과정', category: 'education', categoryLabel: '교육·콘텐츠', description: '소상공인 현장의 문제를 정의하고 AI 활용 과제, 프롬프트, 상담 문서, 실행 지표로 연결하는 교육 과정입니다. 기관이 대규모 수강생을 대상으로 표준화된 강의안과 현장실습을 운영할 때 활용할 수 있습니다.', language: 'CONSULTING · COURSE' , image: 'assets/projects/generated/photoreal-26/16-small-business-ai.jpg'},
-  { title: '사장님을 움직이는 컨설팅은 무엇이 다른가', category: 'education', categoryLabel: '교육·콘텐츠', description: '소상공인 상담 현장에서 신뢰를 만들고 문제를 정의하며 우선 실행 과제와 성과지표를 정하는 방법을 사례 중심으로 다룭니다. 컨설턴트 양성, 발대식 특강, 현장 코칭 프로그램에 적합합니다.', language: 'LECTURE' , image: 'assets/projects/generated/photoreal-26/17-owner-consulting.jpg'},
-  { title: 'AI 스타트업 만드는 법', category: 'education', categoryLabel: '교육·콘텐츠', description: 'AI 아이디어를 고객 문제와 제품 구조, 수익 모델, 검증 계획으로 구체화하는 창업 프레임워크입니다. 예비창업자·초기팀·기관 창업교육에서 아이디어를 실행 가능한 사업안으로 발전시키는 데 활용할 수 있습니다.', language: 'AI · STARTUP' , image: 'assets/projects/generated/photoreal-26/18-ai-startup.jpg'},
-  { title: 'GEO Score Analyzer', category: 'geo', categoryLabel: 'GEO·AI 검색', description: '기사의 검색 노출과 AI 검색 인용에 영향을 주는 요소를 점검하고 개선 우선순위를 제시합니다. 콘텐츠팀과 마케팅팀이 진단 결과를 제목·구조·출처·본문 개선으로 바로 연결할 수 있는 분석 도구입니다.', language: 'ANALYZER', url: 'https://github.com/Neosiki/geo-score-analyzer' , image: 'assets/projects/generated/photoreal-26/19-geo-score.jpg'},
-  { title: 'GEO 실행형 분석 대시보드', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'GA4 유입 데이터를 채널·콘텐츠·전환 관점에서 정리하고 AI 검색 유입과 개선 과제로 연결합니다. 마케팅 담당자가 보고용 숫자에 그치지 않고 다음 콘텐츠와 캠페인 실행안을 결정하도록 돕습니다.', language: 'HTML', url: 'https://github.com/Neosiki/geo-dashboard' , image: 'assets/projects/generated/photoreal-26/20-geo-dashboard.jpg'},
-  { title: 'GEO Score Analyzer 강의자료', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'SEO·GEO 진단 항목을 실제 기사에 적용하고 분석 결과를 재구성안으로 바꾸는 과정을 단계별로 설명합니다. 사내 교육과 콘텐츠 운영팀의 실습 자료, 평가 기준, 개선 체크리스트로 사용할 수 있습니다.', language: 'HTML' , image: 'assets/projects/generated/photoreal-26/21-geo-course.jpg'},
-  { title: 'AI 팩토리 NYT 스타일 칼럼', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'AI 산업과 업무 변화의 핵심 쟁점을 장문 콘텐츠 구조로 정리하고 독자가 이해할 수 있는 사례와 논리로 확장합니다. 기관 브리핑, 리더십 콘텐츠, thought leadership 기획을 위한 편집 레퍼런스입니다.', language: 'LONGFORM' , image: 'assets/projects/generated/photoreal-26/22-ai-factory-column.jpg'},
-  { title: '검색은 끝났다: 비판 리뷰', category: 'geo', categoryLabel: 'GEO·AI 검색', description: '검색에서 생성형 AI 답변으로 이동하는 변화를 사용자 경험·콘텐츠 품질·정보 신뢰 관점에서 검토합니다. 조직의 검색·콘텐츠 전략을 재정의하기 전 시장과 기술 변화를 정리하는 분석 자료입니다.', language: 'HTML' , image: 'assets/projects/generated/photoreal-26/23-search-review.jpg'},
-  { title: '13단어, AI 검색을 속이기에 충분하다', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'AI 검색 결과를 오염시키는 콘텐츠 구조와 조작 가능성을 분석하고 신뢰도 높은 정보 설계 관점에서 정리합니다. 브랜드·미디어·공공기관의 콘텐츠 신뢰성 및 검증 정책을 검토할 때 참고할 수 있습니다.', language: 'RESEARCH' , image: 'assets/projects/generated/photoreal-26/24-ai-search-integrity.jpg'},
-  { title: '소상공인용 Local LLM', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '외부 클라우드 의존도를 낮추고 Windows 장비에서 실행 가능한 로컬 LLM 활용 시나리오를 설계합니다. 소상공인·중소조직이 보안, 비용, 현장 사용성을 함께 검토하며 AI 도입을 시작할 때 참고할 수 있습니다.', language: 'LOCAL LLM · POWERSHELL' , image: 'assets/projects/generated/photoreal-26/25-local-llm.jpg'},
-  { title: 'AI 미디어 하네스', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '조사, 출처 검증, 초안 작성, 품질 평가, 사람 승인을 하나의 콘텐츠 운영 흐름으로 연결합니다. 미디어·홍보·브랜드 조직이 AI 활용 속도와 편집 책임을 동시에 관리하기 위한 운영 모델입니다.', language: 'HARNESS' , image: 'assets/projects/generated/photoreal-26/26-ai-media-harness.jpg'},
-  { title: 'kordoc 공문서 처리 엔진 교안', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '한국어 공문서의 구조와 처리 절차를 분석해 자동화 엔진의 기능·입력·출력·검수 지점을 설명합니다. 개발자와 기획자가 문서 AI 프로젝트의 요구사항과 품질 기준을 합의할 때 활용할 수 있습니다.', language: 'DOCUMENT AI' , image: 'assets/projects/generated/photoreal-26/27-kordoc.jpg'},
-  { title: 'Korean Humanize', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '사실·숫자·인용을 보존하면서 AI 문장의 번역투와 반복 리뒬을 줄이고 한국어 독자에게 자연스러운 문장으로 다들니다. 편집·홍보·마케팅팀이 원문 신뢰성과 읽기 품질을 함께 관리할 때 활용할 수 있습니다.', language: 'PYTHON', url: 'https://github.com/Neosiki/korean-humanize' , image: 'assets/projects/generated/photoreal-26/28-korean-humanize.jpg'},
-  { title: 'AI에이전트 연구기획 워크플로우', category: 'public', categoryLabel: '공공과제·연구기획', description: '연구 질문을 정의하고 자료 수집·분석·보고·제안 단계에 API와 MCP를 연결합니다. 연구기관과 전략기획팀이 개인의 경험에 의존하지 않고 반복 가능한 조사·보고 체계를 구축할 때 적합합니다.', language: 'API · MCP · RAG', url: 'https://github.com/Neosiki/codex-agentic-training' , image: 'assets/projects/generated/photoreal-26/29-agent-workflow.jpg'},
-  { title: 'Codex Shopping Assistant', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '가격·배송·쿠폰 조건을 비교하고 결제 전 확인해야 할 정보를 한 화면에서 안내하는 웹앱입니다. 커머스 업무의 비교·검토 과정을 바이브 코딩으로 빠르게 검증하는 프로토타입 사례입니다.', language: 'HTML' , image: 'assets/projects/generated/photoreal-26/30-shopping-assistant.jpg'},
-  { title: 'Masterclass', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: 'AI·AX 개념을 실제 코드와 업무 시나리오로 연결하는 TypeScript 기반 실습 구조입니다. 교육기관과 조직이 기술 교육을 단순 강의가 아닌 실행형 커리큘럼으로 구성할 때 참고할 수 있습니다.', language: 'TYPESCRIPT' , image: 'assets/projects/generated/photoreal-26/31-masterclass.jpg'},
-  { title: 'Hanacon', category: 'education', categoryLabel: '교육·콘텐츠', description: '교육·컨설팅 과정에서 사용한 커리큘럼, 실습 자료, 사례 문서를 주제별로 정리한 아카이브입니다. 기관 맞춤형 교육이나 컨설팅 범위를 협의하기 전 참고 자료로 활용할 수 있습니다.', language: 'ARCHIVE', url: 'https://github.com/Neosiki/hanacon' , image: 'assets/projects/generated/photoreal-26/32-hanacon.jpg'},
-  { title: '기사 쓰기 스킬 3종', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '기사의 취재 질문, 구조, 출처, GEO 관점을 반영해 초안 작성부터 검수까지 수행하는 실습 스킬입니다. 기자 교육과 사내 콘텐츠팀의 표준 작성·검수 교재로 활용할 수 있습니다.', language: 'HTML' , image: 'assets/projects/generated/photoreal-26/33-article-skills.jpg'},
-  { title: '기자가 알아야 할 테크놀러지', category: 'journalism', categoryLabel: '저널리즘·데이터', description: 'AI·데이터·디지털 기술을 기자의 취재·검증·작성 업무에 연결해 설명합니다. 언론사 교육과 조직 전환 프로그램에서 비전문가도 실무 적용까지 따라갈 수 있도록 구성한 자료입니다.', language: 'COURSE' , image: 'assets/projects/generated/photoreal-26/34-tech-for-journalists.jpg'},
-  { title: 'SEO 2026: 고객 중심으로', category: 'geo', categoryLabel: 'GEO·AI 검색', description: '검색 순위만 보는 접근에서 벗어나 고객 질문, 콘텐츠 경험, 신뢰 신호를 중심으로 SEO 전략을 재구성합니다. 브랜드·마케팅팀이 검색 변화에 맞춰 콘텐츠 기획 기준을 정비할 때 활용할 수 있습니다.', language: 'SEO · GEO' , image: 'assets/projects/generated/photoreal-26/35-seo-2026.jpg'},
-  { title: '빛과 그림자 사이', category: 'domain', categoryLabel: '도메인·아카이브', description: '현장 관찰과 에너지·산업 이슈를 취재형 서술과 분석 구조로 정리합니다. 기관 보고서, 산업 콘텐츠, 현장 기반 캠페인의 메시지와 자료 구조를 설계하는 편집 레퍼런스입니다.', language: 'FIELD REPORT' , image: 'assets/projects/generated/photoreal-26/36-light-shadow.jpg'},
-  { title: '극복은 인류의 알고리즘이다', category: 'domain', categoryLabel: '도메인·아카이브', description: '산림·정원·회복의 주제를 강의 원고와 청중 메시지 구조로 발전시킨 프로젝트입니다. 교육·문화·공공 프로그램에서 복잡한 주제를 설득력 있는 강의와 콘텐츠로 전환할 때 참고할 수 있습니다.', language: 'LECTURE' , image: 'assets/projects/generated/photoreal-26/37-humanity-algorithm.jpg'},
-  { title: 'BioInvest Daily Digest', category: 'domain', categoryLabel: '도메인·아카이브', description: '의료·제약·바이오 투자 뉴스를 선별·분류·요약해 다국어 뉴스레터로 제공하는 정보 서비스 구조입니다. 전문 분야의 뉴스 모니터링과 정기 브리핑 자동화를 검토하는 조직에 적합한 플랫폼 사례입니다.', language: 'TYPESCRIPT', url: 'https://github.com/Neosiki/BioInvest-Daily-Digest' , image: 'assets/projects/generated/photoreal-26/38-bioinvest-digest.jpg'},
+  { title: '빅카인즈 뉴스데이터 강의자료', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '뉴스 데이터를 검색·분류·비교해 핵심 흐름을 찾고 데이터 스토리텔링으로 구성합니다. 뉴스룸 교육과 기관 연구에서 분석 과정과 검증 근거를 함께 남기고 싶은 팀을 위한 자료입니다.', language: 'NEWS DATA · COURSE' , image: 'archive-13-bigkinds.png'},
+  { title: '한반도 지진 데이터저널리즘', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '장기간 지진 데이터를 CSV와 지도 시각화, 설명형 강의자료로 연결해 지역·시기별 패턴을 확인할 수 있도록 구성합니다. 공공데이터 교육, 지역 이슈 보도, 데이터 기반 캠페인의 실습 레퍼런스로 활용할 수 있습니다.', language: 'DATA · HTML' , image: 'archive-14-earthquake.png'},
+  { title: '국민연금 공시 대시보드', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '공시 자료를 수집·검토·정리하고 핵심 지표를 시각화해 게시 가능한 콘텐츠로 전환합니다. 기관·미디어·연구팀이 공시 기반 정보 서비스를 기획할 때 필요한 검토와 표현 절차를 보여주는 사례입니다.', language: 'DATA · DASHBOARD' , image: 'archive-15-pension-dashboard.png'},
+  { title: '소상공인 AI 컨설턴트 양성과정', category: 'education', categoryLabel: '교육·콘텐츠', description: '소상공인 현장의 문제를 정의하고 AI 활용 과제, 프롬프트, 상담 문서, 실행 지표로 연결하는 교육 과정입니다. 기관이 대규모 수강생을 대상으로 표준화된 강의안과 현장실습을 운영할 때 활용할 수 있습니다.', language: 'CONSULTING · COURSE' , image: 'archive-16-small-business-ai.png'},
+  { title: '사장님을 움직이는 컨설팅은 무엇이 다른가', category: 'education', categoryLabel: '교육·콘텐츠', description: '소상공인 상담 현장에서 신뢰를 만들고 문제를 정의하며 우선 실행 과제와 성과지표를 정하는 방법을 사례 중심으로 다룹니다. 컨설턴트 양성, 발대식 특강, 현장 코칭 프로그램에 적합합니다.', language: 'LECTURE' , image: 'archive-17-owner-consulting.png'},
+  { title: 'AI 스타트업 만드는 법', category: 'education', categoryLabel: '교육·콘텐츠', description: 'AI 아이디어를 고객 문제와 제품 구조, 수익 모델, 검증 계획으로 구체화하는 창업 프레임워크입니다. 예비창업자·초기팀·기관 창업교육에서 아이디어를 실행 가능한 사업안으로 발전시키는 데 활용할 수 있습니다.', language: 'AI · STARTUP' , image: 'archive-18-ai-startup.png'},
+  { title: 'GEO Score Analyzer', category: 'geo', categoryLabel: 'GEO·AI 검색', description: '기사의 검색 노출과 AI 검색 인용에 영향을 주는 요소를 점검하고 개선 우선순위를 제시합니다. 콘텐츠팀과 마케팅팀이 진단 결과를 제목·구조·출처·본문 개선으로 바로 연결할 수 있는 분석 도구입니다.', language: 'ANALYZER', url: 'https://github.com/Neosiki/geo-score-analyzer' , image: 'archive-19-geo-score.png'},
+  { title: 'GEO 실행형 분석 대시보드', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'GA4 유입 데이터를 채널·콘텐츠·전환 관점에서 정리하고 AI 검색 유입과 개선 과제로 연결합니다. 마케팅 담당자가 보고용 숫자에 그치지 않고 다음 콘텐츠와 캠페인 실행안을 결정하도록 돕습니다.', language: 'HTML', url: 'https://github.com/Neosiki/geo-dashboard' , image: 'archive-20-geo-dashboard.png'},
+  { title: 'GEO Score Analyzer 강의자료', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'SEO·GEO 진단 항목을 실제 기사에 적용하고 분석 결과를 재구성안으로 바꾸는 과정을 단계별로 설명합니다. 사내 교육과 콘텐츠 운영팀의 실습 자료, 평가 기준, 개선 체크리스트로 사용할 수 있습니다.', language: 'HTML' , image: 'archive-21-geo-course.png'},
+  { title: 'AI 팩토리 NYT 스타일 칼럼', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'AI 산업과 업무 변화의 핵심 쟁점을 장문 콘텐츠 구조로 정리하고 독자가 이해할 수 있는 사례와 논리로 확장합니다. 기관 브리핑, 리더십 콘텐츠, thought leadership 기획을 위한 편집 레퍼런스입니다.', language: 'LONGFORM' , image: 'archive-22-ai-factory-column.png'},
+  { title: '검색은 끝났다: 비판 리뷰', category: 'geo', categoryLabel: 'GEO·AI 검색', description: '검색에서 생성형 AI 답변으로 이동하는 변화를 사용자 경험·콘텐츠 품질·정보 신뢰 관점에서 검토합니다. 조직의 검색·콘텐츠 전략을 재정의하기 전 시장과 기술 변화를 정리하는 분석 자료입니다.', language: 'HTML' , image: 'archive-23-search-review.png'},
+  { title: '13단어, AI 검색을 속이기에 충분하다', category: 'geo', categoryLabel: 'GEO·AI 검색', description: 'AI 검색 결과를 오염시키는 콘텐츠 구조와 조작 가능성을 분석하고 신뢰도 높은 정보 설계 관점에서 정리합니다. 브랜드·미디어·공공기관의 콘텐츠 신뢰성 및 검증 정책을 검토할 때 참고할 수 있습니다.', language: 'RESEARCH' , image: 'archive-24-ai-search-integrity.png'},
+  { title: '소상공인용 Local LLM', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '외부 클라우드 의존도를 낮추고 Windows 장비에서 실행 가능한 로컬 LLM 활용 시나리오를 설계합니다. 소상공인·중소조직이 보안, 비용, 현장 사용성을 함께 검토하며 AI 도입을 시작할 때 참고할 수 있습니다.', language: 'LOCAL LLM · POWERSHELL' , image: 'archive-25-local-llm.png'},
+  { title: 'AI 미디어 하네스', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '조사, 출처 검증, 초안 작성, 품질 평가, 사람 승인을 하나의 콘텐츠 운영 흐름으로 연결합니다. 미디어·홍보·브랜드 조직이 AI 활용 속도와 편집 책임을 동시에 관리하기 위한 운영 모델입니다.', language: 'HARNESS' , image: 'archive-26-ai-media-harness.png'},
+  { title: 'kordoc 공문서 처리 엔진 교안', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '한국어 공문서의 구조와 처리 절차를 분석해 자동화 엔진의 기능·입력·출력·검수 지점을 설명합니다. 개발자와 기획자가 문서 AI 프로젝트의 요구사항과 품질 기준을 합의할 때 활용할 수 있습니다.', language: 'DOCUMENT AI' , image: 'archive-27-kordoc.png'},
+  { title: 'Korean Humanize', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '사실·숫자·인용을 보존하면서 AI 문장의 번역투와 반복 리듬을 줄이고 한국어 독자에게 자연스러운 문장으로 다듬습니다. 편집·홍보·마케팅팀이 원문 신뢰성과 읽기 품질을 함께 관리할 때 활용할 수 있습니다.', language: 'PYTHON', url: 'https://github.com/Neosiki/korean-humanize' , image: 'archive-28-korean-humanize.png'},
+  { title: 'AI에이전트 연구기획 워크플로우', category: 'public', categoryLabel: '공공과제·연구기획', description: '연구 질문을 정의하고 자료 수집·분석·보고·제안 단계에 API와 MCP를 연결합니다. 연구기관과 전략기획팀이 개인의 경험에 의존하지 않고 반복 가능한 조사·보고 체계를 구축할 때 적합합니다.', language: 'API · MCP · RAG', url: 'https://github.com/Neosiki/codex-agentic-training' , image: 'archive-29-agent-workflow.png'},
+  { title: 'Codex Shopping Assistant', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: '가격·배송·쿠폰 조건을 비교하고 결제 전 확인해야 할 정보를 한 화면에서 안내하는 웹앱입니다. 커머스 업무의 비교·검토 과정을 바이브 코딩으로 빠르게 검증하는 프로토타입 사례입니다.', language: 'HTML' , image: 'archive-30-shopping-assistant.png'},
+  { title: 'Masterclass', category: 'vibe', categoryLabel: '바이브 코딩·에이전트', description: 'AI·AX 개념을 실제 코드와 업무 시나리오로 연결하는 TypeScript 기반 실습 구조입니다. 교육기관과 조직이 기술 교육을 단순 강의가 아닌 실행형 커리큘럼으로 구성할 때 참고할 수 있습니다.', language: 'TYPESCRIPT' , image: 'archive-31-masterclass.png'},
+  { title: 'Hanacon', category: 'education', categoryLabel: '교육·콘텐츠', description: '교육·컨설팅 과정에서 사용한 커리큘럼, 실습 자료, 사례 문서를 주제별로 정리한 아카이브입니다. 기관 맞춤형 교육이나 컨설팅 범위를 협의하기 전 참고 자료로 활용할 수 있습니다.', language: 'ARCHIVE', url: 'https://github.com/Neosiki/hanacon' , image: 'archive-32-hanacon.png'},
+  { title: '기사 쓰기 스킬 3종', category: 'journalism', categoryLabel: '저널리즘·데이터', description: '기사의 취재 질문, 구조, 출처, GEO 관점을 반영해 초안 작성부터 검수까지 수행하는 실습 스킬입니다. 기자 교육과 사내 콘텐츠팀의 표준 작성·검수 교재로 활용할 수 있습니다.', language: 'HTML' , image: 'archive-33-article-skills.png'},
+  { title: '기자가 알아야 할 테크놀러지', category: 'journalism', categoryLabel: '저널리즘·데이터', description: 'AI·데이터·디지털 기술을 기자의 취재·검증·작성 업무에 연결해 설명합니다. 언론사 교육과 조직 전환 프로그램에서 비전문가도 실무 적용까지 따라갈 수 있도록 구성한 자료입니다.', language: 'COURSE' , image: 'archive-34-tech-for-journalists.png'},
+  { title: 'SEO 2026: 고객 중심으로', category: 'geo', categoryLabel: 'GEO·AI 검색', description: '검색 순위만 보는 접근에서 벗어나 고객 질문, 콘텐츠 경험, 신뢰 신호를 중심으로 SEO 전략을 재구성합니다. 브랜드·마케팅팀이 검색 변화에 맞춰 콘텐츠 기획 기준을 정비할 때 활용할 수 있습니다.', language: 'SEO · GEO' , image: 'archive-35-seo-2026.png'},
+  { title: '빛과 그림자 사이', category: 'domain', categoryLabel: '도메인·아카이브', description: '현장 관찰과 에너지·산업 이슈를 취재형 서술과 분석 구조로 정리합니다. 기관 보고서, 산업 콘텐츠, 현장 기반 캠페인의 메시지와 자료 구조를 설계하는 편집 레퍼런스입니다.', language: 'FIELD REPORT' , image: 'archive-36-light-shadow.png'},
+  { title: '극복은 인류의 알고리즘이다', category: 'domain', categoryLabel: '도메인·아카이브', description: '산림·정원·회복의 주제를 강의 원고와 청중 메시지 구조로 발전시킨 프로젝트입니다. 교육·문화·공공 프로그램에서 복잡한 주제를 설득력 있는 강의와 콘텐츠로 전환할 때 참고할 수 있습니다.', language: 'LECTURE' , image: 'archive-37-humanity-algorithm.png'},
+  { title: 'BioInvest Daily Digest', category: 'domain', categoryLabel: '도메인·아카이브', description: '의료·제약·바이오 투자 뉴스를 선별·분류·요약해 다국어 뉴스레터로 제공하는 정보 서비스 구조입니다. 전문 분야의 뉴스 모니터링과 정기 브리핑 자동화를 검토하는 조직에 적합한 플랫폼 사례입니다.', language: 'TYPESCRIPT', url: 'https://github.com/Neosiki/BioInvest-Daily-Digest' , image: 'archive-38-bioinvest-digest.png'},
 ];
+
+const archiveGrid = document.querySelector('#archive-grid');
+const archiveFilters = document.querySelectorAll('.archive-filter');
+const archiveCount = document.querySelector('#archive-count');
+
+function renderProjectArchive(category = 'all') {
+  const visibleProjects = portfolioProjects.filter(project => category === 'all' || project.category === category);
+  archiveCount.textContent = visibleProjects.length;
+
+  if (!visibleProjects.length) {
+    archiveGrid.innerHTML = '<p class="archive-empty">이 분야의 프로젝트를 정리하고 있습니다.</p>';
+    return;
+  }
+
+  archiveGrid.innerHTML = visibleProjects.map(project => {
+    const originalIndex = portfolioProjects.indexOf(project) + 1;
+    const tag = project.url ? 'a' : 'article';
+    const isInternal = project.url && (project.url.startsWith('#') || project.url.endsWith('.html'));
+    const linkAttributes = project.url ? ` href="${project.url}"${isInternal ? '' : ' target="_blank" rel="noreferrer"'}` : '';
+    const featured = project.featured ? ' · FEATURED' : '';
+    const visibility = project.url ? (isInternal ? 'READ CASE' : 'VIEW PROJECT') : 'CASE STUDY';
+    const openMark = project.url ? `<span class="archive-open" aria-hidden="true">${isInternal ? '↖' : '↗'}</span>` : '<span class="archive-open" aria-hidden="true">—</span>';
+    return `<${tag} class="archive-card ${project.caseStudy || !project.url ? 'case-study' : ''}"${linkAttributes}>
+      <img class="archive-image" src="${project.image}" alt="${project.title} 프로젝트를 상징하는 이미지" loading="lazy" />
+      <span class="archive-top">
+        <span class="archive-number">${String(originalIndex).padStart(2, '0')} / ${project.categoryLabel}</span>
+        <span class="archive-visibility">${visibility}${featured}</span>
+      </span>
+      <span class="archive-category">${project.categoryLabel}</span>
+      <h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <span class="archive-bottom"><span class="archive-language">${project.language}</span>${openMark}</span>
+    </${tag}>`;
+  }).join('');
+}
+
+archiveFilters.forEach(button => {
+  button.addEventListener('click', () => {
+    archiveFilters.forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    renderProjectArchive(button.dataset.archiveFilter);
+  });
+});
+
+renderProjectArchive();
+
+
+
+
+
+
+const projectDialog = document.querySelector('#project-dialog');
+const projectDialogImage = document.querySelector('#project-dialog-image');
+const projectDialogKicker = document.querySelector('#project-dialog-kicker');
+const projectDialogTitle = document.querySelector('#project-dialog-title');
+const projectDialogSummary = document.querySelector('#project-dialog-summary');
+const projectDialogAudience = document.querySelector('#project-dialog-audience');
+const projectDialogScope = document.querySelector('#project-dialog-scope');
+const projectDialogOutputs = document.querySelector('#project-dialog-outputs');
+const projectDialogApplication = document.querySelector('#project-dialog-application');
+const projectDialogLink = document.querySelector('#project-dialog-link');
+const projectDetailPresets = {
+  public: ['공공기관·연구기관·전략기획팀','공고·정책·시장 자료 조사, 논리 구조화, 검토 절차 설계','제안서·연구기획안·사업계획서·보고서·검토 체크리스트','공공과제 준비, 연구개발 기획, 기관 보고 체계 정비'],
+  vibe: ['교육기관·콘텐츠팀·업무 자동화를 검토하는 조직','요구사항 정리, 화면·데이터 흐름 설계, 작동형 웹앱 실습','실습 코드·작동 화면·사용 절차·재현 가능한 교육 자료','신규 서비스 검증, 사내 교육, 반복 업무의 빠른 프로토타이핑'],
+  automation: ['중소기업·스타트업·소상공인·제작 운영팀','자료 수집, 문서 처리, 작업 상태 관리, 검수·재처리 흐름 설계','업무 흐름·자동화 규칙·검수 기준·문서 및 운영 가이드','AI·AX 도입, 문서 생산성 개선, 제작 운영의 표준화'],
+  journalism: ['언론사·공공 커뮤니케이션팀·데이터 콘텐츠 조직','데이터 수집·검증, 시각화, 기사 구조화, 출처와 근거 관리','데이터셋·시각화·기사 초안·팩트체크표·교육 실습 자료','데이터저널리즘, 뉴스룸 교육, 공공정보 콘텐츠 제작'],
+  geo: ['콘텐츠·마케팅·브랜드·검색 유입을 관리하는 조직','검색 질문 분석, 콘텐츠 구조 진단, AI 검색 인용 관점의 개선안 도출','진단 결과·개선 우선순위·콘텐츠 재구성안·운영 체크리스트','SEO·GEO 전략 수립, 콘텐츠 품질 관리, 검색 유입 개선'],
+  education: ['교육기관·지원기관·중소기업·스타트업·소상공인','교육 목표 정의, 실습 단계 설계, 현장 적용 과제와 결과물 구성','강의안·실습 자료·사례 문서·평가 기준·후속 적용 가이드','AI교육·컨설팅, 조직 역량 강화, 기관 맞춤형 프로그램 운영'],
+  domain: ['기관·미디어·전문 분야 콘텐츠를 기획하는 조직','전문 주제 조사, 메시지 구조화, 편집·브리핑·아카이브 설계','콘텐츠 구조·원고·브리핑 자료·아카이브 기준·편집 레퍼런스','전문 콘텐츠 제작, 리더십 브리핑, 지식 자산화']
+};
+function openProjectDetail(index){
+  const project=portfolioProjects[index]; if(!project||!projectDialog)return;
+  const d=projectDetailPresets[project.category]||projectDetailPresets.domain;
+  projectDialogImage.src=project.image; projectDialogImage.alt=project.title+' 프로젝트 이미지';
+  projectDialogKicker.textContent=String(index+1).padStart(2,'0')+' / '+project.categoryLabel+' · '+project.language;
+  projectDialogTitle.textContent=project.title; projectDialogSummary.textContent=project.description;
+  projectDialogAudience.textContent=d[0]; projectDialogScope.textContent=d[1]; projectDialogOutputs.textContent=d[2]; projectDialogApplication.textContent=d[3];
+  projectDialogLink.href=project.url||'#'; projectDialogLink.hidden=!project.url; projectDialog.showModal();
+}
+archiveGrid.addEventListener('click',event=>{const card=event.target.closest('.archive-card');if(!card)return;event.preventDefault();const cards=[...archiveGrid.querySelectorAll('.archive-card')];const n=cards.indexOf(card);const title=card.querySelector('h3')?.textContent;const i=portfolioProjects.findIndex(p=>p.title===title);openProjectDetail(i>=0?i:n);});
+archiveGrid.addEventListener('keydown',event=>{if(event.key!=='Enter'&&event.key!==' ')return;const card=event.target.closest('.archive-card');if(!card)return;event.preventDefault();const title=card.querySelector('h3')?.textContent;openProjectDetail(portfolioProjects.findIndex(p=>p.title===title));});
+projectDialog?.addEventListener('click',event=>{if(event.target===projectDialog)projectDialog.close();});
+projectDialog?.addEventListener('close',()=>{projectDialogImage.removeAttribute('src');projectDialogImage.alt='';});
