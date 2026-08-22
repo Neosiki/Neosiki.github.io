@@ -956,6 +956,16 @@
     .archive-head { margin-bottom: 26px; }
     @media (max-width: 980px) { .sales-section { padding: 42px 0; } }
     @media (max-width: 640px) { .sales-section { padding: 36px 0; } .sales-intro p { margin-top: 12px; line-height: 1.55; } .sales-points, .sales-service-list { margin-top: 22px; } .sales-point, .sales-point + .sales-point, .sales-service, .sales-service + .sales-service { padding-top: 14px; padding-bottom: 14px; } .sales-service b { margin-bottom: 12px; } .section-title { margin-bottom: 20px; } .archive-head { margin-bottom: 18px; } }
+
+    /* Hero background rotation: original visual assets */
+    .hero { position: relative; isolation: isolate; overflow: hidden; background: var(--paper); }
+    .hero::before, .hero::after { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background-repeat: no-repeat; background-size: cover; background-position: center center; will-change: opacity; }
+    .hero::before { background-image: linear-gradient(rgba(255,255,255,.84), rgba(255,255,255,.84)), url("assets/hero-backgrounds/hero-A-optical-lattice.jpg"); opacity: .28; animation: hero-background-a 18s ease-in-out infinite; }
+    .hero::after { background-image: linear-gradient(rgba(255,255,255,.84), rgba(255,255,255,.84)), url("assets/hero-backgrounds/hero-B-data-crystal.jpg"); opacity: 0; animation: hero-background-b 18s ease-in-out infinite; }
+    .hero > * { position: relative; z-index: 1; }
+    @keyframes hero-background-a { 0%, 42% { opacity: .28; } 50%, 92% { opacity: 0; } 100% { opacity: .28; } }
+    @keyframes hero-background-b { 0%, 42% { opacity: 0; } 50%, 92% { opacity: .28; } 100% { opacity: 0; } }
+    @media (max-width: 700px) { .hero::before, .hero::after { background-position: 58% center; } }
 </style>
 </head>
 <body>
