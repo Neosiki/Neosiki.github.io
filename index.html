@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -916,22 +916,19 @@
     .project:hover .project-arrow, .archive-card:hover .archive-open { color: var(--teal-dark); transform: translateX(3px); }
     .project:focus-visible, .archive-card:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
     @media (prefers-reduced-motion: reduce) { .project, .archive-card, .project-image, .archive-image, .project-arrow, .archive-open { transition: none; } .project:hover, a.archive-card:hover, .project:hover .project-image, .archive-card:hover .archive-image, .project:hover .project-arrow, .archive-card:hover .archive-open { transform: none; } }
-</style>
+`r`n    .brand-logo { display:block; width:138px; height:58px; object-fit:contain; object-position:center; }`r`n    @media (max-width:640px) { .brand-logo { width:104px; height:46px; } }`r`n</style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
 
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#top" aria-label="AI·AX 업무 전환 서비스 홈">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-label">AI·AX 업무 전환</span>
-      </a>
+      <a class="brand" href="#top" aria-label="NextAI 홈"><img class="brand-logo" src="assets/brand/nextai-logo-transparent.png" alt="NextAI" /></a>
       <nav class="nav-links" aria-label="주요 메뉴">
         <a href="about.html">소개·커리어</a>
         <a href="#work">프로젝트</a>
         <a href="#service">전문영역</a>
-        <a href="#credentials">자격·수료</a>
+        <a href="about.html#credentials">자격·수료</a>
       </nav>
       <div class="nav-cta"><a class="pill-link" href="#contact">협업 문의 <span>↗</span></a></div>
     </div>
@@ -947,7 +944,7 @@
           <span class="line">연결합니다</span>
         </h1>
         <p class="hero-intro reveal delay-2">
-          공공과제와 연구기획, AI 에이전트, 바이브 코딩, 데이터 콘텐츠를 업무 목적에 맞게 설계합니다. 중소기업·스타트업·소상공인에는 현장에 바로 적용할 수 있는 AI교육과 컨설팅을 제공합니다.
+          공공과제와 연구기획 AI 에이전트 바이브 코딩 데이터 콘텐츠를 업무 목적에 맞게 설계합니다. 중소기업·스타트업·소상공인에는 현장에 바로 적용할 수 있는 AI교육과 컨설팅을 제공합니다.
         </p>
       </div>
 
@@ -974,7 +971,7 @@
       <div class="section-inner">
         <div class="section-kicker">3D English Learning / Integrated Project</div>
         <h2 class="section-title" id="english-feature-title">3D로 배우는 생활 영어<br />학습과 제작을 한 페이지에</h2>
-        <p class="english-feature-lede">생활 속 장면을 3D로 체험하면서 영어를 익히는 학습앱입니다. 앱 체험과 실습 강의안, 복습 기능과 모바일 설치 과정을 한 페이지에서 확인할 수 있습니다.</p>
+        <p class="english-feature-lede">생활 속 장면을 3D로 체험하면서 영어를 익히는 학습앱입니다. 앱 체험과 실습 강의안 복습 기능과 모바일 설치 과정을 한 페이지에서 확인할 수 있습니다.</p>
         <div class="english-feature-grid">
           <figure class="english-feature-media"><video controls preload="metadata" poster="assets/english-learning/english-explorer-product-video-A-poster.jpg"><source src="assets/english-learning/english-explorer-product-video-A.mp4" type="video/mp4">브라우저가 동영상을 지원하지 않습니다.</video><figcaption>English Explorer 제품 소개 영상 A · 3D 공간에서 배우는 생활 영어</figcaption></figure>
                     <div><div class="english-feature-copy"><div class="english-feature-card"><img src="assets/english-learning/english-explorer-product-video-A-poster.jpg" alt="English Explorer 영어 학습앱 소개 포스터" loading="lazy" /><strong>English Explorer</strong><span>영어를 외우지 말고 공간에서 경험하는 3D 생활영어</span></div><div class="english-feature-card"><img src="assets/english-learning/english-explorer-product-video-A.gif" alt="English Explorer 제품 소개 애니메이션" loading="lazy" /><strong>학습과 제작</strong><span>앱 체험·강의안·고도화 기능을 한 페이지에서 확인</span></div></div><div class="english-feature-actions"><a href="english-learning.html">통합 페이지 열기 
@@ -1001,7 +998,7 @@
             <img class="project-image" src="project-public-proposal.png" alt="공공과제 제안서와 정책 자료를 정리한 작업 테이블" loading="lazy" />
             <div class="project-meta"><span>01 / PUBLIC PROJECT</span><span class="status">READ CASE</span></div>
             <h3>AI 활용 정부과제<br />제안서 작성</h3>
-            <p>공고·정책·시장 자료를 분석해 제안 논리와 추진체계를 세우고, 제출 가능한 제안서·요약본·검증 체크리스트까지 연결합니다.</p>
+            <p>공고·정책·시장 자료를 분석해 제안 논리와 추진체계를 세우고 제출 가능한 제안서·요약본·검증 체크리스트까지 연결합니다.</p>
             <div class="project-tags"><span>GOVERNMENT</span><span>PROPOSAL</span><span>DOCUMENT</span></div>
             <span class="project-arrow">↘</span>
           </a>
@@ -1009,7 +1006,7 @@
             <img class="project-image" src="project-research-planning.png" alt="연구 질문과 데이터 관계를 정리한 연구기획 테이블" loading="lazy" />
             <div class="project-meta"><span>02 / RESEARCH PLANNING</span><span class="status">READ CASE</span></div>
             <h3>AI에이전트 기반<br />연구기획·보고·제안</h3>
-            <p>연구 질문을 데이터 수집·분석·보고·제안 단계로 구조화하고 API, CLI, MCP를 연결해 반복 가능한 기획 체계를 설계합니다.</p>
+            <p>연구 질문을 데이터 수집·분석·보고·제안 단계로 구조화하고 API CLI MCP를 연결해 반복 가능한 기획 체계를 설계합니다.</p>
             <div class="project-tags"><span>AGENTS</span><span>API</span><span>MCP</span></div>
             <span class="project-arrow">↘</span>
           </a>
@@ -1025,7 +1022,7 @@
             <img class="project-image" src="project-design-studio-bookforge.png" alt="업무 문서와 자동화 대시보드를 함께 검수하는 작업 공간" loading="lazy" />
             <div class="project-meta"><span>04 / AGENTIC BUILD</span><span class="status">VIEW PROJECT</span></div>
             <h3>ChatGPT Codex<br />에이전틱 업무자동화</h3>
-            <p>업무 자료를 읽고 보고서와 메일, 발표 자료를 만드는 과정을 자동화하고 검수까지 연결합니다.</p>
+            <p>업무 자료를 읽고 보고서와 메일 발표 자료를 만드는 과정을 자동화하고 검수까지 연결합니다.</p>
             <div class="project-tags"><span>CODEX</span><span>AGENT</span><span>DOCUMENT</span></div>
             <span class="project-arrow">↗</span>
           </a>
@@ -1033,7 +1030,7 @@
             <img class="project-image" src="project-english-learning.png" alt="미니어처 생활 공간에서 영어를 배우는 3D 학습앱 장면" loading="lazy" />
             <div class="project-meta"><span>05 / 3D LEARNING APP</span><span class="status">VIEW PROJECT</span></div>
             <h3>3D로 배우는<br />생활 영어</h3>
-            <p>3D 공간에서 영어를 익히고 음성 재생과 복습, 모바일 설치까지 확인할 수 있는 작동형 학습앱입니다.</p>
+            <p>3D 공간에서 영어를 익히고 음성 재생과 복습 모바일 설치까지 확인할 수 있는 작동형 학습앱입니다.</p>
             <div class="project-tags"><span>THREE.JS</span><span>PWA</span><span>ENGLISH</span></div>
             <span class="project-arrow">↗</span>
           </a>
@@ -1054,7 +1051,7 @@
               <h3 class="archive-title">분야별로 선별한<br />주요 프로젝트</h3>
             </div>
             <div>
-              <p class="archive-intro">공공과제, 연구기획, 바이브 코딩, AI 자동화, 데이터 콘텐츠, 교육·컨설팅을 목적별로 정리했습니다. 각 프로젝트에서 해결 대상, 수행 범위, 주요 산출물과 적용 가능성을 확인한 뒤 상담을 요청할 수 있습니다.</p>
+              <p class="archive-intro">공공과제 연구기획 바이브 코딩 AI 자동화 데이터 콘텐츠 교육·컨설팅을 목적별로 정리했습니다. 각 프로젝트에서 해결 대상 수행 범위 주요 산출물과 적용 가능성을 확인한 뒤 상담을 요청할 수 있습니다.</p>
               <div class="archive-count"><strong id="archive-count">38</strong><span>SELECTED PROJECTS</span></div>
             </div>
           </div>
@@ -1073,45 +1070,18 @@
       </div>
     </section>
 
-    <section class="credentials" id="credentials">
-      <div class="section-inner">
-        <div class="credentials-top">
-          <div>
-            <div class="section-kicker">Professional Record / Verified Learning</div>
-            <h2 class="section-title">교육과 자격 이력을<br />확인 가능한 자료로 남깁니다</h2>
-          </div>
-          <div>
-            <p class="credentials-copy">AI 활용과 업무 전환에 필요한 교육 이력, 시스템·데이터베이스 자격, 국내 AI·디지털 전문자격을 발급기관과 원본 자료 기준으로 정리했습니다. 프로젝트와 교육·컨설팅 범위를 검토할 때 참고할 수 있습니다.</p>
-            <div class="credential-counts" aria-label="자격·수료 현황">
-              <div class="credential-stat"><strong>36</strong><span>TOTAL</span></div>
-              <div class="credential-stat"><strong>8</strong><span>GOOGLE</span></div>
-              <div class="credential-stat"><strong>21</strong><span>ANTHROPIC</span></div>
-              <div class="credential-stat"><strong>4</strong><span>MICROSOFT</span></div>
-              <div class="credential-stat"><strong>3</strong><span>국내 전문자격</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="cert-filter-row" role="group" aria-label="자격증 발급기관 필터">
-          <button class="cert-filter active" data-cert-filter="all">전체 36</button>
-          <button class="cert-filter" data-cert-filter="google">Google 8</button>
-          <button class="cert-filter" data-cert-filter="anthropic">Anthropic 21</button>
-          <button class="cert-filter" data-cert-filter="microsoft">Microsoft 4</button>
-          <button class="cert-filter" data-cert-filter="professional">국내 전문자격 3</button>
-        </div>
-        <div class="credential-grid" id="credential-grid" aria-live="polite"></div>
-      </div>
-    </section>
+    
 
     <section class="public-project" id="public-project">
       <div class="section-inner">
         <div class="section-kicker">Public Project / AI Business Planning</div>
-        <h2 class="section-title">공공과제 AI 사업계획서,<br />근거와 실행 구조를 함께 씁니다</h2>
-        <p class="public-project-intro">공고문·정책·시장·공공데이터를 바탕으로 과제의 필요성과 목표를 구조화하고, 평가자가 확인할 수 있는 성과지표와 실행계획으로 연결합니다. 아래 네 개의 실무·교육 프로젝트를 클릭하면 관련 자료와 프로젝트로 이동할 수 있습니다.</p>
+        <h2 class="section-title">공공과제 AI 사업계획서<br />근거와 실행 구조를 함께 씁니다</h2>
+        <p class="public-project-intro">공고문·정책·시장·공공데이터를 바탕으로 과제의 필요성과 목표를 구조화하고 평가자가 확인할 수 있는 성과지표와 실행계획으로 연결합니다. 아래 네 개의 실무·교육 프로젝트를 클릭하면 관련 자료와 프로젝트로 이동할 수 있습니다.</p>
         <div class="public-project-grid">
           <a class="public-project-lead" href="#all-projects"><h3>AI 활용 정부과제 제안서 작성</h3><p>자료 분석·작성·검증·문서 산출물까지 이어지는 실무.</p><span class="public-project-link">PROJECT ARCHIVE ↘</span></a>
           <a class="public-project-lead" href="#all-projects"><h3>AI와 함께 보고서와 사업계획서 작성하기</h3><p>검색·시장조사·데이터 분석부터 전략·프레임워크·문서 산출물까지 이어지는 AI 협업 워크플로우.</p><span class="public-project-link">PROJECT ARCHIVE ↘</span></a>
-          <a class="public-project-lead" href="https://github.com/Neosiki/codex-agentic-training" target="_blank" rel="noreferrer"><h3>AI에이전트 기반 연구기획·보고·제안</h3><p>API 연동·바이브코딩, 데이터 수집·분석, Claude Code·Gemini CLI·Codex CLI와 MCP 활용.</p><span class="public-project-link">RELATED PROJECT ↗</span></a>
-          <a class="public-project-lead" href="https://github.com/Neosiki/vibe-coding-1day-kpf" target="_blank" rel="noreferrer"><h3>생성형AI와 AI에이전트로 연구 기획</h3><p>AI·LLM 원리, 고급 프롬프팅, 데이터 분석·시각화, RAG 문서작성과 최종 프로젝트.</p><span class="public-project-link">RELATED COURSE ↗</span></a>
+          <a class="public-project-lead" href="https://github.com/Neosiki/codex-agentic-training" target="_blank" rel="noreferrer"><h3>AI에이전트 기반 연구기획·보고·제안</h3><p>API 연동·바이브코딩 데이터 수집·분석 Claude Code·Gemini CLI·Codex CLI와 MCP 활용.</p><span class="public-project-link">RELATED PROJECT ↗</span></a>
+          <a class="public-project-lead" href="https://github.com/Neosiki/vibe-coding-1day-kpf" target="_blank" rel="noreferrer"><h3>생성형AI와 AI에이전트로 연구 기획</h3><p>AI·LLM 원리 고급 프롬프팅 데이터 분석·시각화 RAG 문서작성과 최종 프로젝트.</p><span class="public-project-link">RELATED COURSE ↗</span></a>
         </div>
         <div class="public-project-steps">
           <div class="public-project-step"><span>01</span><div><strong>자료와 공고문 분석</strong><small>핵심 요구사항·대상·제약조건·평가항목을 추출하고 근거를 정리</small></div></div>
@@ -1124,7 +1094,7 @@
       <div class="section-inner">
         <div class="section-kicker">Vibe Coding / Build With AI</div>
         <h2 class="section-title" id="vibe-coding-title">아이디어를 실행 가능한 서비스로<br />AI와 함께 만듭니다</h2>
-        <p class="public-project-intro">바이브 코딩은 업무 아이디어를 말로 정리하고 AI와 함께 작동하는 결과물로 만드는 방법입니다. 데이터저널리즘 실습부터 업무자동화, 3D 영어 학습앱, 문서 처리까지 실제 적용 사례를 확인할 수 있습니다.</p>
+        <p class="public-project-intro">바이브 코딩은 업무 아이디어를 말로 정리하고 AI와 함께 작동하는 결과물로 만드는 방법입니다. 데이터저널리즘 실습부터 업무자동화 3D 영어 학습앱 문서 처리까지 실제 적용 사례를 확인할 수 있습니다.</p>
         <div class="public-project-grid">
           <a class="public-project-lead" href="https://github.com/Neosiki/vibe-coding-1day-kpf" target="_blank" rel="noreferrer"><h3>1-Day 데이터 바이브코딩</h3><p>공공데이터를 수집하고 분석·시각화해 취재 문서까지 완성하는 실습.</p><span class="public-project-link">VIEW PROJECT ↗</span></a>
           <a class="public-project-lead" href="https://github.com/Neosiki/codex-agentic-training" target="_blank" rel="noreferrer"><h3>Codex 에이전틱 업무자동화</h3><p>보고서·메일·PPT를 AI와 함께 만들고 검수까지 연결하는 교육.</p><span class="public-project-link">VIEW PROJECT ↗</span></a>
@@ -1137,17 +1107,17 @@
       <div class="section-inner">
         <div class="section-kicker">Design Studio / P0 Feature Case</div>
         <h2 class="section-title" id="design-studio-title">기획부터 검수까지<br />한 번에 관리합니다</h2>
-        <p class="design-studio-lede">Design Studio는 HTML과 문서, 영상 제작 과정을 한 곳에서 관리하는 운영 시스템입니다. 작업 상태를 기록하고 바뀐 결과만 다시 처리하며 검수 과정에서 발견된 문제와 수정안을 함께 확인할 수 있습니다.</p>
+        <p class="design-studio-lede">Design Studio는 HTML과 문서 영상 제작 과정을 한 곳에서 관리하는 운영 시스템입니다. 작업 상태를 기록하고 바뀐 결과만 다시 처리하며 검수 과정에서 발견된 문제와 수정안을 함께 확인할 수 있습니다.</p>
         <div class="design-studio-grid">
           <figure class="design-studio-visual">
-            <img src="assets/design-studio-feature-overview.png" alt="Design Studio의 입력, 설계, 검수, 제작, 공유 단계와 CLI·MCP·REST 연결을 보여주는 기능 안내도" loading="lazy" />
+            <img src="assets/design-studio-feature-overview.png" alt="Design Studio의 입력 설계 검수 제작 공유 단계와 CLI·MCP·REST 연결을 보여주는 기능 안내도" loading="lazy" />
             <figcaption class="design-studio-caption">입력 → 설계 → 검수 → 제작 → 공유 · 작업 상태와 검수 근거를 남기는 시각 제작 도구</figcaption>
           </figure>
           <div>
             <div class="design-studio-points">
-              <div class="design-studio-point"><span>01</span><div><strong>작업 상태와 진행률</strong><small>산출물별 대기·실행·완료·실패·취소 상태를 기록하고, 실패 장면만 재시도할 수 있습니다.</small></div></div>
-              <div class="design-studio-point"><span>02</span><div><strong>증분 렌더링과 stale 관리</strong><small>입력·IR·산출물 해시를 비교해 바뀐 결과만 다시 만들고, stale 사유를 확인할 수 있습니다.</small></div></div>
-              <div class="design-studio-point"><span>03</span><div><strong>검수 수정 제안과 승인 적용</strong><small>안전 영역·대비·글자 크기·대체 텍스트 오류를 제안으로 바꾸고, 미리보기 후 JSON 원본에 승인 적용합니다.</small></div></div>
+              <div class="design-studio-point"><span>01</span><div><strong>작업 상태와 진행률</strong><small>산출물별 대기·실행·완료·실패·취소 상태를 기록하고 실패 장면만 재시도할 수 있습니다.</small></div></div>
+              <div class="design-studio-point"><span>02</span><div><strong>증분 렌더링과 stale 관리</strong><small>입력·IR·산출물 해시를 비교해 바뀐 결과만 다시 만들고 stale 사유를 확인할 수 있습니다.</small></div></div>
+              <div class="design-studio-point"><span>03</span><div><strong>검수 수정 제안과 승인 적용</strong><small>안전 영역·대비·글자 크기·대체 텍스트 오류를 제안으로 바꾸고 미리보기 후 JSON 원본에 승인 적용합니다.</small></div></div>
             </div>
             <div class="design-studio-actions">
               <a href="https://github.com/Neosiki/design-studio" target="_blank" rel="noreferrer">저장소 보기 ↗</a>
@@ -1185,7 +1155,7 @@
             <div class="p1-list">
               <div class="p1-item"><span>P1·01</span><div><strong>작업 큐와 동시 실행 제어</strong><small>우선순위·대기열·동시 실행 수·자원 사용량 관리</small></div><span class="p1-status">NEXT</span></div>
               <div class="p1-item"><span>P1·02</span><div><strong>팀 협업·권한·감사 로그</strong><small>검토자·승인자·변경 이력과 산출물별 접근 권한</small></div><span class="p1-status">NEXT</span></div>
-              <div class="p1-item"><span>P1·03</span><div><strong>시각 회귀·품질 대시보드</strong><small>렌더 결과 비교, QA 추이, 실패 원인과 개선 우선순위</small></div><span class="p1-status">NEXT</span></div>
+              <div class="p1-item"><span>P1·03</span><div><strong>시각 회귀·품질 대시보드</strong><small>렌더 결과 비교 QA 추이 실패 원인과 개선 우선순위</small></div><span class="p1-status">NEXT</span></div>
               <div class="p1-item"><span>P1·04</span><div><strong>템플릿·플러그인 확장 구조</strong><small>조직별 템플릿과 HTML·문서·영상 출력 모듈 재사용</small></div><span class="p1-status">NEXT</span></div>
             </div>
           </div>
@@ -1218,8 +1188,6 @@
             <p>현재 상황과 필요한 결과물을 알려주시면 교육이나 컨설팅의 범위와 진행 방식을 제안합니다.</p>
             <a class="contact-mail" href="mailto:osiki999@gmail.com">osiki999@gmail.com <span>↗</span></a>
             <div class="contact-cta">
-              <a class="button primary" href="#inquiry">1분 문의 작성 <span class="arrow">↘</span></a>
-              <a class="button secondary" href="mailto:osiki999@gmail.com?subject=AI%C2%B7AX%20상담%20문의">바로 이메일 보내기 <span class="arrow">↗</span></a>
             </div>
           </div>
         </div>
@@ -1227,7 +1195,7 @@
           <div class="inquiry-copy">
             <div class="section-kicker">Inquiry Brief</div>
             <h3>현재 상황을 알려주시면<br />다음 실행안을 제안합니다</h3>
-            <p>중소기업·스타트업·소상공인 AI교육 및 컨설팅, 공공과제·연구기획, AI 에이전트·바이브 코딩, 데이터·문서 자동화 중 필요한 영역을 선택해 주세요.</p>
+            <p>중소기업·스타트업·소상공인 AI교육 및 컨설팅 공공과제·연구기획 AI 에이전트·바이브 코딩 데이터·문서 자동화 중 필요한 영역을 선택해 주세요.</p>
             <div class="inquiry-points">
               <div class="inquiry-point"><span>01</span><strong>문의 목적에 맞는 상담 분류</strong></div>
               <div class="inquiry-point"><span>02</span><strong>업무 범위와 산출물 중심 검토</strong></div>
@@ -1243,7 +1211,7 @@
             <label>소속·기업명<input name="organization" type="text" autocomplete="organization" placeholder="기업·기관명" required /></label>
             <label>이메일<input name="email" type="email" autocomplete="email" placeholder="name@company.com" required /></label>
             <label>희망 방식<select name="format"><option>상담·컨설팅</option><option>임직원·구성원 AI교육</option><option>공공과제·연구기획</option><option>바이브 코딩·AI 에이전트</option><option>데이터·문서 자동화</option></select></label>
-            <label class="full">문의 내용<textarea name="message" placeholder="현재 업무, 해결하고 싶은 문제, 희망 일정이나 산출물을 간단히 적어주세요." required></textarea></label>
+            <label class="full">문의 내용<textarea name="message" placeholder="현재 업무 해결하고 싶은 문제 희망 일정이나 산출물을 간단히 적어주세요." required></textarea></label>
             <div class="inquiry-submit">
               <small>제출 버튼을 누르면 문의 내용이 이메일로 전송됩니다.<br />첫 제출 시 수신 확인 메일에서 한 번만 확인해 주세요.</small>
               <button class="button" type="submit">문의 내용 이메일로 보내기 <span class="arrow">↗</span></button>
@@ -1251,7 +1219,7 @@
             <p class="inquiry-status" id="inquiry-status" role="status" aria-live="polite"></p>
           </form>
         </div>
-        <div class="footer"><span>윤영식 / AI · AX STRATEGY & CONSULTING</span><span>SEOUL, KOREA · 2026</span></div>
+        <div class="footer"><span>윤영식 / AI · AX STRATEGY & CONSULTING</span><span>SEOUL KOREA · 2026</span></div>
       </div>
     </section>
   </main>
