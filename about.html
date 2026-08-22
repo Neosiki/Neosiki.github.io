@@ -76,7 +76,9 @@
     .hero-side { display: grid; grid-template-rows: auto 1fr; gap: 28px; }
     .identity-card { padding: 30px; border: 1px solid var(--ink); background: var(--white); }
     .identity-card .label { color: var(--teal); font: 800 9px/1 var(--mono); letter-spacing: .14em; }
-    .identity-card h2 { margin: 28px 0 12px; font: 760 39px/1.08 var(--display); letter-spacing: -.045em; }
+    .identity-card h2 { margin: 0; font: 760 39px/1.08 var(--display); letter-spacing: -.045em; }
+    .identity-brand { display: flex; align-items: center; gap: 22px; margin: 28px 0 12px; }
+    .identity-leader { color: var(--teal); font: 750 clamp(15px, 1.55vw, 20px)/1.35 var(--display); letter-spacing: -.035em; }
     .identity-card p { margin: 0; color: var(--muted); font-size: 13px; }
     .identity-facts { display: grid; margin-top: 29px; border-top: 1px solid var(--line); }
     .identity-fact { display: grid; grid-template-columns: 82px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
@@ -209,7 +211,10 @@
       .contact-mail { font-size: 16px; }
       .footer { flex-direction: column; gap: 10px; }
       .brand-logo { width: 116px; height: 40px; }
+      .identity-brand { align-items: flex-start; gap: 14px; }
       .identity-logo { width: 156px; height: 70px; }
+      .identity-leader { font-size: 14px; }
+      .identity-leader-break { display: none; }
       .footer-logo { width: 132px; height: 50px; }
     }
   
@@ -281,7 +286,7 @@
 <div class="hero-side">
 <article class="identity-card">
 <div class="label">PROFILE / CURRENT</div>
-<h2><img alt="NextAI · Agentic Engineering &amp; Enterprise AI Solutions" class="identity-logo" src="assets/brand/nextai-logo-transparent.png"/></h2>
+<div class="identity-brand"><h2><img alt="NextAI · Agentic Engineering &amp; Enterprise AI Solutions" class="identity-logo" src="assets/brand/nextai-logo-transparent.png"/></h2><span class="identity-leader">윤영식<br class="identity-leader-break" />AI 혁신 서비스 조직 리더</span></div>
 <p>검색·네트워크·콘텐츠 실무 경험을 AI·AX 전환의 언어와 실행 구조로 번역하는 강사·컨설턴트입니다.</p>
 <div class="identity-facts">
 <div class="identity-fact"><strong>주요 커리어</strong><span>2002년 FIFA 한일 월드컵 컨설턴트 · 포털 전략기획 및 검색컨텐츠 팀장 · 머니투데이·뉴스1 전략기획실장·CIO · SkylifeTV(현 ENA) ICT팀장 · 메디게이트뉴스 대표·편집인 · 무비스트 발행인·편집인</span></div>
