@@ -596,13 +596,13 @@ ff<!doctype html>
     .analytics-actions a:hover { background: var(--lime); border-color: var(--lime); color: var(--ink); }
     .contact { background: var(--teal); color: var(--white); padding-bottom: 70px; }
     .contact .section-kicker { color: var(--lime); }
-    .contact-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 50px; align-items: end; }
-    .contact h2 { margin: 14px 0 0; font: 760 clamp(48px, 7vw, 96px)/1 var(--display); letter-spacing: -.065em; }
-    .contact-panel { padding: 22px 0; border-top: 1px solid rgba(255,255,255,.5); border-bottom: 1px solid rgba(255,255,255,.5); }
-    .contact-panel p { margin: 0 0 20px; color: rgba(255,255,255,.75); font-size: 13px; }
-    .contact-mail { display: inline-flex; align-items: center; gap: 12px; font: 700 20px/1 var(--mono); }
-    .contact-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .contact-cta .button { min-height: 48px; padding: 0 18px; font-size: 12px; }
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+    .contact h2 { margin: 14px 0 0; font: 760 clamp(42px, 6vw, 82px)/1.08 var(--display); letter-spacing: -.065em; }
+    .contact-panel { min-width: 0; padding: 24px 0 28px; border-top: 1px solid rgba(255,255,255,.5); border-bottom: 1px solid rgba(255,255,255,.5); }
+    .contact-panel p { max-width: 38em; margin: 0 0 26px; color: rgba(255,255,255,.9); font-size: clamp(16px, 1.45vw, 21px); line-height: 1.8; letter-spacing: -.025em; overflow-wrap: anywhere; }
+    .contact-mail { display: inline-block; max-width: 100%; color: var(--white); font: 800 clamp(25px, 3.2vw, 42px)/1.2 var(--mono); letter-spacing: -.04em; overflow-wrap: anywhere; word-break: break-word; }
+    .contact-cta { display: none !important; }
+    @media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; gap: 28px; } .contact h2 { font-size: clamp(40px, 12vw, 64px); } .contact-panel p { font-size: 16px; line-height: 1.7; } .contact-mail { font-size: clamp(22px, 7vw, 31px); } }
     .inquiry-wrap { display: grid; grid-template-columns: .72fr 1.28fr; gap: 48px; margin-top: 62px; padding-top: 42px; border-top: 1px solid rgba(255,255,255,.35); }
     .inquiry-copy h3 { margin: 14px 0 12px; color: var(--white); font: 740 32px/1.15 var(--display); letter-spacing: -.045em; }
     .inquiry-copy p { margin: 0; max-width: 420px; color: rgba(255,255,255,.72); font-size: 13px; }
@@ -1225,7 +1225,11 @@ ff<!doctype html>
             <h2>지금 필요한 업무부터<br />상담해 주세요</h2>
           </div>
           <div class="contact-panel">
-            <p style="font-size:clamp(1rem,1.7vw,1.25rem);line-height:1.85;max-width:52rem;overflow-wrap:anywhere">현재 상황과 필요한 결과물을 알려주시면  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+            <p>현재 상황과 필요한 결과물을 알려주시면 교육이나 컨설팅의 범위와 진행 방식을 제안합니다.</p>
+            <a class="contact-mail" href="mailto:osiki999@gmail.com">osiki999@gmail.com</a>
+          </div>
+        </div>
+        <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
     <form method="dialog" class="project-dialog-shell">
       <button class="project-dialog-close" value="close" aria-label="프로젝트 상세 닫기">×</button>
       <div class="project-dialog-image"><img id="project-dialog-image" alt="" /></div>
@@ -1243,11 +1247,7 @@ ff<!doctype html>
       </div>
     </form>
   </dialog>
-려주시면 교육이나 컨설팅의 범위와 진행 방식을 제안합니다.</p>
-            <a class="contact-mail" style="display:inline-block;font-size:clamp(1.45rem,3.2vw,2.35rem);line-height:1.22;letter-spacing:-.025em;overflow-wrap:anywhere;word-break:break-word" href="mailto:osiki999@gmail.com">osiki999@gmail.com</a>
-            
-          </div>
-        </div>`n<div class="inquiry-wrap" id="inquiry">
+        <div class="inquiry-wrap" id="inquiry">
           <div class="inquiry-copy">
             <div class="section-kicker">Inquiry Brief</div>
             <h3>현재 상황을 알려주시면<br />다음 실행안을 제안합니다</h3>
