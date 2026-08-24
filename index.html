@@ -1062,6 +1062,48 @@
       .sales-intro .section-title { font-size: 31px; }
       .brand-film-actions { grid-template-columns: 1fr; }
     }
+
+    [data-unavailable="true"] { cursor: pointer; }
+    .site-message-dialog {
+      width: min(390px, calc(100vw - 36px));
+      margin: auto;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+    }
+    .site-message-dialog::backdrop { background: rgba(15,26,36,.58); backdrop-filter: blur(3px); }
+    .site-message-shell {
+      padding: 28px;
+      border: 1px solid rgba(31,45,64,.24);
+      background: var(--paper);
+      box-shadow: 10px 10px 0 var(--mint);
+      text-align: center;
+    }
+    .site-message-kicker {
+      margin: 0 0 12px;
+      color: var(--teal);
+      font: 800 10px/1.4 var(--mono);
+      letter-spacing: .14em;
+    }
+    .site-message-text { margin: 0; font: 750 24px/1.35 var(--display); }
+    .site-message-close {
+      min-width: 112px;
+      margin-top: 24px;
+      padding: 11px 20px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--paper);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .site-message-close:hover,
+    .site-message-close:focus-visible { background: var(--teal); border-color: var(--teal); }
+    @media (max-width: 640px) {
+      .site-message-shell { padding: 24px 20px; box-shadow: 7px 7px 0 var(--mint); }
+      .site-message-text { font-size: 21px; }
+      .site-message-close { width: 100%; }
+    }
 </style>
 <style id="unified-transparent-panels">.quick-links .proof{background:rgba(255,255,255,.62);backdrop-filter:blur(5px);border-color:rgba(18,43,46,.18)}.bookforge-inner{background:rgba(16,44,45,.90);backdrop-filter:blur(4px)}.project,.archive-card,.service-item,.credential-card,.inquiry-form{background:rgba(255,255,255,.64);backdrop-filter:blur(6px)}.project:hover,.archive-card:hover{background:rgba(255,255,255,.82)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.20),transparent 34%),radial-gradient(circle at 12% 82%,rgba(238,216,185,.16),transparent 30%)}.credentials,.english-feature{background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.12),transparent 34%)}@media(max-width:700px){.quick-links .proof,.project,.archive-card,.service-item,.credential-card,.inquiry-form{backdrop-filter:blur(3px)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 85% 8%,rgba(199,221,210,.16),transparent 42%)}}</style></head>
 <body>
@@ -1206,13 +1248,13 @@
             <div class="project-tags"><span>THREE.JS</span><span>PWA</span><span>ENGLISH</span></div>
             <span class="project-arrow">↗</span>
           </a>
-          <a class="project" data-category="automation" href="https://github.com/Neosiki/design-studio" target="_blank" rel="noreferrer">
+          <a class="project" data-category="automation" href="#" data-unavailable="true" aria-label="Design Studio 제작 운영 시스템">
             <img class="project-image" src="assets/projects/generated/neo-design-studio-operations.png" alt="전자출판 교정지와 제작 검수 대시보드" loading="lazy" />
             <div class="project-meta"><span>06 / DESIGN STUDIO</span><span class="status">VIEW PROJECT</span></div>
             <h3>Design Studio 제작 운영 시스템</h3>
             <p>AI 제작 작업의 접수·진행률·실패 원인·검수 이력을 한 흐름으로 관리합니다. 전체 작업을 반복하지 않고 문제가 있는 단계만 재처리해 납기와 품질을 함께 관리합니다.</p>
             <div class="project-tags"><span>JOBS</span><span>CACHE</span><span>QA</span></div>
-            <span class="project-arrow">↗</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -1289,8 +1331,8 @@
               <div class="design-studio-point"><span>03</span><div><strong>검수 수정 제안과 승인 적용</strong><small>안전 영역·대비·글자 크기·대체 텍스트 오류를 제안으로 바꾸고 미리보기 후 JSON 원본에 승인 적용합니다.</small></div></div>
             </div>
             <div class="design-studio-actions">
-              <a href="https://github.com/Neosiki/design-studio" target="_blank" rel="noreferrer">저장소 보기 ↗</a>
-              <a href="https://github.com/Neosiki/design-studio#p0-%EC%9E%91%EC%97%85-%EC%9A%B4%EC%98%81-%EA%B8%B0%EB%8A%A5" target="_blank" rel="noreferrer">사용 흐름 보기 ↗</a>
+              <a href="#" data-unavailable="true">저장소 보기</a>
+              <a href="#" data-unavailable="true">사용 흐름 보기</a>
             </div>
           </div>
         </div>
@@ -1391,6 +1433,14 @@
       </div>
     </section>
   </main>
+
+  <dialog class="site-message-dialog" id="site-message-dialog" aria-labelledby="site-message-text">
+    <div class="site-message-shell">
+      <p class="site-message-kicker">PROJECT NOTICE</p>
+      <p class="site-message-text" id="site-message-text">업데이트 중입니다.</p>
+      <button class="site-message-close" id="site-message-close" type="button">확인</button>
+    </div>
+  </dialog>
 
   <dialog class="cert-dialog" id="cert-dialog" aria-labelledby="cert-dialog-title">
     <div class="cert-dialog-shell">
@@ -1573,6 +1623,39 @@
       inquiryStatus.textContent = '문의가 접수되었습니다. 첫 제출이라면 osiki999@gmail.com으로 발송된 확인 메일에서 수신 확인을 완료해 주세요.';
     }
   </script>
-  <script src="assets/projects.js?v=909c82e"></script>
+  <script>
+    const unavailableProjectUrls = new Set([
+      'https://github.com/Neosiki/design-studio',
+      'https://github.com/Neosiki/neo-design-studio',
+    ]);
+    const siteMessageDialog = document.querySelector('#site-message-dialog');
+    const siteMessageClose = document.querySelector('#site-message-close');
+
+    function showUpdatingMessage() {
+      if (!siteMessageDialog) return;
+      if (typeof siteMessageDialog.showModal === 'function') {
+        if (!siteMessageDialog.open) siteMessageDialog.showModal();
+        siteMessageClose?.focus();
+        return;
+      }
+      window.alert('업데이트 중입니다.');
+    }
+
+    siteMessageClose?.addEventListener('click', () => siteMessageDialog.close());
+    siteMessageDialog?.addEventListener('click', event => {
+      if (event.target === siteMessageDialog) siteMessageDialog.close();
+    });
+
+    document.addEventListener('click', event => {
+      const link = event.target.closest('a[href]');
+      const control = event.target.closest('[data-unavailable="true"]');
+      const normalizedUrl = link ? link.href.split('#')[0] : '';
+      if (!control && !unavailableProjectUrls.has(normalizedUrl)) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      showUpdatingMessage();
+    }, true);
+  </script>
+  <script src="assets/projects.js?v=20260824-safe-links"></script>
 </body>
 </html>
