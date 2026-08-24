@@ -422,14 +422,19 @@
     .archive-filter.active, .archive-filter:hover { background: var(--ink); color: var(--paper); }
     .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
     .archive-card {
+      width: 100%;
       min-height: 300px;
       padding: 21px;
+      border-top: 0;
+      border-left: 0;
       border-right: 1px solid var(--ink);
       border-bottom: 1px solid var(--ink);
       background: rgba(255,255,255,.18);
+      appearance: none;
       display: flex;
       flex-direction: column;
       text-align: left;
+      cursor: pointer;
       transition: transform .22s ease, background .22s ease, box-shadow .22s ease;
     }
     a.archive-card:hover { position: relative; z-index: 2; background: var(--white); transform: translate(-3px, -3px); box-shadow: 7px 7px 0 var(--lime); }
@@ -1656,6 +1661,6 @@
       showUpdatingMessage();
     }, true);
   </script>
-  <script src="assets/projects.js?v=20260824-safe-links"></script>
+  <script src="assets/projects.js?v=20260824-all-card-links"></script>
 </body>
 </html>

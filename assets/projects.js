@@ -54,14 +54,16 @@ function renderProjectArchive(category = 'all') {
 
   archiveGrid.innerHTML = visibleProjects.map(project => {
     const originalIndex = portfolioProjects.indexOf(project) + 1;
-    const tag = project.updating ? 'button' : (project.url ? 'a' : 'article');
+    const tag = project.url ? 'a' : 'button';
     const isInternal = project.url && (project.url.startsWith('#') || project.url.endsWith('.html'));
-    const linkAttributes = project.updating
-      ? ` type="button" data-unavailable="true" aria-label="${project.title}"`
-      : (project.url ? ` href="${project.url}"${isInternal ? '' : ' target="_blank" rel="noreferrer"'}` : '');
+    const linkAttributes = project.url
+      ? ` href="${project.url}"${isInternal ? '' : ' target="_blank" rel="noreferrer"'}`
+      : ` type="button" data-unavailable="true" aria-label="${project.title}"`;
     const featured = project.featured ? ' · FEATURED' : '';
-    const visibility = project.updating ? 'VIEW PROJECT' : (project.url ? (isInternal ? 'READ CASE' : 'VIEW PROJECT') : 'CASE STUDY');
-    const openMark = project.updating ? '<span class="archive-open" aria-hidden="true">↗</span>' : (project.url ? `<span class="archive-open" aria-hidden="true">${isInternal ? '↖' : '↗'}</span>` : '<span class="archive-open" aria-hidden="true">—</span>');
+    const visibility = project.url ? (isInternal ? 'READ CASE' : 'VIEW PROJECT') : 'CASE STUDY';
+    const openMark = project.url
+      ? `<span class="archive-open" aria-hidden="true">${isInternal ? '↖' : '↗'}</span>`
+      : '<span class="archive-open" aria-hidden="true">↗</span>';
     return `<${tag} class="archive-card ${project.caseStudy || !project.url ? 'case-study' : ''}"${linkAttributes}>
       <img class="archive-image" src="${project.image}" alt="${project.title} 프로젝트를 상징하는 이미지" loading="lazy" />
       <span class="archive-top">
@@ -119,7 +121,5 @@ function openProjectDetail(index){
   projectDialogAudience.textContent=d[0]; projectDialogScope.textContent=d[1]; projectDialogOutputs.textContent=d[2]; projectDialogApplication.textContent=d[3];
   projectDialogLink.href=project.url||'#'; projectDialogLink.hidden=!project.url; projectDialog.showModal();
 }
-archiveGrid.addEventListener('click',event=>{const card=event.target.closest('.archive-card');if(!card)return;event.preventDefault();const cards=[...archiveGrid.querySelectorAll('.archive-card')];const n=cards.indexOf(card);const title=card.querySelector('h3')?.textContent;const i=portfolioProjects.findIndex(p=>p.title===title);openProjectDetail(i>=0?i:n);});
-archiveGrid.addEventListener('keydown',event=>{if(event.key!=='Enter'&&event.key!==' ')return;const card=event.target.closest('.archive-card');if(!card)return;event.preventDefault();const title=card.querySelector('h3')?.textContent;openProjectDetail(portfolioProjects.findIndex(p=>p.title===title));});
 projectDialog?.addEventListener('click',event=>{if(event.target===projectDialog)projectDialog.close();});
 projectDialog?.addEventListener('close',()=>{projectDialogImage.removeAttribute('src');projectDialogImage.alt='';});
