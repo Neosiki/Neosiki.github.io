@@ -311,6 +311,31 @@
       font: 780 clamp(38px, 5vw, 68px)/1.08 var(--display);
       letter-spacing: -.05em;
     }
+    .brand-film { background: #f7faf9; color: var(--ink); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; }
+    .brand-film-head { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(300px, .82fr); gap: 54px; align-items: end; margin-bottom: 38px; }
+    .brand-film .section-title { max-width: 880px; margin-bottom: 0; }
+    .brand-film-lede { max-width: 540px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.8; }
+    .brand-film-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .brand-film-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--ink); color: var(--ink); font-size: 11px; font-weight: 800; transition: background .2s ease, color .2s ease, transform .2s ease; }
+    .brand-film-link:hover { background: var(--ink); color: var(--paper); transform: translateY(-2px); }
+    .brand-film-link.primary { background: var(--teal); color: var(--ink); border-color: var(--teal); }
+    .brand-film-link.primary:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .brand-film-frame { margin: 0; border: 1px solid var(--ink); background: #0f1a24; box-shadow: 12px 12px 0 var(--teal); overflow: hidden; }
+    .brand-film-frame video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #0f1a24; }
+    .brand-film-frame figcaption { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 14px 16px; background: var(--white); color: var(--muted); font: 650 10px/1.45 var(--mono); letter-spacing: .04em; }
+    .brand-film-frame figcaption strong { color: var(--ink); }
+    @media (max-width: 980px) {
+      .brand-film-head { grid-template-columns: 1fr; gap: 18px; }
+      .brand-film-lede { max-width: 760px; }
+      .brand-film-frame { box-shadow: 8px 8px 0 var(--teal); }
+    }
+    @media (max-width: 640px) {
+      .brand-film-head { margin-bottom: 26px; }
+      .brand-film-actions { display: grid; grid-template-columns: 1fr 1fr; }
+      .brand-film-link { justify-content: center; padding: 0 10px; }
+      .brand-film-frame { box-shadow: 6px 6px 0 var(--teal); }
+      .brand-film-frame figcaption { align-items: flex-start; flex-direction: column; gap: 3px; }
+    }
     .english-feature { background: #102c2d; color: var(--paper); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
     .english-feature .section-kicker { color: var(--lime); }
     .english-feature .section-title { max-width: 850px; }
@@ -1013,6 +1038,32 @@
         <a class="proof" href="#vibe-coding"><strong>바이브 코딩</strong><span>작동하는 웹앱과 실습 모델</span></a>
         <a class="proof" href="#english-learning"><strong>AI교육·컨설팅</strong><span>중소기업·스타트업·소상공인</span></a>
         <a class="proof" href="#all-projects"><strong>프로젝트 자료실</strong><span>38개 프로젝트 · PDF 소개서</span></a>
+      </div>
+    </section>
+
+
+    <section class="brand-film" id="brand-film" aria-labelledby="brand-film-title">
+      <div class="section-inner">
+        <div class="brand-film-head">
+          <div>
+            <div class="section-kicker">NextAI Brand Film / 100 Seconds</div>
+            <h2 class="section-title" id="brand-film-title">NextAI를 100초로 소개합니다</h2>
+          </div>
+          <div>
+            <p class="brand-film-lede">도구보다 업무의 완성도를 봅니다. 경력과 방법론, 주요 프로젝트와 검수 기준을 100초 영상에 담았습니다.</p>
+            <div class="brand-film-actions">
+              <a class="brand-film-link primary" href="#work">주요 프로젝트 보기 ↘</a>
+              <a class="brand-film-link" href="#contact">협업 문의하기 ↘</a>
+            </div>
+          </div>
+        </div>
+        <figure class="brand-film-frame">
+          <video controls preload="metadata" playsinline poster="assets/video/nextai-brand-film-poster.jpg" aria-label="NextAI 브랜드 소개 영상">
+            <source src="assets/video/nextai-brand-film-100s.mp4" type="video/mp4" />
+            브라우저가 동영상을 지원하지 않습니다.
+          </video>
+          <figcaption><strong>NextAI Brand Film</strong><span>99초 · 한글 자막 · 음성 및 BGM 포함</span></figcaption>
+        </figure>
       </div>
     </section>
 
