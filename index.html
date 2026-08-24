@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -991,6 +991,77 @@
     @keyframes hero-background-a { 0%, 42% { opacity: .88; } 50%, 92% { opacity: 0; } 100% { opacity: .88; } }
     @keyframes hero-background-b { 0%, 42% { opacity: 0; } 50%, 92% { opacity: .88; } 100% { opacity: 0; } }
     @media (max-width: 700px) { .hero::before, .hero::after { background-position: 58% center; } }
+
+    /* Mobile reading rhythm: balanced headings, consistent gutters and compact cards */
+    @media (max-width: 640px) {
+      html { scroll-padding-top: 64px; overflow-x: hidden; }
+      body { overflow-x: hidden; font-size: 14px; line-height: 1.58; }
+      img, video { max-width: 100%; }
+
+      .nav-inner { min-height: 58px; padding: 0 16px; gap: 16px; }
+      .brand-logo { width: 92px; height: 42px; }
+      .pill-link { min-height: 40px; padding: 0 13px; gap: 7px; font-size: 11px; }
+
+      section { padding: 54px 18px; }
+      .section-kicker { margin-bottom: 9px; font-size: 9px; line-height: 1.4; letter-spacing: .12em; overflow-wrap: anywhere; }
+      .section-title,
+      .sales-intro .section-title {
+        margin: 8px 0 14px;
+        font-size: clamp(32px, 9vw, 36px);
+        line-height: 1.16;
+        letter-spacing: -.045em;
+        text-wrap: balance;
+      }
+
+      .sales-section { padding: 40px 18px; }
+      .sales-intro { max-width: none; }
+      .sales-intro p {
+        max-width: none;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.72;
+        text-wrap: pretty;
+      }
+      .sales-points,
+      .sales-service-list { margin-top: 18px; }
+      .sales-point,
+      .sales-point + .sales-point {
+        padding: 16px 0;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .sales-point:first-child { border-top: 0; }
+      .sales-point strong,
+      .sales-service strong { font-size: 17px; line-height: 1.4; }
+      .sales-point span,
+      .sales-service span { margin-top: 6px; font-size: 14px; line-height: 1.62; text-wrap: pretty; }
+
+      .sales-service,
+      .sales-service + .sales-service,
+      .sales-service:nth-child(3),
+      .sales-service:nth-child(4) {
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        column-gap: 12px;
+        padding: 16px 0;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .sales-service:first-child { border-top: 0; }
+      .sales-service b { grid-column: 1; grid-row: 1 / span 2; margin: 5px 0 0; font-size: 10px; }
+      .sales-service strong,
+      .sales-service span { grid-column: 2; min-width: 0; }
+
+      .brand-film-head { gap: 14px; margin-bottom: 22px; }
+      .brand-film-lede { font-size: 14px; line-height: 1.7; }
+      .brand-film-actions { margin-top: 16px; }
+    }
+
+    @media (max-width: 380px) {
+      .section-title,
+      .sales-intro .section-title { font-size: 31px; }
+      .brand-film-actions { grid-template-columns: 1fr; }
+    }
 </style>
 <style id="unified-transparent-panels">.quick-links .proof{background:rgba(255,255,255,.62);backdrop-filter:blur(5px);border-color:rgba(18,43,46,.18)}.bookforge-inner{background:rgba(16,44,45,.90);backdrop-filter:blur(4px)}.project,.archive-card,.service-item,.credential-card,.inquiry-form{background:rgba(255,255,255,.64);backdrop-filter:blur(6px)}.project:hover,.archive-card:hover{background:rgba(255,255,255,.82)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.20),transparent 34%),radial-gradient(circle at 12% 82%,rgba(238,216,185,.16),transparent 30%)}.credentials,.english-feature{background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.12),transparent 34%)}@media(max-width:700px){.quick-links .proof,.project,.archive-card,.service-item,.credential-card,.inquiry-form{backdrop-filter:blur(3px)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 85% 8%,rgba(199,221,210,.16),transparent 42%)}}</style></head>
 <body>
