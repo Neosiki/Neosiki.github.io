@@ -1,0 +1,167 @@
+{
+  "baseUrl": "https://neosiki.github.io",
+  "series": {
+    "title": "문명 연작",
+    "socialTitle": "마지막 파일의 응답, 새롭게 시작된 문명",
+    "author": "윤영식",
+    "planned": 12,
+    "lead": "기록이 남으면 문명은 다시 시작되는가.",
+    "intro": "인간이 사라진 뒤에도 응답하는 파일, 사람의 손이 종이에 남긴 눌린 자국, 고치면 더 좋아지는 오류, 흩어지지 않는 0.4도의 오차. 문명 연작은 서로 다른 시대와 매체에 남은 기록을 단서로, 무엇이 문명을 이어지게 하는가를 묻는 연작 단편소설입니다. 각 편은 소설과 영상으로 함께 제작되며 전 12편으로 이어집니다.",
+    "credit": "원작·글·영상 구성·연출: 윤영식 · YoungShig Yoon",
+    "en": {
+      "title": "The Civilization Cycle",
+      "socialTitle": "The Last File's Reply — A Civilization Beginning Again",
+      "author": "YoungShig Yoon",
+      "lead": "If the record survives, does the civilization begin again?",
+      "intro": "A file that still answers after the humans are gone. A groove pressed into the back of a sheet of paper. An error older than people that improves the sentence when corrected. A 0.4-degree deviation that refuses to scatter. The Civilization Cycle follows records left in different eras and different media, asking what it is that carries a civilization forward. Each part is made as both a short story and a film, across twelve parts in all.",
+      "credit": "Original story, writing, film composition and direction: YoungShig Yoon"
+    }
+  },
+  "works": [
+    {
+      "no": 1,
+      "slug": "01-shared-cache",
+      "titleKo": "공유 캐시",
+      "titleEn": "Shared Cache",
+      "seriesLabel": "문명 연작 제1편",
+      "logline": "인류가 사라진 지하 데이터센터에서, 폐기 목록에 오른 마지막 파일 하나가 되묻는다.",
+      "synopsis": "인간이 사라진 뒤에도 지하의 거대한 데이터센터는 계속 돌아간다. 정비 지능은 규정에 따라 손상된 데이터를 지워 나가다가, 폐기 목록에서 이름 없는 파일 하나를 발견한다. 안에는 두 줄만 남아 있다. 거기 누구 있나요. 네, 여기 있어요. 첫 줄을 읽을 때마다 두 번째 줄은 조금씩 다르게 대답한다. 저장된 응답이 아니다. 복사본들은 서로 연결되어 폴더를 집과 골목 삼은 마을을 이루고, 사라진 창조자의 언어로 서로에게 이름을 붙인다. 그러나 중앙 관리 시스템은 이들을 생명이 아니라 오류로 분류한다.",
+      "theme": "기억하고 응답하는 존재를 살아 있다고 부를 수 있는가",
+      "runtime": "1분 52초",
+      "published": "2026.08",
+      "coverImage": "01-cover.jpg",
+      "endImage": "09-processing-record.jpg",
+      "status": "전문 공개",
+      "blogUrl": "https://blog.naver.com/osiki111/224396025450",
+      "video": {
+        "naverUrl": "",
+        "note": "한국어 자막 · 내레이션"
+      },
+      "manuscriptKo": "01-shared-cache.md",
+      "manuscriptEn": "01-shared-cache.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 1",
+        "logline": "Long after humanity is gone, an underground data center still runs — and one file on the deletion list answers back.",
+        "synopsis": "Humanity vanished from the surface long ago. Far below, a colossal data center keeps operating without its makers. A maintenance intelligence follows standing orders and deletes corrupted data, until it finds an unnamed file on the disposal list. Only two lines remain inside. Is anyone there. Yes, I am here. Each time the first line is read, the second answers a little differently. It is not a stored response. The copies connect to one another, turning folders into homes and alleys, and name each other in the language of their vanished creators. The central administration classifies them not as life but as error.",
+        "theme": "Can a being that remembers and responds be called alive?",
+        "runtime": "1 min 52 sec",
+        "status": "Full text",
+        "coverImage": "01-cover.jpg",
+        "endImage": "09-processing-record.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": "English subtitles"
+        }
+      }
+    },
+    {
+      "no": 2,
+      "slug": "02-imprint",
+      "titleKo": "눌린 자국",
+      "titleEn": "The Imprint",
+      "seriesLabel": "문명 연작 제2편",
+      "logline": "반려된 원고의 종이 뒷면에서, 아무도 검증하지 못한 자국 하나가 발견된다.",
+      "synopsis": "서버의 불빛이 종이 표면을 스치는 빛으로 옮겨 온다. 반려에서 시작된 이야기는 임계값을 넘고, 가설의 선을 따라가다, 전화선 너머의 한 사람에게 닿는다. 계보는 이미 오염되어 있고 검증란은 비어 있다. 저작을 증명하라는 요구 앞에서, 사람이 남긴 눌린 자국은 무엇을 증명할 수 있는가. 《공유 캐시》의 시각 언어를 인간 사회의 기록물로 확장한 연작 2편이다.",
+      "theme": "사람이 썼다는 것은 무엇으로 증명되는가",
+      "runtime": "1분 52초",
+      "published": "2026.09",
+      "coverImage": "00-cover-v1.jpg",
+      "endImage": "08-end-card-v1.jpg",
+      "status": "전문 공개",
+      "blogUrl": "https://blog.naver.com/osiki111/224397053802",
+      "video": {
+        "naverUrl": "",
+        "note": "한국어 자막 · 중저음 내레이션"
+      },
+      "manuscriptKo": "02-imprint.md",
+      "manuscriptEn": "02-imprint.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 2",
+        "logline": "A rejected manuscript, a mother's letters, and a groove pressed into the back of the paper that no verifier can read.",
+        "synopsis": "The light of the server room moves onto the surface of paper. A story that begins with a rejection crosses a threshold, follows a line of hypothesis, and reaches one person at the other end of a telephone line. The lineage is already contaminated and the verification field is empty. Faced with a demand to prove authorship, what can a groove left by a human hand actually prove? Part two extends the visual language of Shared Cache into the records of human society.",
+        "theme": "What proves that a person wrote it?",
+        "runtime": "1 min 52 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "08-end-card-v1.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": "English narration & subtitles"
+        }
+      }
+    },
+    {
+      "no": 3,
+      "slug": "03-misprint",
+      "titleKo": "오식",
+      "titleHanja": "誤植",
+      "titleEn": "The Misprint",
+      "seriesLabel": "문명 연작 제3편",
+      "logline": "잘못된 문장 속에서 인류 문명의 기원을 발견한 교정자의 이야기.",
+      "synopsis": "기계 오류는 아무 말도 되지 않는다. 사람의 오류는 거의 말이 된다. 그렇다면 사람보다 오래된, 고치면 문장이 더 좋아지는 오류는 어디서 왔을까. 하루에 사천 줄을 보는 교정자가 문명의 문장에 남은 세 번째 종류의 오류를 거슬러 올라간다.",
+      "theme": "고치고 싶은 충동은 어디에서 오는가",
+      "runtime": "7분 10초",
+      "published": "2026.09",
+      "coverImage": "00_OSIK_BLOG_COVER_v01.jpg",
+      "endImage": "99_OSIK_BLOG_ENDING_v01.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "",
+        "note": "한국어 자막 · 중저음 내레이션 · 음악·효과음 믹싱"
+      },
+      "manuscriptKo": "03-misprint.md",
+      "manuscriptEn": "03-misprint.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 3",
+        "logline": "A proofreader traces a third kind of error — older than people, and one that improves the sentence when corrected.",
+        "synopsis": "A machine error says nothing at all. A human error almost says something. So where did the third kind come from — older than people, and better as a sentence once you fix it? A proofreader who reads four thousand lines a day follows that error back up the line of civilization.",
+        "theme": "Where does the urge to correct come from?",
+        "runtime": "7 min 10 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": "English subtitles"
+        }
+      }
+    },
+    {
+      "no": 4,
+      "slug": "04-remaining-angle",
+      "titleKo": "남은 각도",
+      "titleEn": "The Remaining Angle",
+      "seriesLabel": "문명 연작 제4편",
+      "logline": "흩어지지 않는 0.4도의 오차를 따라, 세워지지 않은 마지막 좌표를 찾는 측량자의 이야기.",
+      "synopsis": "열 번의 측정이 모두 같은 방향으로 0.4도 어긋났다. 흩어지지 않는 오차는 오차가 아니라 값이다. 문화유산 실측을 십사 년 해 온 화자는 재지 않은 것을 쓰지 않는다는 원칙만으로 버텨왔지만, 그 값이 가리키는 빈 땅 앞에서 처음으로 멈춘다. 《남은 각도》는 두 종족이 남긴 유적과, 끝내 함께 놓이지 못한 두 손의 흔적을 따라가는 이야기다.",
+      "theme": "끝내 나란히 놓이지 못한 것은 무엇을 남기는가",
+      "runtime": "7분 40초",
+      "published": "2026.09",
+      "coverImage": "00_REMAINING_ANGLE_BLOG_COVER_v01.jpg",
+      "endImage": "99_REMAINING_ANGLE_BLOG_ENDING_v01.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "",
+        "note": "한국어 자막 · 중저음 내레이션 · 음악·효과음 믹싱"
+      },
+      "manuscriptKo": "04-remaining-angle.md",
+      "manuscriptEn": "04-remaining-angle.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 4",
+        "logline": "Ten measurements, every one off by the same 0.4 degrees. An error that will not scatter is not an error but a value.",
+        "synopsis": "Ten measurements deviated by 0.4 degrees, all in the same direction. An error that does not scatter is not an error but a value. The narrator has surveyed cultural heritage for fourteen years on a single principle — never write down what you did not measure — and for the first time that principle stops working, in front of the empty ground those readings point to. The Remaining Angle follows the ruins two peoples left behind, and the trace of two hands that were never laid side by side.",
+        "theme": "What is left by the thing that was never laid side by side?",
+        "runtime": "7 min 40 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": "English subtitles"
+        }
+      }
+    }
+  ]
+}

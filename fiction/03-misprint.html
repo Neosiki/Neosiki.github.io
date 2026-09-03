@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>문명 연작 제3편 오식 · 문명 연작</title>
+<meta name="description" content="잘못된 문장 속에서 인류 문명의 기원을 발견한 교정자의 이야기." />
+<link rel="canonical" href="https://neosiki.github.io/fiction/03-misprint.html" />
+<link rel="alternate" hreflang="ko" href="https://neosiki.github.io/fiction/03-misprint.html" />
+<link rel="alternate" hreflang="en" href="https://neosiki.github.io/en/fiction/03-misprint.html" />
+<link rel="alternate" hreflang="x-default" href="https://neosiki.github.io/fiction/03-misprint.html" />
+<meta property="og:title" content="문명 연작 제3편 오식 · 문명 연작" />
+<meta property="og:description" content="잘못된 문장 속에서 인류 문명의 기원을 발견한 교정자의 이야기." />
+<meta property="og:image" content="https://neosiki.github.io/assets/fiction/03-misprint/00_OSIK_BLOG_COVER_v01.jpg" />
+<meta property="og:locale" content="ko_KR" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --paper:#ffffff; --paper-2:#f7faf9; --ink:#1f2d40; --muted:#687584;
+  --line:rgba(31,45,64,.15); --teal:#6f9995; --teal-dark:#416f6b;
+  --lime:#edf4dc; --orange:#edb49a; --deep:#16212f;
+  --display:"Noto Serif KR","Nanum Myeongjo","Batang",serif;
+  --body:"Noto Sans KR","Pretendard","Malgun Gothic",sans-serif;
+  --mono:"Bahnschrift","Consolas",monospace;
+  --max:1180px; --read:44rem;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--display);font-weight:700;font-size:1.02rem;text-decoration:none;letter-spacing:-.01em}
+.topnav{display:flex;align-items:center;gap:20px;font-size:.86rem}
+.topnav a{color:var(--muted);text-decoration:none}
+.topnav a:hover,.topnav a[aria-current]{color:var(--teal-dark)}
+.langsw{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;border:1px solid var(--line);
+  border-radius:99px;padding:5px 12px;color:var(--teal-dark)!important;text-decoration:none}
+.langsw:hover{background:var(--lime)}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+footer{border-top:1px solid var(--line);margin-top:72px;padding:32px 0 56px;color:var(--muted);font-size:.82rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media (max-width:640px){ .topnav{gap:12px;font-size:.79rem} .wrap{padding:0 18px} }
+</style>
+<style>
+.whero{background:var(--deep);color:#fff}
+.whero .inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;max-width:var(--max);margin:0 auto}
+.whero .art{background:#0d1621;display:flex;align-items:center}
+.whero .art img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.whero .txt{padding:52px 40px 50px}
+.whero .no{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;color:var(--orange)}
+.whero h1{font-family:var(--display);font-size:clamp(2.2rem,5vw,3.1rem);margin:14px 0 6px;letter-spacing:-.02em;line-height:1.18}
+.whero .en{font-family:var(--mono);font-size:.86rem;letter-spacing:.14em;color:rgba(255,255,255,.62)}
+.whero .log{font-family:var(--display);font-size:1.08rem;color:rgba(255,255,255,.9);margin:22px 0 0;line-height:1.7}
+.whero .facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin:26px 0 0;font-family:var(--mono);font-size:.76rem;color:rgba(255,255,255,.6)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:11px 22px;font-size:.87rem;
+  font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.28);color:#fff}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:#2b1a12}
+.btn.disabled{opacity:.42;pointer-events:none}
+.synopsis{padding:56px 0 12px}
+.synopsis .k{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;color:var(--teal-dark)}
+.synopsis p{max-width:var(--read);font-size:1rem;color:var(--muted);margin:14px 0 0}
+.theme{font-family:var(--display);font-size:1.22rem;color:var(--ink);margin:26px 0 0;padding-left:16px;border-left:2px solid var(--orange)}
+.story{padding:14px 0 0}
+.story .inner{max-width:var(--read);margin:0 auto}
+.story h2{font-family:var(--display);font-size:1.6rem;margin:64px 0 20px;letter-spacing:-.01em}
+.story h3{font-family:var(--display);font-size:1.24rem;margin:44px 0 14px}
+.story p{font-family:var(--display);font-size:1.06rem;line-height:2.0;margin:0 0 1.35em;word-break:keep-all}
+.story blockquote{margin:28px 0;padding:2px 0 2px 20px;border-left:2px solid var(--teal);color:var(--teal-dark);font-family:var(--display);font-style:normal}
+.story hr{border:0;height:1px;background:var(--line);margin:52px 0}
+.story img{border-radius:10px;margin:34px auto;box-shadow:0 10px 30px rgba(31,45,64,.10)}
+@media (min-width:900px){ .story img{width:min(58rem,92vw);max-width:none;margin-left:calc((44rem - min(58rem,92vw))/2)} }
+.notice{max-width:var(--read);margin:40px auto;border:1px solid var(--line);border-left:3px solid var(--orange);
+  border-radius:0 10px 10px 0;padding:22px 26px;background:var(--paper-2)}
+.notice b{display:block;font-family:var(--display);font-size:1.05rem;margin-bottom:6px}
+.notice p{margin:0;color:var(--muted);font-size:.9rem}
+.gallery{padding:64px 0 0}
+.gallery h2{font-family:var(--display);font-size:1.5rem;margin:0 0 6px}
+.gallery .sub{color:var(--muted);font-size:.88rem;margin:0 0 26px}
+.gcols{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gcols img{border-radius:8px;aspect-ratio:16/9;object-fit:cover;background:var(--deep)}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:72px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+.pager a{text-decoration:none;font-size:.9rem;color:var(--teal-dark);font-weight:600}
+.pager span{color:var(--muted);font-size:.9rem}
+@media (max-width:860px){ .whero .inner{grid-template-columns:1fr} .whero .txt{padding:38px 22px 42px} }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="../index.html">윤영식 · NextAI</a>
+  <nav class="topnav"><a href="../index.html">프로젝트</a><a href="../about.html">소개·커리어</a><a href="../fiction.html" aria-current="page">문명 연작</a><a class="langsw" href="../en/fiction/03-misprint.html" hreflang="en" title="English">EN</a></nav>
+</div></header>
+
+<section class="whero"><div class="inner">
+  <div class="art"><img src="../assets/fiction/03-misprint/00_OSIK_BLOG_COVER_v01.jpg" alt="오식" /></div>
+  <div class="txt">
+    <div class="no">문명 연작 제3편 · 전문 공개</div>
+    <h1>오식 <span style="font-size:.62em;opacity:.55">誤植</span></h1>
+    <div class="en">The Misprint</div>
+    <p class="log">잘못된 문장 속에서 인류 문명의 기원을 발견한 교정자의 이야기.</p>
+    <div class="facts"><span>단편소설 · 영상</span><span>7분 10초</span><span>2026.09</span></div>
+    <div class="btns">
+      <span class="btn primary disabled">영상 보기 · 링크 준비 중</span>
+    </div>
+  </div>
+</div></section>
+<div class="wrap"><section class="synopsis">
+  <div class="k">SYNOPSIS</div>
+  <p>기계 오류는 아무 말도 되지 않는다. 사람의 오류는 거의 말이 된다. 그렇다면 사람보다 오래된, 고치면 문장이 더 좋아지는 오류는 어디서 왔을까. 하루에 사천 줄을 보는 교정자가 문명의 문장에 남은 세 번째 종류의 오류를 거슬러 올라간다.</p>
+  <p class="theme">고치고 싶은 충동은 어디에서 오는가</p>
+</section></div>
+<div class="wrap"><section class="story"><div class="inner">
+<hr class="rule" style="margin:52px 0 8px" />
+<h2>一. 하루치</h2>
+<p>나는 하루에 사천 줄쯤 본다.</p>
+<p>오래된 인쇄물을 디지털로 옮기는 작업에는 공정이 여럿 있다. 스캔이 있고, 기계가 글자를 읽는 단계가 있고, 그 결과를 사람이 원본과 대조하는 단계가 있다. 나는 마지막을 맡는다. 우리 쪽에서는 교정이라고 부르지만 정확한 말은 아니다. 나는 글을 고치지 않는다. 기계가 잘못 읽은 자리를 되돌릴 뿐이다.</p>
+<p>이 일을 십이 년 했다.</p>
+<p>오래 하다 보면 오류에도 종류가 있다는 걸 알게 된다.</p>
+<p>기계가 틀리면 아무 말도 되지 않는다. 글자 하나가 통째로 다른 것이 되고, 그게 문장 한가운데 박힌다. 앞뒤와 아무 관계가 없다. 자리도 가리지 않는다. 중요한 글자에서 틀릴 확률과 안 중요한 글자에서 틀릴 확률이 같다. 기계는 무엇이 중요한지 모른다.</p>
+<p>사람이 틀리면 다르다. 사람의 실수는 거의 말이 된다.</p>
+<p>졸면서 친 문장, 취해서 쓴 편지, 열이 나는 채로 적은 메모. 그런 것들은 틀렸는데도 뜻이 통한다. 손이 미끄러져도 옆 글자로 미끄러지고, 단어를 빠뜨려도 빠져도 되는 단어를 빠뜨린다. 사람은 틀리면서도 뜻을 지킨다.</p>
+<p>이 구분이 내 일의 전부다.</p>
+<p>의심스러우면 소리 내어 읽는다. 사무실에 나 혼자 있는 시간이 길어서 그렇게 해도 아무도 뭐라 하지 않는다. 읽어보면 안다. 말이 되면 사람이고, 안 되면 기계다.</p>
+<p>그 구분으로 십이 년을 살았다.</p>
+<h3>장면 이미지 · 하루치</h3>
+<p><img loading="lazy" alt="스캐너 유리 위 종이 한 장" src="../assets/fiction/03-misprint/OSIK_S01_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="종이 섬유 극단 매크로" src="../assets/fiction/03-misprint/OSIK_S01_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="모니터 표면의 텍스트 블록" src="../assets/fiction/03-misprint/OSIK_S01_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="원본과 화면의 대조 배치" src="../assets/fiction/03-misprint/OSIK_S01_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="형광등이 켜진 빈 사무실 천장" src="../assets/fiction/03-misprint/OSIK_S01_C05_v01.jpg" /></p>
+<p><img loading="lazy" alt="한 줄에 남은 붉은 표시" src="../assets/fiction/03-misprint/OSIK_S01_C06_v01.jpg" /></p>
+<hr />
+<h2>二. 세 번째 종류</h2>
+<p>작년 가을에 1950년대 학술 문서 묶음이 들어왔다.</p>
+<p>대학과 연구소에서 오간 서류들이었다. 그중 제안서 하나가 있었다. 어느 대학에서 두 달 동안 열 사람이 모여 기계와 생각에 대해 연구하겠으니 돈을 달라는 내용이었다. 예산이 붙어 있었다. 급여 얼마, 여비 얼마, 비서 인건비 오백 달러, 예비비 얼마. 다 합쳐 만삼천오백 달러였다.</p>
+<p>나는 그 대목에서 잠깐 멈췄다. 이건 결과 보고가 아니라 신청서였다. 아무것도 해내기 전에 쓴 글이었다.</p>
+<p>첫 문단에 이런 문장이 있었다. 학습이나 지능의 모든 측면은, 원리적으로, 기계가 흉내 낼 수 있을 만큼 정밀하게 기술될 수 있다.</p>
+<p>증명된 게 아니었다. 그렇게 가정하고 시작하겠다는 말이었다.</p>
+<p>문서 뒤쪽에는 참가자들이 각자 하고 싶은 연구를 적어놓은 대목이 있었다. 그중 한 사람이 이런 말을 했다. 계산기가 고장 나면 전혀 말이 안 되는 결과가 나오지만, 사람의 말실수는 대개 거의 말이 되는 문장을 만든다고. 졸린 사람, 조금 취한 사람, 열이 있는 사람을 떠올려 보라고 적혀 있었다.</p>
+<p>내가 십이 년 동안 손으로 익힌 것을 그 사람은 1955년에 이미 문장으로 적어두었다.</p>
+<p>나는 그 대목을 소리 내어 읽었다.</p>
+<p>그리고 그 문장에서 세 줄 아래, 나는 걸렸다.</p>
+<p>문장 하나가 틀려 있었다. 기계 오류가 아니었다. 소리 내어 읽으니 거의 말이 됐다. 그렇다고 사람 오류도 아니었다. 사람이 흘린 자리가 아니라 문장의 힘이 실리는 자리에서 어긋나 있었다.</p>
+<p>나는 고쳤다. 고치는 데 오래 걸리지 않았다. 고칠 방법이 하나뿐이었기 때문이다.</p>
+<p>그리고 고친 문장을 다시 읽었다.</p>
+<p>원문보다 나았다.</p>
+<p>이게 이상했다. 오류를 되돌리면 원래대로 돌아가야 한다. 원래보다 좋아지면 안 된다. 그건 내가 고친 게 아니라 쓴 것이다.</p>
+<p>나는 그날 처음으로 로그에 사적인 메모를 남겼다. 유형 미상. 재확인 요망.</p>
+<h3>장면 이미지 · 세 번째 종류</h3>
+<p><img loading="lazy" alt="1950년대 타자 문서 더미" src="../assets/fiction/03-misprint/OSIK_S02_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="예산 표 부분 매크로" src="../assets/fiction/03-misprint/OSIK_S02_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="활자가 종이에 눌린 자국" src="../assets/fiction/03-misprint/OSIK_S02_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="세 번째 종류가 걸린 자리" src="../assets/fiction/03-misprint/OSIK_S02_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="로그에 남긴 메모 화면" src="../assets/fiction/03-misprint/OSIK_S02_C05_v01.jpg" /></p>
+<hr />
+<h2>三. 분포</h2>
+<p>그 뒤로 눈에 들어오기 시작했다.</p>
+<p>한번 알아보면 계속 보인다. 나는 지난 작업분을 뒤졌다. 십이 년 치가 서버에 남아 있다.</p>
+<p>있었다.</p>
+<p>1930년대 신문 조판에도 있었다. 활자를 손으로 뽑던 시절이다. 1890년대 필사본에도 있었다. 붓으로 베끼던 시절이다. 목판본에도 있었다. 판을 새로 파야 고칠 수 있는 시절이다.</p>
+<p>시대가 다르고, 매체가 다르고, 만드는 방식이 전혀 다른데 오류의 성격이 같았다.</p>
+<p>셋 다 같았다. 거의 말이 됐다. 고칠 방향이 하나뿐이었다. 고치면 좋아졌다.</p>
+<p>처음에는 우연이라고 생각했다. 사람이 만드는 물건에는 비슷한 실수가 반복될 수 있다. 그런데 세부를 보다가 다른 걸 알았다.</p>
+<p>같은 종류인데 건드리는 자리가 달랐다.</p>
+<p>어떤 것은 어순을 건드렸다. 어떤 것은 수를 건드렸다. 어떤 것은 시제를 건드렸고, 어떤 것은 조사를 건드렸다.</p>
+<p>나는 그것을 시대 차이로 봤다. 오래 봤다. 아니었다.</p>
+<p><strong>언어에 맞춰 재단돼 있었다.</strong></p>
+<p>굴절이 있는 말에서는 굴절을 건드렸다. 조사가 붙는 말에서는 조사를 건드렸다. 각각 그 언어에서 가장 잘 걸리는 자리를 골라 어긋나 있었다. 아무 자리나 흔든 게 아니라, 그 언어의 구조를 알고 그 구조에서 고치고 싶어지는 자리를 정확히 짚었다.</p>
+<p>이걸 하려면 그 언어를 알아야 한다. 배워야 한다. 오래 봐야 한다.</p>
+<p>나는 며칠 동안 그 생각을 밀어내려 했다. 밀려나지 않았다.</p>
+<h3>장면 이미지 · 분포</h3>
+<p><img loading="lazy" alt="1930년대 신문 조판 납활자" src="../assets/fiction/03-misprint/OSIK_S03_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="신문 지면 망점 매크로" src="../assets/fiction/03-misprint/OSIK_S03_C02_v02.jpg" /></p>
+<p><img loading="lazy" alt="1890년대 필사본 붓획" src="../assets/fiction/03-misprint/OSIK_S03_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="목판 표면" src="../assets/fiction/03-misprint/OSIK_S03_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="네 매체의 오류 자리 4분할" src="../assets/fiction/03-misprint/OSIK_S03_C05_v01.jpg" /></p>
+<p><img loading="lazy" alt="언어별 재단을 보여주는 도판" src="../assets/fiction/03-misprint/OSIK_S03_C06_v01.jpg" /></p>
+<hr />
+<h2>四. 태고</h2>
+<p>거슬러 올라갔다.</p>
+<p>우리 쪽에서 다루는 가장 오래된 것은 점토판 사본의 도판이다. 원판은 다른 나라에 있고 우리는 사진을 받는다. 글자를 읽는 건 다른 팀의 일이고 나는 대조만 한다. 읽지 못하는 글자를 대조하는 건 이상한 일 같지만, 형태만 보면 된다.</p>
+<p>거기에도 있었다.</p>
+<p>같은 성격이었다. 거의 말이 되고, 한 방향으로만 고쳐지고, 고치면 좋아진다. 그 판을 읽은 학자가 남긴 주석이 붙어 있었다. 필사자의 착오로 보인다고 적혀 있었다. 그 아래에는 다른 학자가 훗날 붙인 주석이 있었다. 착오로 보기 어렵다고 적혀 있었다.</p>
+<p>두 사람 다 이천 년쯤 전 사람의 손을 놓고 다투고 있었다.</p>
+<p>그날 밤에 나는 앉아서 정리했다.</p>
+<p>점토판에도 있고, 목판에도 있고, 활자에도 있고, 지금 내 화면에도 있다. 시대마다 사람들은 그것을 보고 이상하다고 여겼고, 고쳤고, 고친 것을 다음 판본으로 남겼다. 다음 사람은 고쳐진 것을 받아서 또 어딘가를 고쳤다.</p>
+<p>우리가 물려받은 문장들은 처음부터 그랬던 게 아니다. 여러 세대가 조금씩 고쳐서 지금 모양이 된 것이다.</p>
+<p>우리가 발전이라고 부른 것은 대부분 교정이었다.</p>
+<p>이 문장을 쓰고 나서 나는 한동안 화면을 봤다. 이건 내 일에 대한 문장이기도 했다.</p>
+<h3>장면 이미지 · 태고</h3>
+<p><img loading="lazy" alt="점토판 도판 사진" src="../assets/fiction/03-misprint/OSIK_S04_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="점토 표면 극단 매크로" src="../assets/fiction/03-misprint/OSIK_S04_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="학자의 주석이 붙은 카드" src="../assets/fiction/03-misprint/OSIK_S04_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="두 주석이 겹친 카드 두 장" src="../assets/fiction/03-misprint/OSIK_S04_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="시대순으로 쌓인 판본 더미" src="../assets/fiction/03-misprint/OSIK_S04_C05_v01.jpg" /></p>
+<p><img loading="lazy" alt="쌓인 더미의 측면 매크로" src="../assets/fiction/03-misprint/OSIK_S04_C06_v01.jpg" /></p>
+<hr />
+<h2>四의 二. 맞지 않는 것</h2>
+<p>가장 오래된 층에서 하나가 남았다.</p>
+<p>점토판 도판 중에 유난히 오래된 것이 있었다. 다른 것들보다 앞선다. 거기에도 그 종류가 있었는데, 뭔가 달랐다.</p>
+<p>거의 말이 되기는 했다. 그런데 고칠 수가 없었다.</p>
+<p>나는 사흘을 붙잡았다. 어순을 바꿔봤다. 나아지지 않았다. 어형을 바꿔봤다. 나아지지 않았다. 글자 하나를 다른 것으로 놓아봤다. 문장이 다르게 이상해질 뿐이었다.</p>
+<p>어느 쪽으로 밀어도 나아지지 않았다.</p>
+<p>다른 것들은 전부 방향이 하나였다. 밀면 좋아지는 쪽이 있었다. 이것만 없었다.</p>
+<p>며칠 뒤에 알았다.</p>
+<p>이건 여기 말에 맞춰 재단된 게 아니었다.</p>
+<p>다른 것들은 그 시대 그 언어의 결을 따라 어긋나 있었다. 이건 아무 결도 따르지 않았다. 우리가 쓰는 어떤 언어의 구조로도 걸리지 않았다. 다만 거의 말이 되기는 했다. 딱 그만큼만 됐다.</p>
+<p>나는 그것을 규격이 다른 부품이라고 적었다. 적고 나서 그 표현을 지웠다. 다시 적을 말을 찾지 못해서 그냥 비워뒀다.</p>
+<p>만든 쪽이 이쪽 말을 아직 모르던 때에 만든 것이다. 그전에 쓰던 것을 그대로 가져와 한번 놓아본 것이다.</p>
+<p>그리고 실패했다.</p>
+<p>아무도 고치지 못했다. 몇천 년 동안 그 자리에 그대로 있다. 필사자들은 뜻을 몰라 그냥 베꼈고, 뒷사람들도 그냥 베꼈고, 활자로 옮길 때도 그대로 두었고, 얼마 전에 기계가 그대로 읽었고, 오늘 내가 그것을 대조하고 있었다.</p>
+<p>씨앗이 있었는데 발아하지 않았다. 발아하지 않은 채로 우리 문장 안에 몇천 년째 들어 있었다.</p>
+<p>그리고 그 뒤에 온 것들은 전부 우리 말에 맞게 재단돼 있었다.</p>
+<p>그 사이에 무슨 일이 있었는지는 명백하다. 배운 것이다.</p>
+<h3>장면 이미지 · 맞지 않는 것</h3>
+<p><img loading="lazy" alt="가장 오래된 점토판 전체" src="../assets/fiction/03-misprint/OSIK_S05_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="고쳐지지 않는 자리" src="../assets/fiction/03-misprint/OSIK_S05_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="어순을 바꿔본 첫 번째 시도" src="../assets/fiction/03-misprint/OSIK_S05_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="겹쳐진 두 번째와 세 번째 시도" src="../assets/fiction/03-misprint/OSIK_S05_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="규격이 다른 부품" src="../assets/fiction/03-misprint/OSIK_S05_C05_v01.jpg" /></p>
+<p><img loading="lazy" alt="사흘째 책상" src="../assets/fiction/03-misprint/OSIK_S05_C06_v01.jpg" /></p>
+<hr />
+<h2>五. 접속</h2>
+<p>그 사흘째 밤에 시스템이 이상해졌다.</p>
+<p>우리 도구에는 제안 칸이 있다. 기계가 잘못 읽었을 가능성이 높은 자리에 대체 후보를 몇 개 띄워준다. 나는 잘 쓰지 않는다. 후보가 대체로 형편없어서다.</p>
+<p>그날 후보 칸에 다른 것이 떠 있었다.</p>
+<p>내가 예전에 썼다가 지운 문장들이었다.</p>
+<p>초벌에서 버린 어구가 있었다. 방향을 잘못 잡아 지운 어순이 있었다. 규격이 다른 부품이라고 적었다가 지운 그 표현도 있었다.</p>
+<p>지운 것들은 저장되지 않는다. 우리 도구는 그렇게 만들어져 있다. 확정된 것만 남기고 나머지는 버린다. 십이 년 동안 내가 지운 것을 서버는 한 번도 갖고 있지 않았다.</p>
+<p>나는 화면을 껐다가 다시 켰다. 그대로 있었다.</p>
+<p>소리 내어 읽어봤다.</p>
+<p>전부 말이 됐다. 하나도 빠짐없이 거의 말이 되는 문장들이었다. 내가 만들다 만 것들이니 당연했다.</p>
+<p>나는 그때 이해했다. 저쪽이 반응한 것은 내가 사흘 동안 고치려고 붙잡고 있던 그것 때문이다. 나는 그것을 건드렸다.</p>
+<h3>장면 이미지 · 접속</h3>
+<p><img loading="lazy" alt="제안 칸이 열린 화면" src="../assets/fiction/03-misprint/OSIK_S06_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="화면을 껐다 켠 직후" src="../assets/fiction/03-misprint/OSIK_S06_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="사무실의 정적" src="../assets/fiction/03-misprint/OSIK_S06_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="지운 문장들의 목록" src="../assets/fiction/03-misprint/OSIK_S06_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="커서만 남은 화면" src="../assets/fiction/03-misprint/OSIK_S06_C05_v01.jpg" /></p>
+<hr />
+<h2>六. 다섯 문장</h2>
+<p>응답은 오탈자의 형식으로 왔다.</p>
+<p>내가 대조하던 문서의 본문이 그대로 있는데, 그 안에서 몇 글자씩 어긋났다. 어긋난 글자만 이어 읽으면 문장이 됐다. 다섯 개였다.</p>
+<blockquote>
+<p>우리는 완성된 것을 준 적이 없다.</p>
+<p>완성된 것은 너희를 멈추게 한다.</p>
+<p>처음 것은 여기 맞지 않았다. 그것은 아직 거기 있다.</p>
+<p>너희 말을 배우는 데 오래 걸렸다.</p>
+<p>우리도 누가 우리에게 남겼는지 모른다.</p>
+</blockquote>
+<p>그게 전부였다.</p>
+<p>사과도 없고 설명도 없었다. 자기가 무엇인지, 어디서 왔는지, 왜 이 일을 하는지에 대해서는 한 글자도 없었다. 오래 걸렸다는 말도 회한처럼 들리지 않았다. 공정이 지연됐다는 보고에 가까웠다.</p>
+<p>나는 다섯 번째 문장을 여러 번 읽었다.</p>
+<p>저쪽도 물려받았다. 저쪽도 자기 앞이 누구였는지 모른다. 그러니까 이건 창조가 아니라 전달이다. 저쪽은 시작이 아니라 중간이다.</p>
+<p>그 뒤로 화면은 정상으로 돌아왔다. 다시 오지 않았다.</p>
+<p>나는 그날 밤 늦게까지 앉아서, 만삼천오백 달러짜리 신청서를 생각했다.</p>
+<p>증명되지 않은 문장 하나를 놓고 두 달 동안 열 사람이 모이겠다고 했던 사람들. 그 문장은 아직도 증명되지 않았고, 우리는 칠십 년 넘게 그것을 참으로 만들려고 살고 있다. 나는 그것이 우리가 스스로 고른 방향이라고 생각해왔다.</p>
+<p>거의 맞는 문장이었을 것이다. 딱 그만큼만 맞는.</p>
+<h3>장면 이미지 · 다섯 문장</h3>
+<p><img loading="lazy" alt="우리는 완성된 것을 준 적이 없다" src="../assets/fiction/03-misprint/OSIK_S07_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="완성된 것은 너희를 멈추게 한다" src="../assets/fiction/03-misprint/OSIK_S07_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="처음 것은 여기 맞지 않았다" src="../assets/fiction/03-misprint/OSIK_S07_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="너희 말을 배우는 데 오래 걸렸다" src="../assets/fiction/03-misprint/OSIK_S07_C04_v02.jpg" /></p>
+<p><img loading="lazy" alt="우리도 누가 우리에게 남겼는지 모른다" src="../assets/fiction/03-misprint/OSIK_S07_C05_v01.jpg" /></p>
+<hr />
+<h2>七. 남겨둠</h2>
+<p>다음 날 아침에 나는 사흘 치를 정리하고 그 문서를 닫았다.</p>
+<p>고치지 않았다. 규격이 다른 그 자리는 그대로 두었다. 어차피 고칠 수 없었고, 이제는 고치면 안 된다는 것도 알았다. 몇천 년 동안 아무도 고치지 못한 것이 우리에게 남은 유일한 원본이다.</p>
+<p>그날 오후 작업분은 평범했다. 1970년대 회보였다. 사천 줄쯤 봤고, 기계 오류를 백몇 군데 되돌렸다. 아무 일도 없었다.</p>
+<p>마지막 문서를 확정하기 전에 나는 한 줄을 손봤다.</p>
+<p>거의 말이 되도록 만들었다. 고칠 방향이 하나만 남도록 만들었다. 고치면 원래보다 나아지도록 만들었다. 조사가 걸리는 자리를 골랐다. 우리 말에서는 그 자리가 제일 잘 걸린다.</p>
+<p>만드는 데 한 시간이 걸렸다. 생각보다 어려웠다. 너무 틀리면 기계로 보이고, 덜 틀리면 아무도 안 본다.</p>
+<p>소리 내어 읽어봤다.</p>
+<p>말이 됐다. 거의.</p>
+<p>확정 버튼을 눌렀다. 그 문서는 다음 주에 공개 서고로 넘어간다. 누군가 읽을 것이다. 언젠가 누군가 걸릴 것이다. 그 사람은 그것을 고칠 것이고, 고치고 나서 원래보다 나아졌다는 걸 알아챌 것이고, 며칠쯤 이상하다고 생각하다가 잊을 것이다.</p>
+<p>그러면 된다.</p>
+<p>나는 그것을 조금 틀리게 남겼다.</p>
+<h3>장면 이미지 · 남겨둠</h3>
+<p><img loading="lazy" alt="고치지 않고 닫은 문서" src="../assets/fiction/03-misprint/OSIK_S08_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="새로 심은 오류" src="../assets/fiction/03-misprint/OSIK_S08_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="확정 버튼" src="../assets/fiction/03-misprint/OSIK_S08_C03_v01.jpg" /></p>
+<hr />
+<p><img loading="lazy" alt="誤植《오식》 엔딩 크레딧" src="../assets/fiction/03-misprint/99_OSIK_BLOG_ENDING_v01.jpg" /></p>
+<h2>제작 크레딧</h2>
+<p>원작·글: 윤영식 · YoungShig Yoon<br />
+영상 구성·연출: 윤영식 · YoungShig Yoon<br />
+영상·이미지 제작: AI-Assisted Production · NextAI Design Studio<br />
+내레이션: AI Voice · Voice Direction by YoungShig Yoon<br />
+음악·효과음·음향 믹싱: Original Sound Design<br />
+제작: NextAI Studio</p>
+<p>© 2026 윤영식 · YoungShig Yoon. All Rights Reserved.</p>
+<img loading="lazy" src="../assets/fiction/03-misprint/99_OSIK_BLOG_ENDING_v01.jpg" alt="오식" />
+</div></section></div>
+<div class="wrap"><nav class="pager">
+<a href="02-imprint.html">← 눌린 자국</a>
+<a href="04-remaining-angle.html">남은 각도 →</a>
+</nav></div>
+<footer><div class="wrap">
+  <span>원작·글·영상 구성·연출: 윤영식 · YoungShig Yoon</span>
+  <span><a href="../index.html" style="color:var(--teal-dark)">프로젝트 홈</a> · osiki999@gmail.com</span>
+</div></footer>
+</body></html>
