@@ -49,9 +49,10 @@
         "coverImage": "01-cover.jpg",
         "endImage": "09-processing-record.jpg",
         "video": {
-          "naverUrl": "",
+          "naverUrl": "https://blog.naver.com/osiki111/224396073735",
           "note": "English subtitles"
-        }
+        },
+        "blogUrl": ""
       }
     },
     {
@@ -85,9 +86,10 @@
         "coverImage": "00-en-cover.jpg",
         "endImage": "08-end-card-v1.jpg",
         "video": {
-          "naverUrl": "",
-          "note": "English narration & subtitles"
-        }
+          "naverUrl": "https://blog.naver.com/osiki111/224397333891",
+          "note": "English subtitles"
+        },
+        "blogUrl": ""
       }
     },
     {
@@ -105,7 +107,7 @@
       "coverImage": "00_OSIK_BLOG_COVER_v01.jpg",
       "endImage": "99_OSIK_BLOG_ENDING_v01.jpg",
       "status": "전문 공개",
-      "blogUrl": "",
+      "blogUrl": "https://blog.naver.com/osiki111/224398511543",
       "video": {
         "naverUrl": "",
         "note": "한국어 자막 · 중저음 내레이션 · 음악·효과음 믹싱"
@@ -122,9 +124,10 @@
         "coverImage": "00-en-cover.jpg",
         "endImage": "99-en-ending.jpg",
         "video": {
-          "naverUrl": "",
+          "naverUrl": "https://blog.naver.com/osiki111/224398949050",
           "note": "English subtitles"
-        }
+        },
+        "blogUrl": ""
       }
     },
     {
@@ -141,7 +144,7 @@
       "coverImage": "00_REMAINING_ANGLE_BLOG_COVER_v01.jpg",
       "endImage": "99_REMAINING_ANGLE_BLOG_ENDING_v01.jpg",
       "status": "전문 공개",
-      "blogUrl": "",
+      "blogUrl": "https://blog.naver.com/osiki111/224399638169",
       "video": {
         "naverUrl": "",
         "note": "한국어 자막 · 중저음 내레이션 · 음악·효과음 믹싱"
@@ -158,9 +161,10 @@
         "coverImage": "00-en-cover.jpg",
         "endImage": "99-en-ending.jpg",
         "video": {
-          "naverUrl": "",
+          "naverUrl": "https://blog.naver.com/osiki111/224399710772",
           "note": "English subtitles"
-        }
+        },
+        "blogUrl": ""
       }
     }
   ]

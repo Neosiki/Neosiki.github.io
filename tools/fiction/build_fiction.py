@@ -232,8 +232,8 @@ def buttons(w, lang):
     if url:
         out.append('<a class="btn primary" href="%s" target="_blank" rel="noreferrer">%s<span style="opacity:.7;font-weight:400"> · %s</span></a>'
                    % (html.escape(url), t["watch"], html.escape(note)))
-    else:
-        out.append('<span class="btn primary disabled">%s · %s</span>' % (t["watch"], t["pending"]))
+    # 링크가 없으면 비활성 버튼을 만들지 않고 감춘다.
+    # 한국어판은 영상이 소설 포스트 안에 들어 있어 블로그 버튼 하나로 충분하다.
     return "\n      ".join(out)
 
 # ─────────────────────────── 페이지 ───────────────────────────
