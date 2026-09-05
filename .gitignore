@@ -1,0 +1,17 @@
+# 편집기·OS 부산물
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# 백업·임시본
+*.bak
+*.orig
+*.tmp
+*.log
+
+# 의존성
+node_modules/
+
+# 저장소 안에 들어온 별개 프로젝트
+public-apis-4Kr/
