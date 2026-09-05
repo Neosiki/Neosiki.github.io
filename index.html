@@ -1220,6 +1220,16 @@
         .fiction-actions a{display:inline-flex;align-items:center;gap:7px;border-radius:99px;padding:11px 22px;
           font-size:.88rem;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.3);color:#fff}
         .fiction-actions a.solid{background:#edb49a;border-color:#edb49a;color:#2b1a12}
+        .fiction-next{display:grid;grid-template-columns:minmax(0,44%) 1fr;margin:16px 0 0;border-radius:12px;overflow:hidden;
+          background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);text-decoration:none;color:#fff;transition:transform .18s ease}
+        .fiction-next:hover{transform:translateY(-3px)}
+        .fiction-next img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+        .fiction-next .txt{padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
+        .fiction-next .tag{font-size:.7rem;letter-spacing:.14em;font-weight:700;color:#edb49a}
+        .fiction-next b{display:block;font-size:1.32rem;letter-spacing:-.02em;margin-top:8px}
+        .fiction-next .enttl{display:block;font-size:.82rem;color:rgba(255,255,255,.5);margin-top:3px}
+        .fiction-next p{margin:12px 0 0;font-size:.9rem;line-height:1.68;color:rgba(255,255,255,.68)}
+        @media (max-width:760px){ .fiction-next{grid-template-columns:1fr} }
         @media (max-width:1240px){ .fiction-row{grid-template-columns:repeat(3,1fr)} }
         @media (max-width:1020px){ .fiction-row{grid-template-columns:repeat(2,1fr)} }
         @media (max-width:600px){ .fiction-row{grid-template-columns:1fr} }
@@ -1235,6 +1245,15 @@
           <a href="fiction/04-remaining-angle.html"><img src="assets/fiction/04-remaining-angle/00_REMAINING_ANGLE_BLOG_COVER_v01.jpg" alt="남은 각도 표지" loading="lazy" /><span class="cap"><b>제4편 남은 각도</b><span>The Remaining Angle · 7분 40초</span></span></a>
           <a href="fiction/05-two-hands-war.html"><img src="assets/fiction/05-two-hands-war/00-cover.jpg" alt="두 손의 전쟁 표지" loading="lazy" /><span class="cap"><b>제5편 두 손의 전쟁</b><span>The War of Two Hands · 7분 10초</span></span></a>
         </div>
+        <a class="fiction-next" href="fiction.html">
+          <img src="assets/fiction/06-scattered-orbit/00-teaser.jpg" alt="흩어진 자들의 궤도 예고 이미지" loading="lazy" />
+          <span class="txt">
+            <span class="tag">다음 편 예고</span>
+            <b>제6편 흩어진 자들의 궤도</b>
+            <span class="enttl">The Orbit of the Scattered</span>
+            <p>행성이 사라진 뒤에도 몸은 자신이 살던 세계를 계속 믿는다. 말데크 붕괴에서 살아남은 자들이 조각난 궤도 위에서 무엇을 지키려 했는지를 따라간다. 연작에서 처음으로 인물의 얼굴이 화면에 나온다.</p>
+          </span>
+        </a>
         <div class="fiction-actions">
           <a class="solid" href="fiction.html">연작 전체 보기 <span>↗</span></a>
           <a href="fiction/05-two-hands-war.html">최신편 《두 손의 전쟁》 읽기 <span>↗</span></a>
