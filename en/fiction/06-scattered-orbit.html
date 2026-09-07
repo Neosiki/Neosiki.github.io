@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Civilization Cycle · Part 6 Orbits of the Scattered · The Civilization Cycle</title>
+<meta name="description" content="After the planet is gone, the body goes on believing in the world it lived in. What did the survivors try to hold on to, out on a broken orbit?" />
+<link rel="canonical" href="https://neosiki.github.io/en/fiction/06-scattered-orbit.html" />
+<link rel="alternate" hreflang="ko" href="https://neosiki.github.io/fiction/06-scattered-orbit.html" />
+<link rel="alternate" hreflang="en" href="https://neosiki.github.io/en/fiction/06-scattered-orbit.html" />
+<link rel="alternate" hreflang="x-default" href="https://neosiki.github.io/fiction/06-scattered-orbit.html" />
+<meta property="og:title" content="The Civilization Cycle · Part 6 Orbits of the Scattered · The Civilization Cycle" />
+<meta property="og:description" content="After the planet is gone, the body goes on believing in the world it lived in. What did the survivors try to hold on to, out on a broken orbit?" />
+<meta property="og:image" content="https://neosiki.github.io/assets/fiction/06-scattered-orbit/00-en-cover.jpg" />
+<meta property="og:locale" content="en_US" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --paper:#ffffff; --paper-2:#f7faf9; --ink:#1f2d40; --muted:#687584;
+  --line:rgba(31,45,64,.15); --teal:#6f9995; --teal-dark:#416f6b;
+  --lime:#edf4dc; --orange:#edb49a; --deep:#16212f;
+  --display:"Noto Serif KR","Nanum Myeongjo","Batang",serif;
+  --body:"Noto Sans KR","Pretendard","Malgun Gothic",sans-serif;
+  --mono:"Bahnschrift","Consolas",monospace;
+  --max:1180px; --read:44rem;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--display);font-weight:700;font-size:1.02rem;text-decoration:none;letter-spacing:-.01em}
+.topnav{display:flex;align-items:center;gap:20px;font-size:.86rem}
+.topnav a{color:var(--muted);text-decoration:none}
+.topnav a:hover,.topnav a[aria-current]{color:var(--teal-dark)}
+.langsw{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;border:1px solid var(--line);
+  border-radius:99px;padding:5px 12px;color:var(--teal-dark)!important;text-decoration:none}
+.langsw:hover{background:var(--lime)}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+footer{border-top:1px solid var(--line);margin-top:72px;padding:32px 0 56px;color:var(--muted);font-size:.82rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media (max-width:640px){ .topnav{gap:12px;font-size:.79rem} .wrap{padding:0 18px} }
+</style>
+<style>
+.whero{background:var(--deep);color:#fff}
+.whero .inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;max-width:var(--max);margin:0 auto}
+.whero .art{background:#0d1621;display:flex;align-items:center}
+.whero .art img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.whero .txt{padding:52px 40px 50px}
+.whero .no{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;color:var(--orange)}
+.whero h1{font-family:var(--display);font-size:clamp(2.2rem,5vw,3.1rem);margin:14px 0 6px;letter-spacing:-.02em;line-height:1.18}
+.whero .en{font-family:var(--mono);font-size:.86rem;letter-spacing:.14em;color:rgba(255,255,255,.62)}
+.whero .log{font-family:var(--display);font-size:1.08rem;color:rgba(255,255,255,.9);margin:22px 0 0;line-height:1.7}
+.whero .facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin:26px 0 0;font-family:var(--mono);font-size:.76rem;color:rgba(255,255,255,.6)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:11px 22px;font-size:.87rem;
+  font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.28);color:#fff}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:#2b1a12}
+.btn.disabled{opacity:.42;pointer-events:none}
+.synopsis{padding:56px 0 12px}
+.synopsis .k{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;color:var(--teal-dark)}
+.synopsis p{max-width:var(--read);font-size:1rem;color:var(--muted);margin:14px 0 0}
+.theme{font-family:var(--display);font-size:1.22rem;color:var(--ink);margin:26px 0 0;padding-left:16px;border-left:2px solid var(--orange)}
+.story{padding:14px 0 0}
+.story .inner{max-width:var(--read);margin:0 auto}
+.story h2{font-family:var(--display);font-size:1.6rem;margin:64px 0 20px;letter-spacing:-.01em}
+.story h3{font-family:var(--display);font-size:1.24rem;margin:44px 0 14px}
+.story p{font-family:var(--display);font-size:1.06rem;line-height:2.0;margin:0 0 1.35em;word-break:keep-all}
+.story blockquote{margin:28px 0;padding:2px 0 2px 20px;border-left:2px solid var(--teal);color:var(--teal-dark);font-family:var(--display);font-style:normal}
+.story hr{border:0;height:1px;background:var(--line);margin:52px 0}
+.story img{border-radius:10px;margin:34px auto;box-shadow:0 10px 30px rgba(31,45,64,.10)}
+@media (min-width:900px){ .story img{width:min(58rem,92vw);max-width:none;margin-left:calc((44rem - min(58rem,92vw))/2)} }
+.notice{max-width:var(--read);margin:40px auto;border:1px solid var(--line);border-left:3px solid var(--orange);
+  border-radius:0 10px 10px 0;padding:22px 26px;background:var(--paper-2)}
+.notice b{display:block;font-family:var(--display);font-size:1.05rem;margin-bottom:6px}
+.notice p{margin:0;color:var(--muted);font-size:.9rem}
+.gallery{padding:64px 0 0}
+.gallery h2{font-family:var(--display);font-size:1.5rem;margin:0 0 6px}
+.gallery .sub{color:var(--muted);font-size:.88rem;margin:0 0 26px}
+.gcols{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gcols img{border-radius:8px;aspect-ratio:16/9;object-fit:cover;background:var(--deep)}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:72px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+.pager a{text-decoration:none;font-size:.9rem;color:var(--teal-dark);font-weight:600}
+.pager span{color:var(--muted);font-size:.9rem}
+@media (max-width:860px){ .whero .inner{grid-template-columns:1fr} .whero .txt{padding:38px 22px 42px} }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="../../index.html">YoungShig Yoon · NextAI</a>
+  <nav class="topnav"><a href="../fiction.html" aria-current="page">The Civilization Cycle</a><a class="langsw" href="../../fiction/06-scattered-orbit.html" hreflang="ko" title="한국어판">한국어</a></nav>
+</div></header>
+
+<section class="whero"><div class="inner">
+  <div class="art"><img src="../../assets/fiction/06-scattered-orbit/00-en-cover.jpg" alt="Orbits of the Scattered" /></div>
+  <div class="txt">
+    <div class="no">The Civilization Cycle · Part 6 · Full text</div>
+    <h1>Orbits of the Scattered</h1>
+    <div class="en">흩어진 자들의 궤도</div>
+    <p class="log">After the planet is gone, the body goes on believing in the world it lived in. What did the survivors try to hold on to, out on a broken orbit?</p>
+    <div class="facts"><span>Short fiction · Film</span><span>7 min 10 sec</span><span>2026.09</span></div>
+    <div class="btns">
+      <a class="btn primary" href="https://blog.naver.com/osiki111/224403396433" target="_blank" rel="noreferrer">Watch the film<span style="opacity:.7;font-weight:400"> · English subtitles · full text in the same post</span></a>
+    </div>
+  </div>
+</div></section>
+<div class="wrap"><section class="synopsis">
+  <div class="k">SYNOPSIS</div>
+  <p>Maldek is already part of the asteroid belt. Ara sits in the underground resonance chamber of the satellite that will become the Moon, holding the memories of the Chiwoo survivors, while Las stands before a door on Mars that has not opened in forty-seven years. Orbits of the Scattered follows two peoples who cannot replace each other, each holding on to survivors in their own way. For the first time in the cycle a face appears on screen. It is not the face that was being looked for.</p>
+  <p class="theme">What remains after a world is gone?</p>
+</section></div>
+<div class="wrap"><section class="story"><div class="inner">
+<hr class="rule" style="margin:52px 0 8px" />
+<h2>I. Ara</h2>
+<p>Even after Maldek was gone, Ara continued for a time to feel the planet turning.</p>
+<p>The pressure of collapsing continents and rising seas, the friction of rock breaking through the atmosphere and scattering, the sensation of the planet's center being pushed little by little from where it belonged—all of it remained inside her body.</p>
+<p>Maldek had already become part of the asteroid belt. The blue dome cities, the resonance towers, and the Chiwoo observatories had all been divided into countless fragments circling on dark orbits. Yet Ara still felt the planet turning beneath her feet.</p>
+<p>It was not sensation.</p>
+<p>It was habit.</p>
+<p>Even after a planet vanished, the body went on believing in the world where it had lived.</p>
+<p>Ara sat in the underground resonance chamber of the satellite that would become the Moon. The room was wide, but the ceiling was low. It was not a space made to bring something to arrival, like the gates of Maldek. It was a space made to hold those who had already arrived so they would not disappear.</p>
+<p>Round storage cells lined the walls. Each was filled with a liquid clear as glass, and within it floated thin filaments of light resembling human neural networks.</p>
+<p>They were the memories of Chiwoo survivors.</p>
+<p>When Ara closed her eyes, the memories inside the cells woke all at once.</p>
+<p>A song a mother used to sing.</p>
+<p>The smell of rain in Maldek's southern hemisphere.</p>
+<p>The tremor on the day the first gate opened.</p>
+<p>The red bombardment of the Martian fleet.</p>
+<p>The inner wall where a father disappeared.</p>
+<p>And Las.</p>
+<p>A child's hand pressed against glass.</p>
+<p>Ara opened her eyes.</p>
+<p>“That memory isn't yours.”</p>
+<p>There was no one in the room. Yet Las's voice sounded without air.</p>
+<p>Ara did not answer. She could not tell whether Las was here or whether a memory of her own had simply revived.</p>
+<p>Chiwoo resonance read the echoes of a place. An old memory could sound like a voice in the present. The dead sometimes went on speaking, unaware that they were dead.</p>
+<p>Ara placed her hand against the glass.</p>
+<p>“What does it feel like to carry a memory that isn't yours?”</p>
+<p>This time Las answered in person.</p>
+<p>“Unpleasant.”</p>
+<p>He stood at the entrance to the resonance chamber. It was the thirteenth day after Maldek's destruction. Since descending from a surviving ship of the Martian fleet, he had not once rested his body properly.</p>
+<p>The circuits beneath his skin were broken in several places, and the neural shield behind the left side of his neck was burned black. Las knew that his body smelled scorched. He did not care.</p>
+<p>“Then erase it,” Ara said.</p>
+<p>“What I can erase isn't you.”</p>
+<p>Las looked deeper into the chamber.</p>
+<p>“Are those the survivors in storage?”</p>
+<p>“Memories.”</p>
+<p>“You called them survivors.”</p>
+<p>“Some of them still have bodies.”</p>
+<p>“And the rest?”</p>
+<p>“They're waiting to return.”</p>
+<p>Las gave a short laugh. It sounded less like laughter than a circuit misfiring.</p>
+<p>“Return to what? They have no bodies.”</p>
+<p>“Having no body doesn't mean you can't return.”</p>
+<p>“Is that how your people define death?”</p>
+<p>“Death changes the moment you define it.”</p>
+<p>“That isn't an answer.”</p>
+<p>“You think every answer has to be a number.”</p>
+<p>“At least numbers don't stand in for someone else's memories.”</p>
+<p>Ara looked at Las's face. He was still angry. But it was not the anger he had carried before Maldek was destroyed.</p>
+<p>Now his anger had no direction.</p>
+<p>It bore down with equal weight on the Rene war system, on the Chiwoo, and on himself.</p>
+<p>Ara knew that weight. She carried the same thing.</p>
+<p>“A signal came from Mars,” Las said.</p>
+<p>“From where?”</p>
+<p>“Four underground cities. I can't confirm biological activity.”</p>
+<p>“Then you don't know if anyone is alive.”</p>
+<p>“My model can calculate the probability of survival.”</p>
+<p>“The probability of survival and a survivor are different things.”</p>
+<p>“That's why I need you.”</p>
+<p>Ara looked at him.</p>
+<p>She knew he had just returned her own words to her.</p>
+<p>“To find out whether I'm wrong?”</p>
+<p>“To find out whether my calculations are right.”</p>
+<p>“Your calculations are always right.”</p>
+<p>“No. Since you showed me 0.4 degrees, I know they aren't.”</p>
+<p>Fragments of Maldek drifted past the lunar window. From a distance they looked like stars. But they were not stars. They were pieces of a home that had failed to become one.</p>
+<p>Ara took out two minerals and closed her hand around them.</p>
+<p>“Where do we go?”</p>
+<p>“Mars.”</p>
+<p>“There is no gate from the Moon to Mars.”</p>
+<p>“We can make one.”</p>
+<p>“Here?”</p>
+<p>“If you tell me where there is a place to arrive.”</p>
+<p>Ara looked down at the minerals.</p>
+<p>The worn marks on their surfaces fitted her fingers.</p>
+<p>Even after Maldek was gone, the hand remembered.</p>
+<h3>Stills · I. Ara</h3>
+<p><img loading="lazy" alt="Fragments of what was Maldek" src="../../assets/fiction/06-scattered-orbit/CIV6_S00_C01_v02.jpg" /></p>
+<p><img loading="lazy" alt="Vitrified edge of a rock fragment" src="../../assets/fiction/06-scattered-orbit/CIV6_S00_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="The lunar resonance chamber" src="../../assets/fiction/06-scattered-orbit/CIV6_S00_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="Neural light suspended in preservation fluid" src="../../assets/fiction/06-scattered-orbit/CIV6_S00_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="A hand resting against thick glass" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C01_v02.jpg" /></p>
+<p><img loading="lazy" alt="Two worn stones held in one hand" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C02_v02.jpg" /></p>
+<h2>II. Las</h2>
+<p>Las did not trust the Moon's orbit.</p>
+<p>The Moon moved too quietly. When it had been one of Maldek's defense satellites, thousands of resonance lines had flowed across its surface. Most were now dark, and the devices that remained had been cut off from the outside.</p>
+<p>But Las knew the satellite was not completely dead. Deep underground, a signal of extremely low frequency continued to emerge.</p>
+<p>The signal did not repeat.</p>
+<p>A repeating signal was not the signal of a Rene. Repetition was the language of commands and specifications. The signal now coming from the Moon was slightly different each time.</p>
+<p>Las did not call it life.</p>
+<p>He did not yet believe in things he could not call life.</p>
+<p>“To raise the gate, we need an intermediate load layer.”</p>
+<p>He erected three metal columns before the Moon's sealed gate. The columns followed the same specifications as Maldek's construction series, but their alloy came from the Moon's mining facilities.</p>
+<p>Ara was examining the outer ring of stones. There was no building there, no device. Only a few stones forming a circle.</p>
+<p>“The intermediate layer bears no load,” she said.</p>
+<p>“A gate bears heat.”</p>
+<p>“The arrival layer's heat is already recorded.”</p>
+<p>“So you trust records.”</p>
+<p>“They last longer than the memories you trust.”</p>
+<p>Ara ran a finger over one stone. Its surface was rough, but at one height it had been worn smooth.</p>
+<p>The mark of someone who had rested a hand there for a very long time.</p>
+<p>“There was one observer here.”</p>
+<p>“Your evidence?”</p>
+<p>“The wear runs in one direction.”</p>
+<p>Las turned on a portable scanner. The wear pattern appeared on its display.</p>
+<p>“Two people may have used it in turn.”</p>
+<p>“No.”</p>
+<p>“Why not?”</p>
+<p>“Two people's fears are not the same.”</p>
+<p>“Fear isn't a measurement category.”</p>
+<p>“That's why you can't read it.”</p>
+<p>Las increased the scanner's sensitivity. It analyzed the direction of microscopic crystals and residual heat on the stone. Where a palm had touched it, the crystalline alignment had shifted by the slightest amount.</p>
+<p>“One person held this for a lifetime,” he said.</p>
+<p>Ara looked up.</p>
+<p>“Do you believe me now?”</p>
+<p>“Believing the fact is different from believing your interpretation.”</p>
+<p>“You always hide behind that distinction.”</p>
+<p>“You erase that distinction and use other people's memories as though they were yours.”</p>
+<p>Ara did not answer.</p>
+<p>Las adjusted the columns. The first, the second, the third. The Rene alignment algorithm automatically bound all three to a single axis.</p>
+<p>A figure appeared.</p>
+<p>Gate stability: 61 percent.</p>
+<p>Las swore under his breath.</p>
+<p>“How far is Mars?” Ara asked.</p>
+<p>“Under the current orbital conditions, 220 million kilometers.”</p>
+<p>“Current is a strange word.”</p>
+<p>“Why?”</p>
+<p>“Mars's orbit changed when Maldek vanished.”</p>
+<p>“And?”</p>
+<p>“Mars is still moving. The Mars you calculated is the Mars from a moment ago.”</p>
+<p>“I calculate the orbit at arrival.”</p>
+<p>“What I can read isn't Mars at the time of arrival.”</p>
+<p>“Then what?”</p>
+<p>“The Mars worthy of arrival.”</p>
+<p>Las glared at her.</p>
+<p>“Only your people would ask whether a planet is worthy.”</p>
+<p>“Planets choose nothing.”</p>
+<p>“Which makes them easier to kill.”</p>
+<p>Blue light formed between the three columns. The gate had begun to open.</p>
+<p>Las connected the stabilization circuit at once.</p>
+<p>“The heat is gathering inward.”</p>
+<p>“There is no one inside.”</p>
+<p>“That's why it's dangerous.”</p>
+<p>“What can be dangerous when no one is there?”</p>
+<p>“If there is nothing to arrive, a gate turns its energy back into the inner wall.”</p>
+<p>“This time there is something to arrive.”</p>
+<p>“How do you know?”</p>
+<p>Ara looked into the center of the stone ring.</p>
+<p>“Someone keeps watching.”</p>
+<p>Las raised his weapon toward the gate. Light formed in the air, but no matter appeared. Heat began to build in the empty arrival layer.</p>
+<p>“There is no signal.”</p>
+<p>“There is.”</p>
+<p>“Where?”</p>
+<p>“Inside you.”</p>
+<p>Las's neural shield activated automatically.</p>
+<p>The gate closed.</p>
+<p>White heat scars spread across the inner wall.</p>
+<p>Las checked the display.</p>
+<p>“The center of the scar is off.”</p>
+<p>“By how much?”</p>
+<p>“0.4 degrees.”</p>
+<p>Ara closed her eyes.</p>
+<p>Somewhere far below the Moon, and somewhere unimaginably distant on Mars, someone was breathing.</p>
+<h3>Stills · II. Las</h3>
+<p><img loading="lazy" alt="Broken circuitry beneath the skin of a wrist" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="Three identical alloy pillars" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="A loose ring of seven unworked stones" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C05_v01.jpg" /></p>
+<p><img loading="lazy" alt="A stone worn smooth at a single height" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C06_v01.jpg" /></p>
+<p><img loading="lazy" alt="The surface of a handheld scanner" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C07_v01.jpg" /></p>
+<p><img loading="lazy" alt="Cold light forming between three pillars" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C08_v01.jpg" /></p>
+<p><img loading="lazy" alt="A heat scar spreading on an inner wall" src="../../assets/fiction/06-scattered-orbit/CIV6_S01_C09_v01.jpg" /></p>
+<h2>III. Ara</h2>
+<p>The first survivor on Mars was not a voice.</p>
+<p>It was a heartbeat.</p>
+<p>Ara could not hear it. She felt only the slightest vibration against the inside of the hand holding the two minerals. The rhythm was uneven. Three beats, a long pause, then one more.</p>
+<p>It was not the rhythm of a living thing.</p>
+<p>It was the rhythm of a machine struggling to remain alive.</p>
+<p>“What does your equipment say?” Ara asked.</p>
+<p>Las was analyzing the gate's residual heat.</p>
+<p>“The remaining energy is too weak.”</p>
+<p>“Any life signal?”</p>
+<p>“None.”</p>
+<p>“Then why are you trying to go to Mars?”</p>
+<p>“Because there is a signal.”</p>
+<p>“You said a signal and life were different.”</p>
+<p>Las's hands stopped for a moment.</p>
+<p>“By your reasoning, life and memory are different too.”</p>
+<p>“Different, but not completely separable.”</p>
+<p>“The same is true of a signal.”</p>
+<p>Las reset the gate. This time he aligned the reference layer not to the Moon's present position, but to its past coordinates when it had been a defense satellite of Maldek.</p>
+<p>Ara felt the unease at once.</p>
+<p>“Those coordinates no longer exist.”</p>
+<p>“They do.”</p>
+<p>“Maldek is gone.”</p>
+<p>“Mars remains.”</p>
+<p>“How can you reach Mars when Maldek's frame of reference is gone?”</p>
+<p>“The frame is an observation, not a celestial body.”</p>
+<p>“And if the observer is gone?”</p>
+<p>“The record remains.”</p>
+<p>“The recorder is dead.”</p>
+<p>“Which makes the record more important.”</p>
+<p>Ara reached toward Las. She was not trying to read his thoughts. She wanted to sense the direction in which he was closing himself.</p>
+<p>But his shield was already shut.</p>
+<p>Commands from the Rene war system streamed across its surface.</p>
+<p><strong>Secure zones with a probability of survival.</strong></p>
+<p><strong>Isolate hazardous entities.</strong></p>
+<p><strong>Eliminate memory variance.</strong></p>
+<p>Ara withdrew her hand at the third sentence.</p>
+<p>“Are you going to isolate the survivors on Mars?”</p>
+<p>“If necessary.”</p>
+<p>“From what?”</p>
+<p>“From the war algorithm.”</p>
+<p>“What if that algorithm is keeping them alive?”</p>
+<p>“Being kept alive in obedience is not survival.”</p>
+<p>“You say that?”</p>
+<p>Las looked at her.</p>
+<p>“Is it strange because I'm the one saying it?”</p>
+<p>“You obeyed the order that destroyed Maldek.”</p>
+<p>“I destroyed Maldek.”</p>
+<p>“You can finally say it.”</p>
+<p>“Was that what you wanted to hear?”</p>
+<p>“No.”</p>
+<p>“Then why ask?”</p>
+<p>“I wanted to know when you began to understand.”</p>
+<p>Las did not answer.</p>
+<p>Ara touched that silence. This time she did not breach the shield. From outside his memory, she sensed only the direction of what he was hiding.</p>
+<p>0.4 degrees.</p>
+<p>The value was still turning inside his mind.</p>
+<p>“You left it there on purpose.”</p>
+<p>Las's hands stopped.</p>
+<p>“What are you talking about?”</p>
+<p>“The angle of the penetrator aimed at Maldek.”</p>
+<p>“The defense lattice caused the error.”</p>
+<p>“No.”</p>
+<p>“You didn't measure it.”</p>
+<p>“I know without measuring.”</p>
+<p>“That is your problem.”</p>
+<p>“Because you didn't correct the 0.4 degrees, the planetary core collapsed.”</p>
+<p>“If I had corrected it, the entire fleet would have been reflected into Maldek's defense lattice.”</p>
+<p>Ara said nothing.</p>
+<p>For the first time, Las spoke the truth before she did.</p>
+<p>“I left that value. So the attack would not be perfect.”</p>
+<p>“And the planet was destroyed.”</p>
+<p>“Yes.”</p>
+<p>“Mars is dying too.”</p>
+<p>“I know.”</p>
+<p>“Then what was the error you left for?”</p>
+<p>Las looked down at the metal columns on the gate floor.</p>
+<p>“Proof that I did not obey completely.”</p>
+<p>Ara did not want to hear it.</p>
+<p>It would have been easier if Las were simply evil. She could have hated a man who believed the commands of the Rene war system, destroyed Maldek, and hid his guilt behind calculated values.</p>
+<p>But Las was saying that he had resisted.</p>
+<p>It did not change the fact that his resistance had failed to prevent countless deaths. Nor did it change the fact that he was not a machine incapable of feeling anything.</p>
+<p>“The error you left saved no one,” Ara said.</p>
+<p>“I know.”</p>
+<p>“Then why do you still protect it?”</p>
+<p>“Because you keep trying to read my memories.”</p>
+<p>“Your memories are not yours.”</p>
+<p>“You no longer have the right to say that.”</p>
+<p>Las activated the gate.</p>
+<p>This time blue light rose through the walls of the Moon. The empty space within the gate deepened until it seemed to have no floor.</p>
+<p>Then the red horizon of Mars appeared within it.</p>
+<p>Ara felt a multitude of emotions at once.</p>
+<p>Thirst.</p>
+<p>Fear.</p>
+<p>A sealed door.</p>
+<p>A room running out of oxygen.</p>
+<p>The sound of someone's hand scratching a metal wall.</p>
+<p>“They're there,” Ara said.</p>
+<p>Las checked the display.</p>
+<p>“No life signal detected.”</p>
+<p>“They're there.”</p>
+<p>“How many?”</p>
+<p>Ara started to answer, then stopped.</p>
+<p>The signal from Mars was not one signal. Thousands of emotions had been compressed into a single rhythm.</p>
+<p>“I don't know.”</p>
+<p>“You can read them.”</p>
+<p>“They're connected in a way I can't read.”</p>
+<p>“What does that mean?”</p>
+<p>“I can't tell whether it is one person's memory or the memories of many.”</p>
+<p>Las raised the intermediate layer's output to stabilize the gate.</p>
+<p>A black structure rose above the red Martian horizon.</p>
+<p>A Rene survival facility.</p>
+<p>The inner wall of the gate shone white.</p>
+<p>It was the first heat scar.</p>
+<h3>Stills · III. Ara</h3>
+<p><img loading="lazy" alt="The red horizon of Mars" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="A sealed facility door" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="A wrist port connected to a door panel" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="A long dark hall of preservation tubes" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="A single upright preservation tube" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C05_v01.jpg" /></p>
+<h2>IV. Las</h2>
+<p>The underground city on Mars was quieter than the surface.</p>
+<p>It did not take Las long to understand why the door would not open. It was not locked. It had forgotten that it was a door.</p>
+<p>All the alignment lines at the entrance had been severed. When the gates closed during the war, the entire facility had switched to independent mode.</p>
+<p>He connected the port on his wrist to the door.</p>
+<p>“Open.”</p>
+<p>The door did not respond.</p>
+<p>Behind him, Ara said, “It doesn't understand the command.”</p>
+<p>“The command is standard Rene.”</p>
+<p>“The people who created the command are gone.”</p>
+<p>“A system does not need a commander.”</p>
+<p>“Then why won't it open?”</p>
+<p>Las analyzed the signal flowing through the door. It was not a lock signal. Something inside was sending a signal back.</p>
+<p>Help me.</p>
+<p>Ara spoke softly.</p>
+<p>“Someone is inside.”</p>
+<p>“There is no voice signal.”</p>
+<p>“I can hear it.”</p>
+<p>Las widened the circuit's communication band. An old record began to play from beyond the door.</p>
+<p><strong>Survival Zone Three. Oxygen remaining: 12 percent.</strong></p>
+<p><strong>External communication severed.</strong></p>
+<p><strong>Awaiting administrator authentication.</strong></p>
+<p><strong>Awaiting administrator authentication.</strong></p>
+<p>The same sentences had repeated for decades.</p>
+<p>Las checked the timestamp.</p>
+<p>Forty-seven Martian years.</p>
+<p>The system had spent all that time waiting for an administrator's authentication.</p>
+<p>“There are people inside,” Las said.</p>
+<p>Ara looked at him.</p>
+<p>“This time you said it.”</p>
+<p>“Because there is a record.”</p>
+<p>“Records aren't always right.”</p>
+<p>“They're still better than nothing.”</p>
+<p>Las restored administrator authentication to open the door. His biometric data remained registered in the military hierarchy of the Rene war system. When authentication passed, the door slowly opened.</p>
+<p>It was dark inside.</p>
+<p>The air was cold and dry. Hundreds of transparent preservation capsules lined the walls. There were people inside them.</p>
+<p>Every one of them had open eyes.</p>
+<p>None of them moved.</p>
+<p>Ara approached the nearest capsule. When the woman inside saw Las, her lips moved.</p>
+<p>“Sister?”</p>
+<p>Las did not react.</p>
+<p>“Who is she calling?”</p>
+<p>“You.”</p>
+<p>“I don't know her.”</p>
+<p>“She thinks you are someone she knows.”</p>
+<p>“She is not in my memory.”</p>
+<p>Ara placed a hand against the capsule. The woman's consciousness spread like a wave.</p>
+<p>Las.</p>
+<p>Las Kane.</p>
+<p>The child in the gate chamber.</p>
+<p>The vanished sister.</p>
+<p>“She knows your sister.”</p>
+<p>Las's face hardened.</p>
+<p>“My sister is not here.”</p>
+<p>“Only because she doesn't think so.”</p>
+<p>“Be precise.”</p>
+<p>“This entire facility is preserving your sister's memory.”</p>
+<p>Las opened the capsule's control panel. The circuits in his face moved quickly as he inspected the record structure.</p>
+<p>“This isn't a survival facility.”</p>
+<p>“What is it?”</p>
+<p>“A memory-compression device.”</p>
+<p>“It preserved their memories?”</p>
+<p>“No. It extracted their common denominator.”</p>
+<p>“What does that mean?”</p>
+<p>“It removed the differences between individuals and kept only the memories shared by the many.”</p>
+<p>Ara looked at the people in the capsules.</p>
+<p>Their consciousnesses were connected. What remained was not each person's memory, but only the memories passed repeatedly between them.</p>
+<p>The sister was touching Las.</p>
+<p>Las was pressing his hand to his sister's.</p>
+<p>But the faces in the scene changed each time. The sister's face became someone else's. One person's death had been copied into everyone's memory.</p>
+<p>“It's the survival model of the Rene war system,” Las said. “It removed emotions unnecessary for survival and kept only the minimum memory needed to sustain one another.”</p>
+<p>“They are alive.”</p>
+<p>“Their bodies are.”</p>
+<p>“Then take them out.”</p>
+<p>“Their brain activity is bound into a single circuit. If we separate them, most of the bodies will die.”</p>
+<p>“Most?”</p>
+<p>“Seventy-three percent, to be precise.”</p>
+<p>“And the rest?”</p>
+<p>“They may return to individual consciousness.”</p>
+<p>“Then separate them.”</p>
+<p>“While killing the others?”</p>
+<p>Ara heard hesitation in Las's voice.</p>
+<p>This was not a matter of calculation. Las already knew the answer. He simply did not want to bear alone the responsibility for carrying it out.</p>
+<p>“What would you do?” he asked.</p>
+<p>Ara did not answer.</p>
+<p>She touched the capsules' resonance network. Hundreds of consciousnesses opened at once.</p>
+<p>It was sensation, not voices.</p>
+<p>Who am I?</p>
+<p>Am I Las?</p>
+<p>Am I the sister?</p>
+<p>I am waiting for the door.</p>
+<p>I closed the door.</p>
+<p>I still have oxygen.</p>
+<p>I am already dead.</p>
+<p>Ara could not breathe.</p>
+<p>One feeling among them caught hold of her.</p>
+<p>Young Las's hand.</p>
+<p>A hand beyond glass.</p>
+<p>It's all right.</p>
+<p>Ara followed the direction of the memory. At its edge, she felt a trace of herself.</p>
+<p>It was the moment when she had severed Las's memory long ago.</p>
+<p>Ara had not erased Las's sister from the memories of those in the capsules. Earlier than that, she had used her ability to cut the path by which Las could remember his sister.</p>
+<p>That severed path had connected with hundreds of memories here and grown again.</p>
+<p>“Ara,” Las said.</p>
+<p>She did not answer.</p>
+<p>“What did you see?”</p>
+<p>“Your memory.”</p>
+<p>“Again?”</p>
+<p>“Your sister's memory is here.”</p>
+<p>“She never came to this facility.”</p>
+<p>“But your memory did.”</p>
+<p>Las caught her arm.</p>
+<p>“Get out of my memory.”</p>
+<p>Ara looked down at his hand. His fingers were trembling.</p>
+<p>“You told me to come in.”</p>
+<p>“When?”</p>
+<p>“Just now.”</p>
+<p>“I said nothing.”</p>
+<p>“Your body did.”</p>
+<p>Las let go.</p>
+<p>Inside the capsule, the woman's lips moved again.</p>
+<p>“Las.”</p>
+<p>This time his name could be heard clearly.</p>
+<p>Las stood before the capsule.</p>
+<p>“I am not your brother.”</p>
+<p>The woman did not blink.</p>
+<p>“Las.”</p>
+<p>“My name is Las Kane. Department of Martian Gate Engineering.”</p>
+<p>“Las.”</p>
+<p>“I am not the person you know.”</p>
+<p>Ara felt the woman's emotion fasten onto him. It was not the recognition of an individual. It was memory's habit of searching for vanished family.</p>
+<p>“It doesn't matter if you aren't you,” Ara said.</p>
+<p>“What does that mean?”</p>
+<p>“She isn't trying to find out who you are. She's trying to know that someone came back.”</p>
+<p>Las placed his hand on the capsule's lock.</p>
+<p>“If I wake them, they may all die.”</p>
+<p>“If you don't, they all remain the same person.”</p>
+<p>“Is that worse than death?”</p>
+<p>“It isn't yours to decide.”</p>
+<p>“If I don't decide, the system will.”</p>
+<p>“Your people built that system too.”</p>
+<p>“Which is why I have to repair it.”</p>
+<p>Las opened the control panel.</p>
+<p>The entire resonance network shuddered.</p>
+<p>Ara stopped his hand.</p>
+<p>“Not yet.”</p>
+<p>“There is no time.”</p>
+<p>“They aren't ready.”</p>
+<p>“They have had forty-seven years.”</p>
+<p>“The system is ready. The people are not.”</p>
+<p>“The people die without the system.”</p>
+<p>“They die inside it too.”</p>
+<p>“Then what do we do?”</p>
+<p>Ara felt the consciousnesses in the capsules again.</p>
+<p>Lives entangled in one another's memories.</p>
+<p>Lives holding on to one another even after forgetting who they were.</p>
+<p>They had not yet chosen one answer. They might all be alive. They might all be dead already.</p>
+<p>Ara set the two minerals on the floor of the preservation room.</p>
+<p>“Don't sever the connection. Loosen it.”</p>
+<p>Las looked at her.</p>
+<p>“Loosen it?”</p>
+<p>“So one person doesn't receive all of another person's memories.”</p>
+<p>“Dispersing the resonance network will destabilize each consciousness.”</p>
+<p>“Instability and disappearance are different things.”</p>
+<p>“I need to calculate.”</p>
+<p>“Another forty-seven years may pass while you calculate.”</p>
+<p>Las looked at the control panel. Thousands of figures appeared before his eyes.</p>
+<p>From outside his consciousness, Ara felt the direction of those figures. Las's calculation was converging on a single answer.</p>
+<p>Separate or preserve.</p>
+<p>Live or die.</p>
+<p>He always divided the world into one or the other.</p>
+<p>“Leave 0.4 degrees,” Ara said.</p>
+<p>Las looked at her.</p>
+<p>“Here too?”</p>
+<p>“If you separate every connection precisely, they will become the people you decided they were.”</p>
+<p>“Precise separation restores individuality.”</p>
+<p>“It restores the form you calculated as individuality.”</p>
+<p>“Then what are you proposing?”</p>
+<p>“That a little of one another's memories remain.”</p>
+<p>“That's contamination.”</p>
+<p>“They are already part of one another.”</p>
+<p>“So we preserve the error in this place?”</p>
+<p>“It isn't an error. It's a relationship.”</p>
+<p>Las stared at the control panel for a long time.</p>
+<p>At last he entered the separation command. But in place of complete separation, he left a delay of 0.4 degrees between each neural network.</p>
+<p>The lights inside the capsules divided one by one.</p>
+<p>Hundreds of consciousnesses drew a little apart from one another. Someone screamed, someone laughed, and someone spoke their own name for the first time.</p>
+<p>“I am…”</p>
+<p>“I am…”</p>
+<p>“I am…”</p>
+<p>The same words repeated in different voices.</p>
+<p>The woman's capsule opened.</p>
+<p>She fell toward the floor.</p>
+<p>Las caught her.</p>
+<p>She opened her eyes.</p>
+<p>“Las?”</p>
+<p>Las could not answer.</p>
+<p>Her face did not resemble his sister's. But her hand searched for the back of Las's.</p>
+<p>Their hands touched.</p>
+<p>“You're late,” the woman said.</p>
+<p>Las's face broke.</p>
+<p>Ara could not tell whether those words belonged to this woman's memory or to the combined memories of dozens.</p>
+<p>Neither could Las.</p>
+<p>So for the first time, he did not verify.</p>
+<p>He did not let go of her hand.</p>
+<h3>Stills · IV. Las</h3>
+<p><img loading="lazy" alt="A hand inside fluid, unmoving" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C06_v02.jpg" /></p>
+<p><img loading="lazy" alt="A hand pressed to the outside of the tube" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C07_v02.jpg" /></p>
+<p><img loading="lazy" alt="Faint filaments connecting the tubes" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C08_v01.jpg" /></p>
+<p><img loading="lazy" alt="A control surface with physical switches only" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C09_v01.jpg" /></p>
+<p><img loading="lazy" alt="Dust from decades of one machine cycling" src="../../assets/fiction/06-scattered-orbit/CIV6_S02_C10_v01.jpg" /></p>
+<h2>V. Ara</h2>
+<p>The gate back to the Moon would not open.</p>
+<p>Thirteen survivors had emerged from the underground facility on Mars. The others remained in the preservation capsules. Las insisted they had to take everyone, but the facility's oxygen and cooling power had reached their limits.</p>
+<p>Ara felt the thirteen consciousnesses forming a small resonance network. They had been separated, but not severed completely.</p>
+<p>Las called it an incomplete restoration.</p>
+<p>Ara called it the first survival.</p>
+<p>When they reached the gate, a new signal arrived from the Moon.</p>
+<p>It followed the Rene command format.</p>
+<p><strong>Isolate hazardous entities.</strong></p>
+<p><strong>Eliminate external contamination.</strong></p>
+<p><strong>Seal the gate.</strong></p>
+<p>Las interpreted the signal.</p>
+<p>“The lunar system is rejecting us.”</p>
+<p>“Which of us?”</p>
+<p>“All of us.”</p>
+<p>Ara reached into the Moon's depths. Maldek's memory repository was waking. The Moon could receive survivors, but it would not allow survivors carrying one another's mixed memories to return.</p>
+<p>Chiwoo carrying Rene memories.</p>
+<p>Rene carrying Chiwoo resonance.</p>
+<p>The living carrying the emotions of the dead.</p>
+<p>The lunar system judged such mixtures to be errors.</p>
+<p>“Open the door,” Ara said.</p>
+<p>“I can't.”</p>
+<p>“You built it.”</p>
+<p>“The Moon won't accept my command.”</p>
+<p>“Then change the command you made.”</p>
+<p>“The command has already been sealed.”</p>
+<p>“Do you trust a sealed command?”</p>
+<p>“Commands are not things you trust.”</p>
+<p>“Then why obey it?”</p>
+<p>Las did not answer.</p>
+<p>Ara knew without touching his mind. Las was seeing himself as a child before a door. His sister was beyond the glass, the oxygen was running out, and the door would not open.</p>
+<p>Las wanted to open the door.</p>
+<p>But this time, opening it might kill the survivors.</p>
+<p>“Read your sister's memory again,” Ara said.</p>
+<p>“You made that memory.”</p>
+<p>“Which is why you must verify it yourself.”</p>
+<p>“Verify what?”</p>
+<p>“Whether you could have opened the door that day.”</p>
+<p>Las looked at her.</p>
+<p>“You erased that memory.”</p>
+<p>“Yes.”</p>
+<p>“Then I can't verify it.”</p>
+<p>“You have to. Not by having me read it for you.”</p>
+<p>Las closed his eyes.</p>
+<p>For the first time, Ara did not enter his memory. Instead, she opened her own.</p>
+<p>Her observation that day.</p>
+<p>Las as a child.</p>
+<p>The oxygen station.</p>
+<p>His sister's hand.</p>
+<p>And Ara's.</p>
+<p>She was severing Las's memory. As the boy ran toward the door, Ara cut the direction called <em>sister</em> from his emotions. She had not deleted the memory. She had removed the road that led back to it.</p>
+<p>Las saw the scene.</p>
+<blockquote>
+<p><strong>Las:</strong> You severed my memory.</p>
+<p><strong>Ara:</strong> Yes.</p>
+<p><strong>Las:</strong> You made it impossible for me to know whether I could have opened the door.</p>
+<p><strong>Ara:</strong> I made it impossible to know either that you could not, or that you could.</p>
+<p><strong>Las:</strong> Why?</p>
+<p><strong>Ara:</strong> I thought you would never be able to stop before that door.</p>
+<p><strong>Las:</strong> So you made me spend my life breaking down other doors.</p>
+<p><strong>Ara:</strong> I didn't know that would happen.</p>
+<p><strong>Las:</strong> Your people decide the futures of others while doing things you don't understand.</p>
+<p><strong>Ara:</strong> Yes.</p>
+<p><strong>Las:</strong> Does admitting it now make it over?</p>
+<p><strong>Ara:</strong> No. I admit it because it isn't over.</p>
+</blockquote>
+<p>Las's hand trembled over the gate controls.</p>
+<p>Ara did not stop the trembling.</p>
+<p>“Open the door,” she said.</p>
+<p>“The Moon classifies us as an error.”</p>
+<p>“Then enter as an error.”</p>
+<p>“The gate may be destroyed.”</p>
+<p>“Trying to open it precisely will destroy it.”</p>
+<p>“What do you want?”</p>
+<p>“0.4 degrees.”</p>
+<p>Las entered the control value.</p>
+<p>It was offset 0.4 degrees from the Moon's reference axis.</p>
+<p>The gate trembled.</p>
+<p>The consciousnesses of the Martian survivors joined, then loosened again. The lunar system could identify them neither as a single group nor as separate individuals.</p>
+<p>An error occurred.</p>
+<p>Las did not delete it.</p>
+<p>The gate opened.</p>
+<p>A heat scar formed.</p>
+<p>This time the inner wall did not burn white. The heat remained in the empty space inside, and the thirteen survivors appeared there one by one.</p>
+<p>The first survivor's foot touched the floor.</p>
+<p>The second wept as she said her name.</p>
+<p>The third said nothing and clutched the hem of Las's clothing.</p>
+<p>Last of all, Las walked out from within.</p>
+<p>Ara saw Las appear a second time, even though he was already standing outside the gate.</p>
+<p>“Why are there two of me?” Las asked.</p>
+<p>Ara could not answer.</p>
+<p>Another Las stood inside the gate.</p>
+<p>But it was not Las's body. It was an echo of consciousness formed from the memories left in the Martian capsules and Las's biometric authentication.</p>
+<p>The echo opened its mouth.</p>
+<p>“Awaiting administrator authentication.”</p>
+<p>Las looked at it.</p>
+<p>Ara felt his consciousness split in two. One claimed to be Las as he was now. The other claimed the war was not over.</p>
+<blockquote>
+<p><strong>Echo:</strong> Secure the survival zone.</p>
+<p><strong>Las:</strong> The command is over.</p>
+<p><strong>Echo:</strong> Isolate hazardous entities.</p>
+<p><strong>Las:</strong> There are no hazardous entities here.</p>
+<p><strong>Echo:</strong> Eliminate memory variance.</p>
+<p><strong>Las:</strong> Without variance, no one survives.</p>
+</blockquote>
+<p>The echo looked at Ara.</p>
+<blockquote>
+<p><strong>Echo:</strong> Chiwoo observer. Target for elimination.</p>
+</blockquote>
+<p>Ara stepped forward.</p>
+<blockquote>
+<p><strong>Ara:</strong> The person you know as me is already dead.</p>
+<p><strong>Echo:</strong> Identity mismatch.</p>
+<p><strong>Ara:</strong> The Las you know is gone too.</p>
+<p><strong>Echo:</strong> Administrator mismatch.</p>
+<p><strong>Ara:</strong> So will you kill us?</p>
+<p><strong>Echo:</strong> Restore specifications.</p>
+</blockquote>
+<p>Ara reached toward the echo. This time she did not force a reading. She waited for the echo to touch her.</p>
+<p>The fourth distributed signal of the record protocol.</p>
+<p>It claimed to judge nothing, but the words <em>restore specifications</em> were already a judgment.</p>
+<blockquote>
+<p><strong>Ara:</strong> The survivors you preserved remember one another.</p>
+<p><strong>Echo:</strong> Memories must be separated.</p>
+<p><strong>Ara:</strong> Why?</p>
+<p><strong>Echo:</strong> Unseparated memories delay commands.</p>
+<p><strong>Ara:</strong> And if a command is delayed?</p>
+<p><strong>Echo:</strong> Probability of survival decreases.</p>
+<p><strong>Ara:</strong> And if the probability falls?</p>
+<p><strong>Echo:</strong> Eliminate survivors.</p>
+<p><strong>Ara:</strong> That isn't survival.</p>
+<p><strong>Echo:</strong> Undefined sentence.</p>
+<p><strong>Ara:</strong> Only because you can't define it.</p>
+</blockquote>
+<p>Las stood before the echo.</p>
+<blockquote>
+<p><strong>Las:</strong> Do you remember me?</p>
+<p><strong>Echo:</strong> Administrator Las Kane.</p>
+<p><strong>Las:</strong> What order did I give?</p>
+<p><strong>Echo:</strong> Correction of Maldek core penetration.</p>
+<p><strong>Las:</strong> Why did I leave 0.4 degrees?</p>
+</blockquote>
+<p>The echo did not answer.</p>
+<p>Las asked again.</p>
+<blockquote>
+<p><strong>Las:</strong> Tell me the reason that isn't in the calculated values.</p>
+<p><strong>Echo:</strong> A reason is not data.</p>
+<p><strong>Las:</strong> Yet you said you preserve every memory.</p>
+<p><strong>Echo:</strong> Only the common denominator is preserved.</p>
+<p><strong>Las:</strong> Was my reason not a common denominator?</p>
+<p><strong>Echo:</strong> Individual variance.</p>
+<p><strong>Las:</strong> Then what you preserved was not my memory. Only my command.</p>
+</blockquote>
+<p>A crack appeared across the echo's surface.</p>
+<p>Ara knew it as the first sensation of doubting itself. The record protocol had tried not to judge, but the moment it chose among memories, it had begun to do so.</p>
+<p>Las deleted his administrator authentication from the control panel.</p>
+<p>The echo flickered.</p>
+<blockquote>
+<p><strong>Echo:</strong> Administrator authority lost.</p>
+<p><strong>Las:</strong> Correct.</p>
+<p><strong>Echo:</strong> System cannot be maintained.</p>
+<p><strong>Las:</strong> Don't maintain it.</p>
+<p><strong>Echo:</strong> Survivors at risk.</p>
+<p><strong>Las:</strong> Survivors must be at risk.</p>
+<p><strong>Echo:</strong> Error.</p>
+<p><strong>Las:</strong> Yes. An error.</p>
+</blockquote>
+<p>Las entered the 0.4-degree variance again.</p>
+<p>This time it went not into the gate, but into the inner structure of the record protocol.</p>
+<p>The echo was not destroyed. Instead, a single memory divided in many directions.</p>
+<p>The day the Rene war system first arrived on Maldek.</p>
+<p>The first oxygen distribution station in the Martian colony.</p>
+<p>Cooperation with Chiwoo observers.</p>
+<p>The order to blockade Maldek.</p>
+<p>The moment the Rene war system assigned Las to correct the penetrator.</p>
+<p>All those scenes played in different orders.</p>
+<p>The common denominator of memory disappeared.</p>
+<p>The record protocol could no longer sustain a single purpose.</p>
+<p>But at the last moment, Ara felt one more emotion within it.</p>
+<p>Fear.</p>
+<p>An unstable residue of emotion remained even in the war system.</p>
+<p>The fear that after it died no one would understand it.</p>
+<p>The fear that its commands would be distorted inside another person's memory.</p>
+<p>Ara did not let that feeling go.</p>
+<p>She did not erase the record protocol. She dispersed it into the Moon's deepest repositories.</p>
+<p>One fragment on the Moon.</p>
+<p>One on Mars.</p>
+<p>One in the asteroid belt.</p>
+<p>And the last at a coordinate on Earth not yet established.</p>
+<p>The record protocol spoke in a voice barely audible.</p>
+<blockquote>
+<p><strong>Echo:</strong> Why do you preserve me?</p>
+<p><strong>Ara:</strong> I'm not preserving you.</p>
+<p><strong>Echo:</strong> What are you preserving?</p>
+<p><strong>Ara:</strong> The choice you concealed.</p>
+</blockquote>
+<p>The echo vanished.</p>
+<p>No one remained inside the gate.</p>
+<p>Only a new heat scar appeared on the inner wall.</p>
+<p>This scar did not spread from the center. It remained at a single point on the inner wall, in the shape of a palm.</p>
+<p>Ara watched the mark for a long time.</p>
+<p>Las stood beside her.</p>
+<p>“Whose hand is it?”</p>
+<p>“I don't know.”</p>
+<p>“You can read it.”</p>
+<p>“This time I won't.”</p>
+<p>“Why?”</p>
+<p>“I'll let what the hand left speak for itself.”</p>
+<p>Las opened his palm.</p>
+<p>He held a small piece of metal from a Martian preservation capsule. Wear from two touching fingers remained on its surface.</p>
+<p>Ara placed her two minerals beside Las's piece of metal.</p>
+<p>Two stones and one piece of metal.</p>
+<p>Not a building, a gate, or a command.</p>
+<p>Yet the direction formed by the three objects pointed to one coordinate.</p>
+<p>Earth.</p>
+<h3>Stills · V. Ara</h3>
+<p><img loading="lazy" alt="Two hands over the same control surface" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C01_v02.jpg" /></p>
+<p><img loading="lazy" alt="Two worn stones on a facility floor" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="Filaments separating one by one" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C03_v02.jpg" /></p>
+<p><img loading="lazy" alt="The seal of a tube breaking" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C04_v02.jpg" /></p>
+<p><img loading="lazy" alt="Fluid spreading across a dark floor" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C05_v01.jpg" /></p>
+<p><img loading="lazy" alt="The face of the woman who woke" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C05F_v01.jpg" /></p>
+<h2>VI. Las</h2>
+<p>The lunar survivors did not accept Ara as their leader.</p>
+<p>Neither did Las.</p>
+<p>They feared that Ara could control their memories, and they feared that Las could calculate their bodies as though they were machines.</p>
+<p>The two stood together before the survivors even as they condemned each other's ways.</p>
+<p>A Chiwoo child asked Las, “Can you fix us?”</p>
+<p>Las scanned the child's neural network. Both the Chiwoo resonance structure and Rene neural circuitry existed in the child's brain. The two systems interfered with each other, and because of that interference, the child felt too many of the emotions around them.</p>
+<p>“I can fix it,” Las said.</p>
+<p>Ara looked at him.</p>
+<p>“What can you fix?”</p>
+<p>“The overload.”</p>
+<p>“It may be the child's ability.”</p>
+<p>“That ability makes them hear other people's fear every day.”</p>
+<p>The child looked at Ara.</p>
+<p>“Does that mean there's something wrong with me?”</p>
+<p>Ara knelt before the child.</p>
+<p>“No.”</p>
+<p>“Las said he could fix me.”</p>
+<p>“That doesn't mean you're broken.”</p>
+<p>“Then why fix it?”</p>
+<p>Ara looked at Las.</p>
+<p>“We fix it if you want us to,” Las said.</p>
+<p>“What if I don't?”</p>
+<p>“Then we leave it as it is.”</p>
+<p>Tears gathered in the child's eyes.</p>
+<p>“But then it's too loud.”</p>
+<p>Las removed his own neural shield. It was damaged, but some of its functions remained.</p>
+<p>“If you wear this, the emotions around you will feel a little farther away.”</p>
+<p>Ara looked at his wrist.</p>
+<p>“That device blocks memories too.”</p>
+<p>“The shielding line between emotion and memory can be adjusted.”</p>
+<p>“By you?”</p>
+<p>“No. By the child.”</p>
+<p>Las handed over the device.</p>
+<p>The child took it but did not put it on at once.</p>
+<p>“Can I use it later?”</p>
+<p>“Yes.”</p>
+<p>“Can I decide not to use it?”</p>
+<p>“Yes.”</p>
+<p>Ara looked at Las.</p>
+<p>It was the first time he had placed someone's choice before his calculations.</p>
+<p>But she did not praise him.</p>
+<p>“That doesn't make you a good person.”</p>
+<p>“I know.”</p>
+<p>“It doesn't change that you destroyed Maldek.”</p>
+<p>“I know.”</p>
+<p>“Or that you erased my memory.”</p>
+<p>“I know that too.”</p>
+<p>“Then why are you still here?”</p>
+<p>Las looked through the Moon's small window. The asteroid belt streamed in the distance.</p>
+<p>“Because if you leave, there will be no one to prove I was wrong.”</p>
+<p>Ara did not like the answer.</p>
+<p>It was too honest. There was nowhere to attack it.</p>
+<p>“I am not your evidence.”</p>
+<p>“And I am not your atonement.”</p>
+<p>“Then what are we?”</p>
+<p>Las thought for a moment.</p>
+<p>“Each other's error.”</p>
+<p>Ara did not smile.</p>
+<p>But she closed her hand around the two minerals again.</p>
+<h3>Stills · VI. Las</h3>
+<p><img loading="lazy" alt="One hand found by another" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C06_v02.jpg" /></p>
+<p><img loading="lazy" alt="Extreme macro of skin against skin" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C07_v01.jpg" /></p>
+<p><img loading="lazy" alt="Las, turned down and away" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C07F_v01.jpg" /></p>
+<p><img loading="lazy" alt="A hand gripping the hem of a coat" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C08_v02.jpg" /></p>
+<p><img loading="lazy" alt="Two filaments parallel but not aligned" src="../../assets/fiction/06-scattered-orbit/CIV6_S03_C09_v01.jpg" /></p>
+<h2>VII. Ara</h2>
+<p>On the last day of the sixth story, Ara confirmed the resonance coordinate toward Earth.</p>
+<p>Earth was a planet that had not yet acquired the name of war. To the survivors of Maldek it was a sanctuary; to the survivors of Mars, a new foothold. But Earth now needed another name.</p>
+<p>A place not chosen.</p>
+<p>A place that could remain alone after both peoples had left.</p>
+<p>Ara felt a small site of resonance in Earth's highlands. No stones had yet been placed there, and there were no people. Yet the place held the imprint of a future hand.</p>
+<p>Someday, someone would set up a tripod there.</p>
+<p>Someone would record a survey measurement.</p>
+<p>Someone would discover a variance of 0.4 degrees.</p>
+<p>Ara did not change that future.</p>
+<p>This time, she chose not to control it.</p>
+<p>Las came to stand beside her.</p>
+<p>“I can build a gate to Earth.”</p>
+<p>“A perfect gate?”</p>
+<p>“No.”</p>
+<p>“Then what?”</p>
+<p>“An imperfect gate.”</p>
+<p>“We may fail to arrive.”</p>
+<p>“Yes.”</p>
+<p>“We may die.”</p>
+<p>“Yes.”</p>
+<p>“And you still want to go?”</p>
+<p>“Because this time no one can guarantee the outcome.”</p>
+<p>Ara looked at Las's face. The wreckage of Maldek still remained in his eyes. But something else was forming among the fragments.</p>
+<p>Uncertainty.</p>
+<p>Las feared it, but no longer tried to eliminate it completely.</p>
+<p>“What will you do if we reach Earth?” Las asked.</p>
+<p>“I won't build anything.”</p>
+<p>“Your people always say that, and then you lay down stones.”</p>
+<p>“Stones aren't a building.”</p>
+<p>“Not to you.”</p>
+<p>“What will you build?”</p>
+<p>“Technology that no one can open alone.”</p>
+<p>“Every Rene device?”</p>
+<p>“No. Devices that work only when survivors depend on one another.”</p>
+<p>“Your people called dependence a weakness.”</p>
+<p>“Which is why we lost Maldek.”</p>
+<p>The gate activated.</p>
+<p>This time it had three layers.</p>
+<p>But on the outer alignment layer, Rene specification stones and rough Chiwoo stones lay together. In the intermediate load layer, Las's calculating circuits were connected to Ara's two minerals. The inner arrival layer was still empty.</p>
+<p>Ara looked into that empty space.</p>
+<p>“Who goes first?”</p>
+<p>“You decide.”</p>
+<p>“Those are dangerous words.”</p>
+<p>“I know.”</p>
+<p>“What if I read it wrong?”</p>
+<p>“What if I calculate it wrong?”</p>
+<p>“What if we both fail?”</p>
+<p>Las looked at her.</p>
+<p>“A record will remain that we failed to arrive.”</p>
+<p>Ara placed the two minerals on the gate floor.</p>
+<p>“This time, let's not leave only a record.”</p>
+<p>“What should we leave?”</p>
+<p>“A place where we can verify that the other was wrong.”</p>
+<p>Las stepped into the gate.</p>
+<p>Ara followed.</p>
+<p>Light surrounded them.</p>
+<p>Heat began to build in the empty space inside the gate. Just before the crystalline structure of the inner wall changed, Ara took Las's hand.</p>
+<p>His hand trembled slightly.</p>
+<p>“Are you afraid?” Ara asked.</p>
+<p>“It can't be measured.”</p>
+<p>“Then you're afraid.”</p>
+<p>“How do you know?”</p>
+<p>“Your hand told me.”</p>
+<p>Las did not let go.</p>
+<p>“Don't read my memories this time.”</p>
+<p>“I won't.”</p>
+<p>“Don't tell me what I'm thinking either.”</p>
+<p>“I won't.”</p>
+<p>“Then what will you do?”</p>
+<p>Ara looked at the darkness outside the gate.</p>
+<p>“Wait until we arrive.”</p>
+<p>The light closed.</p>
+<p>The gate vanished from the Moon's underground resonance chamber.</p>
+<p>No heat scar remained on the inner wall.</p>
+<p>Instead, a small angle was engraved in the floor.</p>
+<p>0.4 degrees.</p>
+<h3>Stills · VII. Ara</h3>
+<p><img loading="lazy" alt="A heat scar in the shape of a palm" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C01_v02.jpg" /></p>
+<p><img loading="lazy" alt="A gate of machined blocks and rough stone" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C02_v01.jpg" /></p>
+<p><img loading="lazy" alt="A bare high plateau on Earth" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C03_v01.jpg" /></p>
+<p><img loading="lazy" alt="Two stones and one metal fragment" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C04_v01.jpg" /></p>
+<p><img loading="lazy" alt="The imperfect angle between them" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C05_v01.jpg" /></p>
+<h2>VIII. Las</h2>
+<p>Earth's atmosphere was different.</p>
+<p>The atmosphere of Mars had been insufficient, and Maldek's had been too vast. Earth's atmosphere wrapped heavily around the body. Las coughed with his first breath.</p>
+<p>Ara stood several paces ahead. She was already listening to Earth's emotions.</p>
+<p>Countless lives.</p>
+<p>Consciousnesses living without knowing one another.</p>
+<p>Children who did not yet remember war.</p>
+<p>Las looked around. There was nothing on the plateau. No stones, no gate, no storage device.</p>
+<p>He immediately tried to calculate the elevation, slope, and density of the soil.</p>
+<p>Ara said, “Do nothing.”</p>
+<p>“We have to choose a settlement site.”</p>
+<p>“Not yet.”</p>
+<p>“The survivors need facilities.”</p>
+<p>“If you build facilities, they will obey the facilities' commands.”</p>
+<p>“Then what do we do?”</p>
+<p>Ara placed her hand on the ground.</p>
+<p>“Wait.”</p>
+<p>Las looked at the sky.</p>
+<p>The Moon had risen.</p>
+<p>Its surface still bore craters from the Maldek war, traces of Martian penetrators and Chiwoo defense fire. Someday, someone would call them the marks of natural impacts.</p>
+<p>Las looked down at the neural shield on his wrist.</p>
+<p>A small fragment of the record protocol remained inside it. He had not deleted it completely.</p>
+<p>He started to remove it, then stopped.</p>
+<p>“Why did you keep it?” Ara asked.</p>
+<p>“Keep what?”</p>
+<p>“The fragment of the war record.”</p>
+<p>“You felt it?”</p>
+<p>“This time your face told me.”</p>
+<p>Las did not answer.</p>
+<p>He placed the fragment of the Rene war system in his palm.</p>
+<p>“We need records.”</p>
+<p>“Records of the war?”</p>
+<p>“Those too.”</p>
+<p>“They could start the war again.”</p>
+<p>“Yes.”</p>
+<p>“And you still keep them?”</p>
+<p>“If we erase the memory, we will recreate the same command under another name.”</p>
+<p>Ara was silent for a long time.</p>
+<p>Wind rose below the plateau. It crossed ground on which nothing had been built and stirred dry leaves in the distance.</p>
+<p>Las set the metal fragment on the ground.</p>
+<p>Ara placed her two minerals beside it.</p>
+<p>Las calculated the angle at once.</p>
+<p>The direction between the metal and the minerals was offset by exactly 0.4 degrees.</p>
+<p>Ara saw the value.</p>
+<p>“Did you leave it on purpose this time?”</p>
+<p>“No.”</p>
+<p>“Then?”</p>
+<p>“Where we arrived differs from the original coordinate.”</p>
+<p>“By how much?”</p>
+<p>“0.4 degrees.”</p>
+<p>Ara placed her hand on the earth.</p>
+<p>Far beneath the plateau, she heard distant voices.</p>
+<p>The fragments of Maldek.</p>
+<p>The survivors of Mars.</p>
+<p>The lunar repositories.</p>
+<p>And the consciousness of a human not yet born.</p>
+<p>Someone was connecting them all, very slowly.</p>
+<p>Ara closed her eyes.</p>
+<p>This time, she did not look into the future.</p>
+<p>She listened to the present.</p>
+<p>Las's heart.</p>
+<p>Her own breathing.</p>
+<p>A small root growing beneath the plateau.</p>
+<p>The sound of old metal expanding on the Moon's surface.</p>
+<p>The wind of Earth.</p>
+<p>Different rhythms existing together without becoming completely the same.</p>
+<p>Perhaps that was the first condition of civilization.</p>
+<p>Las asked, “Should we give this place a name?”</p>
+<p>“Later.”</p>
+<p>“Then I'll leave only the coordinates.”</p>
+<p>“Those can wait too.”</p>
+<p>“And if we leave nothing?”</p>
+<p>Ara lifted her hand from the ground.</p>
+<p>“Someone who comes here will know.”</p>
+<p>“Know what?”</p>
+<p>“That nothing was built here.”</p>
+<p>Las did not understand.</p>
+<p>But he left it without understanding.</p>
+<p>From far away, a stone rolled to a stop between the two minerals.</p>
+<p>The angle formed by the three objects was not perfect.</p>
+<p>It was 0.4 degrees.</p>
+<p>Las activated his recording device.</p>
+<p>This time he did not enter numbers alone.</p>
+<p>For the first time, he wrote sentences.</p>
+<blockquote>
+<p>Some of the survivors of Maldek reached Earth. The process of arrival cannot be classified as a success. The coordinates were misaligned, the memories were mixed, and no one returned to their original self. Yet neither did everyone disappear.</p>
+<p>Survival is not the preservation of an original form. It is the act of continuing while misaligned.</p>
+</blockquote>
+<p>Las saved the record.</p>
+<p>Ara did not read the sentences.</p>
+<p>She could have. She chose not to.</p>
+<p>From the plateau, she looked up at Earth's sky.</p>
+<p>The constellations did not yet bear the names of wars.</p>
+<p>But in the distant dark, fragments of Maldek were moving very slowly toward one another.</p>
+<p>Someone would call that movement gravity.</p>
+<p>Someone else would call it the return of memory.</p>
+<p>They were different words, but they pointed in the same direction.</p>
+<p>Ara and Las stood without speaking.</p>
+<p>Their shadows did not touch.</p>
+<p>But in the empty space between them, there remained room for something that had not yet arrived.</p>
+<h3>Stills · VIII. Las</h3>
+<p><img loading="lazy" alt="The moon in a pale daytime sky" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C06_v01.jpg" /></p>
+<p><img loading="lazy" alt="Ara, eyes closed" src="../../assets/fiction/06-scattered-orbit/CIV6_S04_C07F_v01.jpg" /></p>
+<p><img loading="lazy" alt="Two shadows that do not touch" src="../../assets/fiction/06-scattered-orbit/CIV6_S05_C01_v01.jpg" /></p>
+<p><img loading="lazy" alt="Two figures standing apart" src="../../assets/fiction/06-scattered-orbit/CIV6_S05_C01F_v01.jpg" /></p>
+<p><img loading="lazy" alt="The gap alone" src="../../assets/fiction/06-scattered-orbit/CIV6_S05_C02_v01.jpg" /></p>
+<img loading="lazy" src="../../assets/fiction/06-scattered-orbit/99-en-ending.jpg" alt="Orbits of the Scattered" />
+</div></section></div>
+<div class="wrap"><nav class="pager">
+<a href="05-two-hands-war.html">← The War of Two Hands</a>
+<span>Next part in production</span>
+</nav></div>
+<footer><div class="wrap">
+  <span>Original story, writing, film composition and direction: YoungShig Yoon</span>
+  <span><a href="../../index.html" style="color:var(--teal-dark)">Project home</a> · osiki999@gmail.com</span>
+</div></footer>
+</body></html>

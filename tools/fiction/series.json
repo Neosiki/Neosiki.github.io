@@ -203,6 +203,43 @@
         },
         "blogUrl": ""
       }
+    },
+    {
+      "no": 6,
+      "slug": "06-scattered-orbit",
+      "titleKo": "흩어진 자들의 궤도",
+      "titleEn": "Orbits of the Scattered",
+      "seriesLabel": "문명 연작 제6편",
+      "logline": "행성이 사라진 뒤에도 몸은 자신이 살던 세계를 계속 믿는다. 살아남은 자들이 조각난 궤도 위에서 무엇을 지키려 했는가.",
+      "synopsis": "말데크는 이미 소행성대의 일부가 되었다. 아라는 달이 될 위성의 지하 공명실에서 치우 생존자들의 기억을 붙잡고 있고, 라스는 화성의 보존실에서 47년 동안 열리지 않은 문 앞에 선다. 《흩어진 자들의 궤도》는 서로를 대체할 수 없는 두 종족이 각자의 방식으로 살아남은 자를 붙드는 이야기다. 연작에서 처음으로 인물의 얼굴이 화면에 나온다. 그리고 그 얼굴은 찾던 얼굴이 아니다.",
+      "theme": "세계가 사라진 뒤에도 남는 것은 무엇인가",
+      "runtime": "7분 10초",
+      "published": "2026.09",
+      "coverImage": "00-cover.jpg",
+      "endImage": "99-ending.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "https://blog.naver.com/osiki111/224403236327",
+        "note": "한국어 자막 영상 · 같은 글에 소설 전문 게재"
+      },
+      "manuscriptKo": "06-scattered-orbit.md",
+      "manuscriptEn": "06-scattered-orbit.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 6",
+        "logline": "After the planet is gone, the body goes on believing in the world it lived in. What did the survivors try to hold on to, out on a broken orbit?",
+        "synopsis": "Maldek is already part of the asteroid belt. Ara sits in the underground resonance chamber of the satellite that will become the Moon, holding the memories of the Chiwoo survivors, while Las stands before a door on Mars that has not opened in forty-seven years. Orbits of the Scattered follows two peoples who cannot replace each other, each holding on to survivors in their own way. For the first time in the cycle a face appears on screen. It is not the face that was being looked for.",
+        "theme": "What remains after a world is gone?",
+        "runtime": "7 min 10 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "https://blog.naver.com/osiki111/224403396433",
+          "note": "English subtitles · full text in the same post"
+        },
+        "blogUrl": ""
+      }
     }
   ]
 }
