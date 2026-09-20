@@ -15,7 +15,15 @@
       "lead": "If the record survives, does the civilization begin again?",
       "intro": "A file that still answers after the humans are gone. A groove pressed into the back of a sheet of paper. An error older than people that improves the sentence when corrected. A 0.4-degree deviation that refuses to scatter. The Civilization Cycle follows records left in different eras and different media, asking what it is that carries a civilization forward. Each part is made as both a short story and a film, across twelve parts in all.",
       "credit": "Original story, writing, film composition and direction: YoungShig Yoon"
-    }
+    },
+    "keyVisual": {
+      "src": "assets/fiction/_war/hub-key-visual.jpg",
+      "altKo": "같은 각으로 기울어 정렬한 관문들",
+      "captionKo": "스물세 개의 관문은 전부 같은 각으로 기울어 있다. 흩어지지 않는 오차는 오차가 아니라 값이다.",
+      "altEn": "Gates holding formation, every one tilted by the same angle",
+      "captionEn": "Twenty-three gates, every one tilted by the same small angle. An error that does not scatter is not an error but a value."
+    },
+    "ogImage": "assets/og/og-fiction.jpg"
   },
   "works": [
     {

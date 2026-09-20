@@ -1,0 +1,104 @@
+{
+  "titleKo": "문명 연작 세계관",
+  "titleEn": "The World of the Civilization Cycle",
+  "leadKo": "두 종족, 세 겹의 관문, 흩어지지 않는 0.4도.",
+  "leadEn": "Two peoples, a gate of three layers, and a 0.4 degree that does not scatter.",
+  "introKo": "문명 연작에 나오는 설정을 한자리에 모았습니다. 공개된 편에서 확인된 것만 적었고, 아직 읽지 않은 분이 봐도 이야기의 결말은 드러나지 않습니다.",
+  "introEn": "This page gathers the settings that appear in the Civilization Cycle. It records only what the published parts confirm, and gives away no endings to anyone who has not read them yet.",
+  "heroImage": "assets/fiction/_world/w-05-ring-angle.jpg",
+  "heroAltKo": "정렬선이 새겨진 관문 구조물",
+  "heroAltEn": "A gate structure engraved with alignment lines",
+  "sections": [
+    {
+      "image": "assets/fiction/_world/w-07-resonance-field.jpg",
+      "ko": {
+        "title": "두 종족",
+        "body": "치우와 르네는 이름부터 역설로 지어졌다. 치우는 전쟁의 신이지만 무기를 만들지 않는다. 르네는 문화의 신이지만 행성의 핵을 관통하는 것을 만든다.\n\n한쪽이 정신을 쓰고 다른 쪽이 기술을 쓰는 것이 아니다. 두 종족 모두 감응과 축조를 함께 가지고 있었고, 종족 특성상 주력으로 삼은 쪽이 달랐을 뿐이다. 치우는 여럿이 동시에 느끼는 방식으로 판단하고, 르네는 여럿이 동시에 계산하는 방식으로 판단한다.",
+        "caption": "치우의 감응망. 직선이 하나도 없다."
+      },
+      "en": {
+        "title": "Two Peoples",
+        "body": "Chiwoo and Rene were named as paradoxes. Chiwoo is a god of war who builds no weapons. Rene is a god of culture who builds a thing that passes through the core of a planet.\n\nIt is not that one side uses mind and the other uses technology. Both peoples held resonance and construction together; they differed only in which one they made their strength. Chiwoo judges by many feeling at once. Rene judges by many calculating at once.",
+        "caption": "The Chiwoo resonance field. Not one straight line in it."
+      }
+    },
+    {
+      "image": "assets/fiction/_world/w-04-ring-section.jpg",
+      "ko": {
+        "title": "관문은 세 겹이다",
+        "body": "바깥이 정렬층, 가운데가 하중층, 안쪽이 도착층이다. 정렬층은 기준을 들고 있고, 하중층은 무게를 읽고, 도착층은 비어 있다.\n\n안쪽이 비어 있는 것이 이 구조물의 정체다. 무기를 싣는 자리가 아니라 도착이 실현되는 자리이기 때문이다. 관문은 뚫리는 것이 아니라 열린다. 열릴 때 빛이 새지 않고, 테두리도 생기지 않는다. 같은 자리를 찍은 두 장면의 검정이 서로 다른 검정일 뿐이다.",
+        "caption": "관문의 단면. 안쪽 층에는 아무것도 지어져 있지 않다."
+      },
+      "en": {
+        "title": "A Gate of Three Layers",
+        "body": "An alignment layer outside, a load layer in the middle, an arrival layer within. The alignment layer holds the standard, the load layer reads weight, and the arrival layer is empty.\n\nThat emptiness is what the structure is. It is not a place to carry a weapon but a place where arrival is realised. A gate is not breached; it opens. Nothing spills out when it does, and no rim appears. Two images of the same place simply hold two different blacks.",
+        "caption": "A gate in cross section. Nothing is built inside the innermost layer."
+      }
+    },
+    {
+      "image": "assets/fiction/_world/w-03-ring-surface.jpg",
+      "ko": {
+        "title": "읽는 방식이 곧 여는 방식이다",
+        "body": "르네는 문자를 쓰지 않는다. 표면에 새겨진 것은 글자가 아니라 선의 깊이와 간격이다. 그래서 그것을 읽으려면 다시 눌러봐야 한다. 같은 압력, 같은 각도, 같은 순서로.\n\n누르는 것으로 적혀 있으니 누르는 것으로 읽어야 하고, 누르면 열린다. 만든 쪽은 그것을 숨기지 않았다. 저것을 읽을 줄 아는 자는 이미 저것을 열 자격이 있다고 보았을 것이다.",
+        "caption": "표면의 규격선. 한 뼘에 선 서른."
+      },
+      "en": {
+        "title": "To Read It Is to Open It",
+        "body": "Rene do not write in letters. What is cut into the surface is not script but the depth and spacing of lines. To read it you must press it again — the same pressure, the same angle, the same order.\n\nIt was written by pressing, so it must be read by pressing, and pressing opens it. The builders did not hide this. Anyone able to read the thing, they must have reasoned, already had the right to open it.",
+        "caption": "Standard lines on the surface. Thirty to a hand's width."
+      }
+    },
+    {
+      "image": "assets/fiction/_world/w-01-gates-formation.jpg",
+      "ko": {
+        "title": "0.4도",
+        "body": "오차에는 성격이 있다. 같은 것을 열 번 재면 값이 열 개 나오고, 그 열 개는 어떤 중심을 둘러싸고 흩어진다. 중심을 찾는 것이 측량이다.\n\n그런데 열 번을 재도 열 번 다 같은 쪽으로 같은 만큼 어긋나는 경우가 있다. 흩어지지 않는 오차는 오차가 아니다. 값이다. 그리고 값은 누가 넣은 것이다.",
+        "caption": "관문들은 전부 같은 각으로 기울어 있다. 하나만이 아니라 전부 똑같이."
+      },
+      "en": {
+        "title": "Zero Point Four Degrees",
+        "body": "An error has a character. Measure the same thing ten times and you get ten values, and those ten scatter around some centre. Finding the centre is what surveying is.\n\nBut sometimes ten measurements all fall the same way by the same amount. An error that does not scatter is not an error. It is a value. And a value is something someone put there.",
+        "caption": "Every gate is tilted by the same angle. Not one of them — all of them, identically."
+      }
+    },
+    {
+      "image": "assets/fiction/_world/w-06-fleet-over-world.jpg",
+      "ko": {
+        "title": "함대는 추진하지 않는다",
+        "body": "관문을 만들 줄 아는 종족이 엔진을 달 이유가 없다. 르네의 함선에는 배기도 항적도 없고, 앞뒤도 없다. 배가 아니라 떠 있는 구조물이기 때문이다.\n\n이동한다는 것은 그들에게 그 공간에 기준을 세우는 일이다. 그래서 함대가 지나간 자리에는 항적이 아니라 격자가 남는다. 빛나지 않고, 그 선을 지나는 별빛이 아주 조금 밀려 있어서 선이 있다는 것만 알 수 있다.",
+        "caption": "도착한 함대. 지상으로 내려오는 빛은 없다."
+      },
+      "en": {
+        "title": "The Fleet Does Not Propel",
+        "body": "A people who can build a gate have no reason to fit an engine. A Rene vessel has no exhaust, no wake, and no front or back, because it is not a vessel but a structure that floats.\n\nTo move, for them, is to set a standard in that space. So what a fleet leaves behind is not a wake but a grid. It does not glow. The few stars seen through it are displaced very slightly along its lines, and that is the only way to know it is there.",
+        "caption": "A fleet arrived. No light descends to the ground."
+      }
+    },
+    {
+      "image": "assets/fiction/_world/w-08-maldek.jpg",
+      "ko": {
+        "title": "말데크는 터지지 않았다",
+        "body": "행성은 폭발하지 않았다. 먼저 모든 소리가 사라졌다. 그다음, 대륙이 접혔다.\n\n화구도 충격파도 없었다. 지각이 거대한 판으로 갈라지며 서로 멀어지고, 그 사이로 안쪽이 드러났을 뿐이다. 말데크는 지금 소행성대의 일부다. 푸른 돔 도시와 공명탑은 수많은 조각으로 나뉘어 어두운 궤도를 돌고 있다.",
+        "caption": "말데크. 터지는 것이 아니라 접히는 것이다."
+      },
+      "en": {
+        "title": "Maldek Did Not Explode",
+        "body": "The planet did not explode. First every sound went away. Then the continents folded.\n\nThere was no fireball and no blast wave. The crust broke into enormous plates that drew apart, and what was inside showed between them. Maldek is now part of the asteroid belt. Its blue dome cities and resonance towers turn on dark orbits, divided into countless fragments.",
+        "caption": "Maldek. It folds rather than detonates."
+      }
+    },
+    {
+      "image": "assets/fiction/_world/w-09-arrival-axis.jpg",
+      "ko": {
+        "title": "도착은 파괴가 아니다",
+        "body": "오천 년 전 누군가 굳은 가죽 한 장에 이 문장을 눌러 썼다. 그 문장은 마을이 옮겨 갈 때 함께 갔고, 다음 세대가 종이라고 부르는 것으로 옮겼고, 그다음 세대가 또 옮겼다. 옮길 때마다 눌러서 떴고, 옮길 때마다 한 글자씩 어긋났다.\n\n수천 년 뒤 어느 교정자가 그 문장을 받게 된다. 그는 그것을 오식이라고 부를 것이다. 그리고 고치지 않을 것이다.",
+        "caption": "도착. 기록 보관소로 내려오는 축."
+      },
+      "en": {
+        "title": "Arrival Is Not Destruction",
+        "body": "Five thousand years ago someone pressed that sentence into a single sheet of hardened hide. It travelled with the village when the village moved, and a later generation copied it onto what they called paper, and a generation after that copied it again. Each copy was lifted by pressing, and each copy slipped by one character.\n\nThousands of years later a proofreader receives that sentence. He will call it a misprint. And he will not correct it.",
+        "caption": "Arrival. An axis descending toward the archive."
+      }
+    }
+  ]
+}

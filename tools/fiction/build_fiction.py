@@ -9,7 +9,7 @@
 
 새 편 추가는 tools/fiction/README.md 참고.
 """
-import json, os, re, glob, html, sys
+import json, os, re, glob, html, sys, io
 
 ROOT  = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CFG   = os.path.join(ROOT, "tools", "fiction", "series.json")
@@ -97,6 +97,11 @@ HUB_CSS = """
 .hero p.intro{max-width:52rem;color:var(--muted);margin:20px 0 0}
 .progress{display:flex;align-items:baseline;gap:12px;margin-top:30px;font-family:var(--mono);font-size:.8rem;color:var(--muted)}
 .progress b{font-size:1.9rem;color:var(--ink);font-family:var(--display)}
+.keyvis{margin:34px 0 4px;border-radius:14px;overflow:hidden;background:#0d1621;border:1px solid rgba(0,0,0,.08)}
+.keyvis img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.keyvis figcaption{padding:14px 18px 17px;font-size:.84rem;line-height:1.65;color:rgba(255,255,255,.62);font-family:var(--mono)}
+.worldlink{margin:14px 0 0;font-family:var(--mono);font-size:.86rem}
+.worldlink a{color:var(--teal-dark);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0,0,0,.18);padding-bottom:2px}
 .bar{flex:1;max-width:260px;height:6px;background:var(--lime);border-radius:99px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--teal)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(292px,1fr));gap:26px;padding:56px 0 8px}
@@ -159,6 +164,27 @@ WORK_CSS = """
 .pager a{text-decoration:none;font-size:.9rem;color:var(--teal-dark);font-weight:600}
 .pager span{color:var(--muted);font-size:.9rem}
 @media (max-width:860px){ .whero .inner{grid-template-columns:1fr} .whero .txt{padding:38px 22px 42px} }
+"""
+
+WORLD_CSS = """
+.hero{padding:70px 0 44px;background:linear-gradient(180deg,var(--paper-2),var(--paper))}
+.hero h1{font-family:var(--display);font-size:clamp(2rem,5vw,3.1rem);line-height:1.22;margin:12px 0 0;letter-spacing:-.02em}
+.hero .lead{font-family:var(--display);font-size:clamp(1.02rem,2.1vw,1.26rem);color:var(--teal-dark);margin:16px 0 0}
+.hero p.intro{max-width:50rem;color:var(--muted);margin:18px 0 0}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.15em;color:var(--orange)}
+.whero-img{margin:0 0 6px;border-radius:14px;overflow:hidden;background:#0d1621}
+.whero-img img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block}
+.wsec{margin:58px 0 0}
+.wsec .inner{display:grid;grid-template-columns:minmax(0,46%) 1fr;gap:30px;align-items:start}
+.wsec figure{margin:0;border-radius:12px;overflow:hidden;background:#0d1621;border:1px solid rgba(0,0,0,.08)}
+.wsec figure img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.wsec figcaption{padding:11px 14px 14px;font-family:var(--mono);font-size:.76rem;line-height:1.55;color:rgba(255,255,255,.6)}
+.wsec h2{font-family:var(--display);font-size:1.52rem;letter-spacing:-.015em;margin:0 0 14px}
+.wsec p{margin:0 0 14px;line-height:1.85;color:var(--ink)}
+.wsec p:last-child{margin-bottom:0}
+.wback{margin:64px 0 0;padding:26px 0 0;border-top:1px solid rgba(0,0,0,.1)}
+.wback a{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:.84rem;color:var(--teal-dark);text-decoration:none;font-weight:600}
+@media (max-width:820px){ .wsec .inner{grid-template-columns:1fr} .whero-img img{aspect-ratio:16/9} }
 """
 
 def head(lang, title, desc, og, root, hubhref, altko, alten, self_url, pagecss, switch_href):
@@ -316,6 +342,56 @@ def build_work(cfg, i, lang):
     open(out, "w", encoding="utf-8").write("\n".join(doc))
     return out, bool(body), len(gal)
 
+def build_world(cfg, lang):
+    wp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "world.json")
+    if not os.path.exists(wp):
+        return None
+    w = json.load(io.open(wp, encoding="utf-8"))
+    t = T[lang]; s = cfg["series"]; base = cfg["baseUrl"]
+    root   = "../" if lang == "en" else ""
+    page   = "fiction-world.html"
+    switch = ("../" if lang == "en" else "en/") + page
+    altko  = base + "/" + page; alten = base + "/en/" + page
+    title  = w["titleEn"] if lang == "en" else w["titleKo"]
+    lead   = w["leadEn"]  if lang == "en" else w["leadKo"]
+    intro  = w["introEn"] if lang == "en" else w["introKo"]
+    og     = base + "/" + s.get("ogImage", "assets/og/og-fiction.jpg")
+    doc = [head(lang, title, intro[:150], og, root, root + "fiction.html",
+                altko, alten, (alten if lang == "en" else altko), WORLD_CSS, switch)]
+    doc.append('<section class="hero"><div class="wrap">')
+    doc.append('  <div class="eyebrow">%s</div>' % ("SETTING" if lang == "en" else "SETTING · 설정"))
+    doc.append('  <h1>%s</h1>' % html.escape(title))
+    doc.append('  <p class="lead">%s</p>' % html.escape(lead))
+    doc.append('  <p class="intro">%s</p>' % html.escape(intro))
+    doc.append('</div></section>')
+    hi = w.get("heroImage")
+    if hi:
+        alt = w.get("heroAltEn" if lang == "en" else "heroAltKo", "")
+        doc.append('<div class="wrap"><figure class="whero-img"><img src="%s%s" alt="%s" /></figure></div>'
+                   % (root, hi, html.escape(alt)))
+    doc.append('<div class="wrap">')
+    for sec in w["sections"]:
+        c = sec["en"] if lang == "en" else sec["ko"]
+        doc.append('<section class="wsec"><div class="inner">')
+        doc.append('  <figure><img loading="lazy" src="%s%s" alt="%s" />' % (root, sec["image"], html.escape(c["title"])))
+        if c.get("caption"):
+            doc.append('    <figcaption>%s</figcaption>' % html.escape(c["caption"]))
+        doc.append('  </figure>')
+        doc.append('  <div><h2>%s</h2>' % html.escape(c["title"]))
+        for para in c["body"].split("\n\n"):
+            doc.append('    <p>%s</p>' % html.escape(para.strip()))
+        doc.append('  </div>')
+        doc.append('</div></section>')
+    backlabel = "Back to the series" if lang == "en" else "연작 전체 보기"
+    doc.append('<div class="wback"><a href="%sfiction.html">← %s</a></div>' % (root, backlabel))
+    doc.append('</div>')
+    sd = s.get("en", s) if lang == "en" else s
+    doc.append(foot(root, sd.get("credit", s.get("credit", "")), t.get("home", "Home" if lang == "en" else "홈")))
+    out = (os.path.join("en", page) if lang == "en" else page)
+    io.open(os.path.join(ROOT, out), "w", encoding="utf-8").write("\n".join(doc))
+    print("  %-40s 세계관 %d절" % (out, len(w["sections"])))
+    return out
+
 def build_hub(cfg, lang):
     t = T[lang]; s = cfg["series"]; works = cfg["works"]; base = cfg["baseUrl"]
     sd = s.get("en", s) if lang == "en" else s
@@ -324,8 +400,11 @@ def build_hub(cfg, lang):
     hub    = "fiction.html"
     switch = "../fiction.html" if lang == "en" else "en/fiction.html"
     altko  = base + "/fiction.html"; alten = base + "/en/fiction.html"
+    hub_og = s.get("ogImage")
+    hub_og = (base + "/" + hub_og) if hub_og else \
+             ("%s/assets/fiction/%s/%s" % (base, works[0]["slug"], val(works[0], lang, "coverImage")))
     doc = [head(lang, "%s · %s" % (sd["title"], sd["socialTitle"]), sd["intro"][:150],
-                "%s/assets/fiction/%s/%s" % (base, works[0]["slug"], val(works[0], lang, "coverImage")),
+                hub_og,
                 root, hub, altko, alten, (alten if lang == "en" else altko), HUB_CSS, switch)]
     doc.append('<section class="hero"><div class="wrap">')
     doc.append('  <div class="eyebrow">%s</div>' % (t["eyebrow"] % s["planned"]))
@@ -335,6 +414,19 @@ def build_hub(cfg, lang):
     doc.append('  <div class="progress"><b>%d</b><span>%s</span><span class="bar"><i style="width:%.0f%%"></i></span></div>'
                % (len(works), t["progress"] % s["planned"], 100.0 * len(works) / s["planned"]))
     doc.append('</div></section>')
+    kv = s.get("keyVisual")
+    if kv:
+        alt = kv.get("altEn" if lang == "en" else "altKo", "")
+        cap = kv.get("captionEn" if lang == "en" else "captionKo", "")
+        doc.append('<div class="wrap"><figure class="keyvis">')
+        doc.append('  <img src="%s%s" alt="%s" />' % (root, kv["src"], html.escape(alt)))
+        if cap:
+            doc.append('  <figcaption>%s</figcaption>' % html.escape(cap))
+        doc.append('</figure></div>')
+    wlabel = ("Two peoples, a gate of three layers, a 0.4 degree — read the setting"
+              if lang == "en" else "두 종족, 세 겹의 관문, 0.4도 — 세계관 읽기")
+    doc.append('<div class="wrap"><p class="worldlink"><a href="%sfiction-world.html">%s →</a></p></div>'
+               % (root, html.escape(wlabel)))
     doc.append('<div class="wrap"><div class="grid">')
     for w in works:
         title = w["titleKo"] if lang == "ko" else w["titleEn"]
@@ -366,6 +458,7 @@ def main():
             p, has, ng = build_work(cfg, i, lang)
             print("  %-40s 본문 %s · 갤러리 %2d" % (os.path.relpath(p, ROOT), "O" if has else "-", ng))
         print("  %-40s 허브" % os.path.relpath(build_hub(cfg, lang), ROOT))
+        build_world(cfg, lang)
 
 if __name__ == "__main__":
     main()
