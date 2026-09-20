@@ -240,6 +240,154 @@
         },
         "blogUrl": ""
       }
+    },
+    {
+      "no": 7,
+      "slug": "07-second-arrival",
+      "titleKo": "두 번째 도착",
+      "titleEn": "The Second Arrival",
+      "seriesLabel": "문명 연작 제7편",
+      "logline": "열두 살 아이가 전쟁 전체를 멈출 수 있게 되었을 때, 어른들은 그 아이를 무기로 남겨 둘 것인가.",
+      "synopsis": "말데크가 사라진 지 열일곱 해. 지구 고산지대에 정착한 아라와 라스 앞에 치우의 감응망에 응답하는 인간 아이 윤서가 나타난다. 아라에게 그 응답은 두 종족 사이에 열린 문이고, 라스에게는 모든 구조물의 축을 흔드는 오차다. 곧 궤도에 스물세 개의 관문이 열린다. 《두 번째 도착》은 승리를 위해 한 아이를 무기로 남겨 둘 것인지, 다시 조준당하더라도 열두 살의 사람으로 돌려보낼 것인지를 묻는다.",
+      "theme": "아이를 무기로 두지 않기 위해 무엇을 포기할 수 있는가",
+      "runtime": "7분 10초",
+      "published": "2026.09",
+      "coverImage": "00-cover.jpg",
+      "endImage": "99-ending.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "",
+        "note": ""
+      },
+      "manuscriptKo": "07-second-arrival.md",
+      "manuscriptEn": "07-second-arrival.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 7",
+        "logline": "When a twelve-year-old can stop an entire war, will the adults leave her standing as a weapon?",
+        "synopsis": "Seventeen years after Maldek vanished, Ara and Las have settled in Earth's highlands. Then Yunseo, a twelve-year-old human, becomes the first person on Earth to answer the Chiwoo resonance network. To Ara that answer is a door opening between two peoples; to Las it is an error capable of shifting the axis of everything the Rene have built. Soon twenty-three gates open in orbit. The Second Arrival asks whether survival can justify leaving a child as a weapon, or whether she must be returned to herself even when that makes her a target again.",
+        "theme": "What can be given up so that a child is not left as a weapon?",
+        "runtime": "7 min 10 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": ""
+        },
+        "blogUrl": ""
+      }
+    },
+    {
+      "no": 8,
+      "slug": "08-tens-of-thousands",
+      "titleKo": "수만 개의 이유",
+      "titleEn": "Tens of Thousands of Reasons",
+      "seriesLabel": "문명 연작 제8편",
+      "logline": "전쟁의 이유가 수만 개라는 말은 이유가 많다는 뜻이 아니었다.",
+      "synopsis": "지하의 벽에는 문장이 하나뿐이다. 적은 이쪽에 있다. 아이가 감응망에서 옮겨 온 스무 줄은 서로 모순되고, 그중 대부분은 사소하다. 회의를 사흘 미룬 일, 물 배급을 줄이기로 한 해, 그날 자리에 없던 두 사람. 《수만 개의 이유》는 거대한 전쟁의 원인이 얼마나 작은 것들로 이루어져 있는지를 보여주고, 그것을 한 문장으로 줄이는 순간 무엇이 사라지는지를 묻는다.",
+      "theme": "줄이면 전달되고, 줄이면 사라진다",
+      "runtime": "7분 10초",
+      "published": "2026.09",
+      "coverImage": "00-cover.jpg",
+      "endImage": "99-ending.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "",
+        "note": ""
+      },
+      "manuscriptKo": "08-tens-of-thousands.md",
+      "manuscriptEn": "08-tens-of-thousands.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 8",
+        "logline": "To say a war had tens of thousands of reasons was never to say the reasons were many.",
+        "synopsis": "The wall underground carries a single sentence: the enemy is on this side. The twenty lines the child relays out of the resonance network contradict one another, and most of them are small — a meeting postponed three days, a year the water ration was already going to be cut, two people who were not in the room. Tens of Thousands of Reasons shows how little the causes of an enormous war are made of, and asks what disappears the moment they are reduced to one sentence.",
+        "theme": "Reduce it and it travels; reduce it and it is gone",
+        "runtime": "7 min 10 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": ""
+        },
+        "blogUrl": ""
+      }
+    },
+    {
+      "no": 9,
+      "slug": "09-testimony-of-two-hands",
+      "titleKo": "두 손의 증언",
+      "titleEn": "The Testimony of Two Hands",
+      "seriesLabel": "문명 연작 제9편",
+      "logline": "기준을 베끼면 깊이가 사라지고, 사라진 깊이는 방향이 된다.",
+      "synopsis": "넉 달 동안 하늘의 원이 같은 자리를 돌았다. 마을은 지하의 벽을 가죽에 떠서 옮기기 시작하고, 옮길 때마다 눌린 자국은 얕아진다. 굽은 벽이 평평해지자 축이 방향을 얻는다. 라스는 정렬핵 앞에서 왼손을 잃고, 그 자리에 있던 사람 중 아이 하나만 그것을 안다. 《두 손의 증언》은 증언이 성립하려면 무엇을 잃어야 하는가를 묻는다.",
+      "theme": "증언에는 반드시 대가가 따른다",
+      "runtime": "7분 10초",
+      "published": "2026.09",
+      "coverImage": "00-cover.jpg",
+      "endImage": "99-ending.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "",
+        "note": ""
+      },
+      "manuscriptKo": "09-testimony-of-two-hands.md",
+      "manuscriptEn": "09-testimony-of-two-hands.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 9",
+        "logline": "Copy a standard and its depth is lost; the lost depth becomes a direction.",
+        "synopsis": "For four months a ring has circled the same place in the sky. The village begins lifting the underground wall onto hide and carrying it away, and with every copy the pressed marks grow shallower. When the curved wall is flattened, the axis acquires a direction. Las loses his left hand at the alignment core, and of everyone present only one child knows it. The Testimony of Two Hands asks what has to be lost before a testimony can stand.",
+        "theme": "Testimony always costs something",
+        "runtime": "7 min 10 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": ""
+        },
+        "blogUrl": ""
+      }
+    },
+    {
+      "no": 10,
+      "slug": "10-inside-maldek",
+      "titleKo": "말데크의 안쪽",
+      "titleEn": "Inside Maldek",
+      "seriesLabel": "문명 연작 제10편",
+      "logline": "전쟁의 원인은 선제공격이 아니라, 두 종족이 맺은 하나의 합의였다.",
+      "synopsis": "지하의 구조물은 말데크 파편 기록실로 이어진 관문의 한쪽이었다. 네 사람이 그 안으로 들어가 네 층의 벽을 읽는다. 좌표, 수신, 명령, 그리고 결정. 마지막 층에는 두 개의 손자국이 있다. 하나는 기준선 안쪽에 값과 함께, 하나는 바깥에 아무 값 없이. 《말데크의 안쪽》은 여럿을 하나로 줄이자는 합의가 어떻게 전쟁이 되었는지를 밝히고, 줄이지 않은 채로 보내는 방법 하나를 남긴다.",
+      "theme": "여럿을 하나로 줄이기로 한 합의가 전쟁이 되었다",
+      "runtime": "7분 10초",
+      "published": "2026.09",
+      "coverImage": "00-cover.jpg",
+      "endImage": "99-ending.jpg",
+      "status": "전문 공개",
+      "blogUrl": "",
+      "video": {
+        "naverUrl": "",
+        "note": ""
+      },
+      "manuscriptKo": "10-inside-maldek.md",
+      "manuscriptEn": "10-inside-maldek.en.md",
+      "en": {
+        "seriesLabel": "The Civilization Cycle · Part 10",
+        "logline": "The cause of the war was not a first strike. It was an agreement the two peoples made together.",
+        "synopsis": "The structure underground was one half of a gate leading to the record room inside a fragment of Maldek. Four people pass through it and read a wall of four layers: coordinates, reception, command, and decision. On the last layer there are two handprints — one inside the standard lines with its values converted, one outside them with no values at all. Inside Maldek uncovers how an agreement to reduce the many to one became a war, and leaves behind one way of sending something without reducing it.",
+        "theme": "An agreement to reduce the many to one became the war",
+        "runtime": "7 min 10 sec",
+        "status": "Full text",
+        "coverImage": "00-en-cover.jpg",
+        "endImage": "99-en-ending.jpg",
+        "video": {
+          "naverUrl": "",
+          "note": ""
+        },
+        "blogUrl": ""
+      }
     }
   ]
 }

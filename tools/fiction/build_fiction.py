@@ -218,7 +218,9 @@ def gallery_files(slug, cover, end):
     d = os.path.join(ASSET, slug)
     if not os.path.isdir(d):
         return []
-    skip = {cover, end}
+    # 언어별 표지/엔딩은 양쪽 모두 갤러리에서 제외한다
+    skip = {cover, end, "00-cover.jpg", "99-ending.jpg",
+            "00-en-cover.jpg", "99-en-ending.jpg", "00-teaser.jpg"}
     return [os.path.basename(p) for p in sorted(glob.glob(os.path.join(d, "*.jpg")))
             if os.path.basename(p) not in skip and "-en-" not in os.path.basename(p)]
 
