@@ -35,6 +35,8 @@ a{color:inherit}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
 .brand{font-family:var(--display);font-weight:700;font-size:1.02rem;text-decoration:none;letter-spacing:-.01em}
 .topnav{display:flex;align-items:center;gap:20px;font-size:.86rem}
+.topnav a{white-space:nowrap}
+.topbar .brand{white-space:nowrap}
 .topnav a{color:var(--muted);text-decoration:none}
 .topnav a:hover,.topnav a[aria-current]{color:var(--teal-dark)}
 .langsw{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;border:1px solid var(--line);
@@ -44,7 +46,13 @@ a{color:inherit}
 .rule{height:1px;background:var(--line);border:0;margin:0}
 footer{border-top:1px solid var(--line);margin-top:72px;padding:32px 0 56px;color:var(--muted);font-size:.82rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
-@media (max-width:640px){ .topnav{gap:12px;font-size:.79rem} .wrap{padding:0 18px} }
+@media (max-width:700px){
+  .topbar .wrap{flex-wrap:wrap;height:auto;min-height:0;padding-top:9px;padding-bottom:10px;row-gap:7px;column-gap:0}
+  .topbar .brand{flex:0 0 100%}
+  .topnav{flex:0 0 100%;gap:16px;font-size:.8rem;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:1px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 16px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 16px),transparent)}
+  .topnav::-webkit-scrollbar{display:none}
+}
+@media (max-width:400px){ .topnav{gap:13px;font-size:.76rem} .wrap{padding:0 16px} }
 </style>
 <style>
 .whero{background:var(--deep);color:#fff}

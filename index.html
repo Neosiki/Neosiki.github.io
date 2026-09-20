@@ -1125,7 +1125,50 @@
       .site-message-close { width: 100%; }
     }
 </style>
-<style id="unified-transparent-panels">.quick-links .proof{background:rgba(255,255,255,.62);backdrop-filter:blur(5px);border-color:rgba(18,43,46,.18)}.e-book-inner{background:rgba(16,44,45,.90);backdrop-filter:blur(4px)}.project,.archive-card,.service-item,.credential-card,.inquiry-form{background:rgba(255,255,255,.64);backdrop-filter:blur(6px)}.project:hover,.archive-card:hover{background:rgba(255,255,255,.82)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.20),transparent 34%),radial-gradient(circle at 12% 82%,rgba(238,216,185,.16),transparent 30%)}.credentials,.english-feature{background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.12),transparent 34%)}@media(max-width:700px){.quick-links .proof,.project,.archive-card,.service-item,.credential-card,.inquiry-form{backdrop-filter:blur(3px)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 85% 8%,rgba(199,221,210,.16),transparent 42%)}}</style><style id="public-project-film-panel">.public-project-film{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(280px,.94fr);gap:34px;align-items:stretch;margin:46px 0 12px;padding:18px;border:1px solid var(--line);background:rgba(255,255,255,.44);box-shadow:10px 10px 0 rgba(18,108,114,.12)}.public-project-film video{display:block;width:100%;height:100%;min-height:270px;aspect-ratio:16/9;object-fit:cover;background:#092442}.public-project-film figcaption{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:18px 8px}.public-project-film figcaption b{color:var(--teal);font:700 10px var(--mono);letter-spacing:.12em}.public-project-film figcaption h3{margin:18px 0 12px;font:500 clamp(25px,2.3vw,40px)/1.24 var(--serif);letter-spacing:-.055em}.public-project-film figcaption p{margin:0;color:var(--muted);line-height:1.75}.public-project-film .button{display:inline-flex;margin-top:24px;padding:13px 16px;border:1px solid var(--coral);color:var(--coral);font:700 11px var(--mono);letter-spacing:.08em;text-decoration:none;transition:.2s}.public-project-film .button:hover,.public-project-film .button:focus-visible{background:var(--coral);color:#fff}@media(max-width:760px){.public-project-film{grid-template-columns:1fr;gap:18px;margin-top:28px;padding:12px;box-shadow:6px 6px 0 rgba(18,108,114,.12)}.public-project-film video{min-height:0}.public-project-film figcaption{padding:8px 6px}.public-project-film figcaption h3{font-size:28px}}</style></head>
+<style id="unified-transparent-panels">.quick-links .proof{background:rgba(255,255,255,.62);backdrop-filter:blur(5px);border-color:rgba(18,43,46,.18)}.e-book-inner{background:rgba(16,44,45,.90);backdrop-filter:blur(4px)}.project,.archive-card,.service-item,.credential-card,.inquiry-form{background:rgba(255,255,255,.64);backdrop-filter:blur(6px)}.project:hover,.archive-card:hover{background:rgba(255,255,255,.82)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.20),transparent 34%),radial-gradient(circle at 12% 82%,rgba(238,216,185,.16),transparent 30%)}.credentials,.english-feature{background-image:radial-gradient(circle at 88% 12%,rgba(199,221,210,.12),transparent 34%)}@media(max-width:700px){.quick-links .proof,.project,.archive-card,.service-item,.credential-card,.inquiry-form{backdrop-filter:blur(3px)}.projects,`n    .sales-section,`n    .archive,`n    .contact {background-image:radial-gradient(circle at 85% 8%,rgba(199,221,210,.16),transparent 42%)}}</style><style id="public-project-film-panel">.public-project-film{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(280px,.94fr);gap:34px;align-items:stretch;margin:46px 0 12px;padding:18px;border:1px solid var(--line);background:rgba(255,255,255,.44);box-shadow:10px 10px 0 rgba(18,108,114,.12)}.public-project-film video{display:block;width:100%;height:100%;min-height:270px;aspect-ratio:16/9;object-fit:cover;background:#092442}.public-project-film figcaption{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:18px 8px}.public-project-film figcaption b{color:var(--teal);font:700 10px var(--mono);letter-spacing:.12em}.public-project-film figcaption h3{margin:18px 0 12px;font:500 clamp(25px,2.3vw,40px)/1.24 var(--serif);letter-spacing:-.055em}.public-project-film figcaption p{margin:0;color:var(--muted);line-height:1.75}.public-project-film .button{display:inline-flex;margin-top:24px;padding:13px 16px;border:1px solid var(--coral);color:var(--coral);font:700 11px var(--mono);letter-spacing:.08em;text-decoration:none;transition:.2s}.public-project-film .button:hover,.public-project-film .button:focus-visible{background:var(--coral);color:#fff}@media(max-width:760px){.public-project-film{grid-template-columns:1fr;gap:18px;margin-top:28px;padding:12px;box-shadow:6px 6px 0 rgba(18,108,114,.12)}.public-project-film video{min-height:0}.public-project-film figcaption{padding:8px 6px}.public-project-film figcaption h3{font-size:28px}}</style><style>
+  /* 모바일 상단 메뉴 — 숨기지 않고 두 번째 줄로 내려 전부 노출 */
+  @media (max-width: 920px) {
+    .nav-inner {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "brand cta" "links links";
+      align-items: center;
+      min-height: 0;
+      padding: 9px 18px 10px;
+      row-gap: 7px;
+      column-gap: 14px;
+    }
+    .nav-inner > .brand { grid-area: brand; }
+    .nav-inner > .nav-cta { grid-area: cta; }
+    .nav-links {
+      display: flex;
+      grid-area: links;
+      gap: 18px;
+      font-size: 12.5px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-bottom: 1px;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { white-space: nowrap; }
+    .nav-links a::after { display: none; }
+    .nav-links {
+      -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 16px), transparent);
+      mask-image: linear-gradient(to right, #000 calc(100% - 16px), transparent);
+    }
+  }
+  @media (max-width: 640px) {
+    .nav-inner { min-height: 0; padding: 8px 16px 9px; gap: 12px; row-gap: 6px; }
+    .nav-links { gap: 15px; font-size: 12px; }
+  }
+  @media (max-width: 400px) {
+    .nav-inner { padding-left: 14px; padding-right: 14px; }
+    .nav-links { gap: 11px; font-size: 11px; }
+  }
+</style>
+</head>
 <body>
   <div class="grain" aria-hidden="true"></div>
 

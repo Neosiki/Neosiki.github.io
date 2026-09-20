@@ -262,6 +262,49 @@
     @media (max-width: 920px) { .credentials-top { grid-template-columns: 1fr; gap: 28px; } .credential-counts { grid-template-columns: repeat(3, 1fr); } .cert-dialog-shell { grid-template-columns: 1fr; } .cert-dialog-meta { border-left: 0; border-top: 1px solid var(--line); } }
     @media (max-width: 640px) { .credentials { padding: 80px 18px; } .credential-counts { grid-template-columns: repeat(2, 1fr); } .credential-grid { grid-template-columns: 1fr; } .credential-title { font-size: 19px; } .cert-dialog { width: 94vw; max-height: 92vh; box-shadow: 8px 8px 0 var(--teal); } .cert-dialog-shell { display: block; min-height: 0; } .cert-dialog-image { padding: 16px; } .cert-dialog-image img { max-height: 53vh; } .cert-dialog-meta { padding: 25px 20px; } .cert-dialog-meta h3 { font-size: 25px; padding-right: 34px; } }
   </style>
+<style>
+  /* 모바일 상단 메뉴 — 숨기지 않고 두 번째 줄로 내려 전부 노출 */
+  @media (max-width: 920px) {
+    .nav-inner {
+      grid-template-columns: 1fr auto !important;
+      grid-template-rows: auto auto !important;
+      grid-template-areas: "brand cta" "links links";
+      align-items: center;
+      min-height: 0 !important;
+      padding: 9px 18px 10px !important;
+      row-gap: 7px;
+      column-gap: 14px;
+    }
+    .nav-inner > .brand { grid-area: brand; }
+    .nav-inner > .nav-cta { grid-area: cta; grid-column: auto !important; justify-self: end; }
+    .nav-links {
+      display: flex !important;
+      grid-area: links;
+      justify-content: flex-start !important;
+      gap: 17px;
+      font-size: 12.5px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-bottom: 1px;
+      -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 18px), transparent);
+      mask-image: linear-gradient(to right, #000 calc(100% - 18px), transparent);
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { white-space: nowrap; }
+    .nav-links a::after { display: none; }
+  }
+  @media (max-width: 640px) {
+    .nav-inner { padding: 8px 16px 9px !important; column-gap: 12px; row-gap: 6px; }
+    .nav-links { gap: 15px; font-size: 12px; }
+  }
+  @media (max-width: 400px) {
+    .nav-inner { padding-left: 14px !important; padding-right: 14px !important; }
+    .nav-links { gap: 12px; font-size: 11.5px; }
+  }
+</style>
 </head>
 <body>
 <div aria-hidden="true" class="grain"></div>
