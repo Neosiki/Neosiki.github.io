@@ -1681,6 +1681,8 @@
     const certDialogDate = document.querySelector('#cert-dialog-date');
     const certDialogVerify = document.querySelector('#cert-dialog-verify');
 
+    // 자격·수료 영역은 about.html로 옮겨져 이 페이지에 없을 수 있음 — 있을 때만 동작
+    if (credentialGrid && certDialog) {
     function renderCredentials(provider = 'all') {
       const visible = credentials.filter(item => provider === 'all' || item.provider === provider);
       credentialGrid.innerHTML = visible.map(item => {
@@ -1733,6 +1735,7 @@
     });
 
     renderCredentials();
+    }
   </script>
   <script>
     // 공개 사이트 코드가 준비되면 이 값만 입력합니다. 비워 두면 추적을 시작하지 않습니다.
