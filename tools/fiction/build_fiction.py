@@ -445,8 +445,8 @@ def build_hub(cfg, lang):
         td = tr.get("en", {}) if lang == "en" else tr
         poster = tr.get("poster", "assets/fiction/_war/hub-key-visual.jpg")
         doc.append('<div class="wrap"><section class="trailer" id="series-trailer">')
-        doc.append('  <div class="trailer-head"><div><div class="eyebrow">OFFICIAL TRAILER · 60 SEC</div><h2>%s</h2></div><p>%s</p></div>'
-                   % (html.escape(td["title"]), html.escape(td["description"])))
+        doc.append('  <div class="trailer-head"><div><div class="eyebrow">OFFICIAL TRAILER · %s</div><h2>%s</h2></div><p>%s</p></div>'
+                   % (html.escape(td.get("durationLabel", "60 SEC")), html.escape(td["title"]), html.escape(td["description"])))
         doc.append('  <video controls preload="metadata" playsinline poster="%s%s"><source src="%s" type="video/mp4" /></video>'
                    % (root, poster, html.escape(td["wideUrl"])))
         doc.append('  <div class="trailer-actions"><a href="%s" target="_blank" rel="noreferrer">%s ↗</a><a href="%s" target="_blank" rel="noreferrer">%s ↗</a></div>'
