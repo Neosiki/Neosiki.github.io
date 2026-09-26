@@ -23,7 +23,24 @@
       "altEn": "Gates holding formation, every one tilted by the same angle",
       "captionEn": "Twenty-three gates, every one tilted by the same small angle. An error that does not scatter is not an error but a value."
     },
-    "ogImage": "assets/og/og-fiction.jpg"
+    "ogImage": "assets/og/og-fiction.jpg",
+    "trailer": {
+      "title": "전 12편 통합 예고편",
+      "description": "기록의 발견에서 전쟁과 도착, 그리고 마지막 문장까지. 문명 연작 시즌 1의 전체 궤도를 60초로 압축한 공식 예고편입니다.",
+      "wideUrl": "https://neosiki.github.io/assets/fiction/_trailer/CIVILIZATION_SERIES_TRAILER_KO_WIDE_1920x1080_60s_v01.mp4",
+      "verticalUrl": "https://github.com/Neosiki/Neosiki.github.io/releases/download/civilization-trailer-v1/CIVILIZATION_SERIES_TRAILER_KO_VERTICAL_1080x1920_60s_v01.mp4",
+      "wideLabel": "가로형 16:9 열기",
+      "verticalLabel": "세로형 9:16 열기",
+      "poster": "assets/fiction/_war/hub-key-visual.jpg",
+      "en": {
+        "title": "Official Trailer · All 12 Stories",
+        "description": "From the discovery of a record to war, arrival, and the final sentence. The official 60-second trailer traces the complete arc of Civilization, Season One.",
+        "wideUrl": "https://neosiki.github.io/assets/fiction/_trailer/CIVILIZATION_SERIES_TRAILER_EN_WIDE_1920x1080_60s_v01.mp4",
+        "verticalUrl": "https://github.com/Neosiki/Neosiki.github.io/releases/download/civilization-trailer-v1/CIVILIZATION_SERIES_TRAILER_EN_VERTICAL_1080x1920_60s_v01.mp4",
+        "wideLabel": "Open 16:9 edition",
+        "verticalLabel": "Open 9:16 edition"
+      }
+    }
   },
   "works": [
     {

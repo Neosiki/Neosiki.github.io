@@ -108,6 +108,15 @@ HUB_CSS = """
 .keyvis{margin:34px 0 4px;border-radius:14px;overflow:hidden;background:#0d1621;border:1px solid rgba(0,0,0,.08)}
 .keyvis img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 .keyvis figcaption{padding:14px 18px 17px;font-size:.84rem;line-height:1.65;color:rgba(255,255,255,.62);font-family:var(--mono)}
+.trailer{margin:38px 0 6px;padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--deep);color:#fff}
+.trailer-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:17px}
+.trailer-head h2{font-family:var(--display);font-size:clamp(1.45rem,3vw,2rem);margin:4px 0 0}
+.trailer-head p{max-width:39rem;margin:0;color:rgba(255,255,255,.66);font-size:.9rem}
+.trailer video{display:block;width:100%;aspect-ratio:16/9;border-radius:10px;background:#05080c}
+.trailer-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.trailer-actions a{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:8px 14px;color:#fff;text-decoration:none;font-size:.8rem}
+.trailer-actions a:hover{background:rgba(255,255,255,.1)}
+@media(max-width:700px){.trailer{padding:14px}.trailer-head{display:block}.trailer-head p{margin-top:8px}}
 .worldlink{margin:14px 0 0;font-family:var(--mono);font-size:.86rem}
 .worldlink a{color:var(--teal-dark);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0,0,0,.18);padding-bottom:2px}
 .bar{flex:1;max-width:260px;height:6px;background:var(--lime);border-radius:99px;overflow:hidden}
@@ -431,6 +440,18 @@ def build_hub(cfg, lang):
         if cap:
             doc.append('  <figcaption>%s</figcaption>' % html.escape(cap))
         doc.append('</figure></div>')
+    tr = s.get("trailer")
+    if tr:
+        td = tr.get("en", {}) if lang == "en" else tr
+        poster = tr.get("poster", "assets/fiction/_war/hub-key-visual.jpg")
+        doc.append('<div class="wrap"><section class="trailer" id="series-trailer">')
+        doc.append('  <div class="trailer-head"><div><div class="eyebrow">OFFICIAL TRAILER · 60 SEC</div><h2>%s</h2></div><p>%s</p></div>'
+                   % (html.escape(td["title"]), html.escape(td["description"])))
+        doc.append('  <video controls preload="metadata" playsinline poster="%s%s"><source src="%s" type="video/mp4" /></video>'
+                   % (root, poster, html.escape(td["wideUrl"])))
+        doc.append('  <div class="trailer-actions"><a href="%s" target="_blank" rel="noreferrer">%s ↗</a><a href="%s" target="_blank" rel="noreferrer">%s ↗</a></div>'
+                   % (html.escape(td["wideUrl"]), html.escape(td["wideLabel"]), html.escape(td["verticalUrl"]), html.escape(td["verticalLabel"])))
+        doc.append('</section></div>')
     wlabel = ("Two peoples, a gate of three layers, a 0.4 degree — read the setting"
               if lang == "en" else "두 종족, 세 겹의 관문, 0.4도 — 세계관 읽기")
     doc.append('<div class="wrap"><p class="worldlink"><a href="%sfiction-world.html">%s →</a></p></div>'
