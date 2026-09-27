@@ -72,6 +72,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
 .trailer-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .trailer-actions a{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:8px 14px;color:#fff;text-decoration:none;font-size:.8rem}
 .trailer-actions a:hover{background:rgba(255,255,255,.1)}
+.arrival{margin:30px 0 8px;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--paper-2)}
+.arrival h2{font-family:var(--display);font-size:clamp(1.45rem,3vw,2rem);margin:4px 0 8px}
+.arrival-intro{max-width:52rem;color:var(--muted);margin:0 0 22px}
+.arrival-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.arrival-card{padding:16px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.arrival-card h3{font-family:var(--display);font-size:1.18rem;margin:0 0 5px}
+.arrival-card p{color:var(--muted);font-size:.88rem;margin:0 0 12px}
+.arrival-card video{display:block;width:100%;aspect-ratio:16/9;background:#05080c;border-radius:8px}
+.arrival-card a{display:inline-block;margin-top:10px;color:var(--teal-dark);font-size:.82rem;font-weight:600}
 @media(max-width:700px){.trailer{padding:14px}.trailer-head{display:block}.trailer-head p{margin-top:8px}}
 .worldlink{margin:14px 0 0;font-family:var(--mono);font-size:.86rem}
 .worldlink a{color:var(--teal-dark);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(0,0,0,.18);padding-bottom:2px}
@@ -116,6 +125,28 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
   <div class="trailer-head"><div><div class="eyebrow">OFFICIAL TRAILER · 75 SEC</div><h2>전 12편 통합 예고편 · 확장판</h2></div><p>기록의 발견에서 전쟁과 도착, 그리고 마지막 문장까지. 치우와 르네의 장엄한 우주전쟁을 새로 더한 문명 연작 시즌 1 공식 75초 확장 예고편입니다.</p></div>
   <video controls preload="metadata" playsinline poster="assets/fiction/_war/hub-key-visual.jpg"><source src="https://neosiki.github.io/assets/fiction/_trailer/CIVILIZATION_SERIES_TRAILER_KO_WIDE_1920x1080_75s_WAR_EXPANDED_v02.mp4" type="video/mp4" /></video>
   <div class="trailer-actions"><a href="https://neosiki.github.io/assets/fiction/_trailer/CIVILIZATION_SERIES_TRAILER_KO_WIDE_1920x1080_75s_WAR_EXPANDED_v02.mp4" target="_blank" rel="noreferrer">75초 확장판 16:9 열기 ↗</a><a href="https://github.com/Neosiki/Neosiki.github.io/releases/download/civilization-trailer-v1/CIVILIZATION_SERIES_TRAILER_KO_VERTICAL_1080x1920_60s_v01.mp4" target="_blank" rel="noreferrer">세로형 9:16 열기 ↗</a></div>
+</section></div>
+<div class="wrap"><section class="arrival" id="chiwoo-rene-arrival" aria-labelledby="arrival-title">
+  <div class="eyebrow">CIVILIZATION · EARTH ARRIVAL</div>
+  <h2 id="arrival-title">치우와 르네, 지구의 하늘에 나타나다</h2>
+  <p class="arrival-intro">우주의 저편에서 화성과 달을 지나 지구에 도착한 두 종족. 검은 장갑과 금빛을 두른 치우, 백금빛 선체를 지닌 르네를 각각의 영상으로 본 뒤, 두 종족을 함께 목격하는 통합판으로 이어집니다. 세 영상은 현재 무음 편집본입니다.</p>
+  <div class="arrival-grid">
+    <article class="arrival-card">
+      <h3>치우 · 독립판</h3><p>거대한 함선이 구름을 가르고 도시 위에 드리우는 1분 26초.</p>
+      <video controls preload="metadata" playsinline aria-label="치우 지구 도착 독립판 86초"><source src="assets/fiction/_arrival/CIVTR_CHIU_ARRIVAL_EXTENDED_86S_SILENT_v01_WEB720.mp4" type="video/mp4" /></video>
+      <a href="assets/fiction/_arrival/CIVTR_CHIU_ARRIVAL_EXTENDED_86S_SILENT_v01_WEB720.mp4" target="_blank" rel="noreferrer">치우편 열기 ↗</a>
+    </article>
+    <article class="arrival-card">
+      <h3>르네 · 독립판</h3><p>백금빛 함선이 지상에 경외감을 남기는 1분 30초.</p>
+      <video controls preload="metadata" playsinline aria-label="르네 지구 도착 독립판 90초"><source src="assets/fiction/_arrival/CIVTR_RENE_ARRIVAL_EXTENDED_90S_SILENT_v01_WEB720.mp4" type="video/mp4" /></video>
+      <a href="assets/fiction/_arrival/CIVTR_RENE_ARRIVAL_EXTENDED_90S_SILENT_v01_WEB720.mp4" target="_blank" rel="noreferrer">르네편 열기 ↗</a>
+    </article>
+    <article class="arrival-card">
+      <h3>두 종족 · 통합판</h3><p>우주에서 지구까지, 치우와 르네의 동시 출현을 잇는 2분 13초.</p>
+      <video controls preload="metadata" playsinline aria-label="치우와 르네 지구 출현 통합판 133초"><source src="assets/fiction/_arrival/CIVTR_CHIU_RENE_EARTH_133S_SILENT_v01_WEB720.mp4" type="video/mp4" /></video>
+      <a href="assets/fiction/_arrival/CIVTR_CHIU_RENE_EARTH_133S_SILENT_v01_WEB720.mp4" target="_blank" rel="noreferrer">통합판 열기 ↗</a>
+    </article>
+  </div>
 </section></div>
 <div class="wrap"><p class="worldlink"><a href="fiction-world.html">두 종족, 세 겹의 관문, 0.4도 — 세계관 읽기 →</a></p></div>
 <div class="wrap"><div class="grid">
