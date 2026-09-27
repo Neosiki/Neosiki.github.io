@@ -1168,6 +1168,20 @@
     .nav-links { gap: 11px; font-size: 11px; }
   }
 </style>
+<style id="nextai-showreel-band">
+.showreel{background:#0B1620;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid var(--line)}
+.showreel-inner{max-width:1180px;margin:0 auto;padding:0 24px}
+.showreel-media{position:relative;margin:0;border:1px solid rgba(255,255,255,.14)}
+.showreel-media video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0B1620}
+.showreel-bar{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-between;align-items:center;padding:18px 0 26px;color:rgba(255,255,255,.72)}
+.showreel-kicker{display:block;font:700 10px/1.4 var(--mono);letter-spacing:.14em;color:#16D0E4;margin-bottom:7px}
+.showreel-bar strong{display:block;color:#fff;font-size:18px;letter-spacing:-.02em}
+.showreel-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;font:650 11px var(--mono);letter-spacing:.05em}
+.showreel-meta a{color:#EDB49A;text-decoration:none;border-bottom:1px solid rgba(237,180,154,.45);padding-bottom:2px;transition:.2s}
+.showreel-meta a:hover,.showreel-meta a:focus-visible{color:#fff;border-color:#fff}
+@media(max-width:760px){.showreel-inner{padding:0 16px}.showreel-bar{padding:14px 0 20px;gap:10px}.showreel-bar strong{font-size:15px}.showreel-meta{font-size:10px;gap:6px 12px}}
+@media(prefers-reduced-motion:reduce){.showreel-media video{display:none}.showreel-media{background:#0B1620 url(assets/video/nextai-showreel-15s-poster.jpg) center/cover;aspect-ratio:16/9}}
+</style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -1218,6 +1232,28 @@
       </div>
     </section>
 
+
+    <section class="showreel" id="showreel" aria-labelledby="showreel-title">
+      <div class="showreel-inner">
+        <figure class="showreel-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/video/nextai-showreel-15s-poster.jpg" aria-label="NextAI 15초 브랜드 쇼릴">
+            <source src="assets/video/nextai-showreel-15s.mp4" type="video/mp4" />
+            브라우저가 동영상을 지원하지 않습니다.
+          </video>
+        </figure>
+        <div class="showreel-bar">
+          <div>
+            <span class="showreel-kicker">NextAI Showreel / 15 Seconds</span>
+            <strong id="showreel-title">15초로 보는 NextAI</strong>
+          </div>
+          <div class="showreel-meta">
+            <span>자격·수료 36 · 선별 프로젝트 38 · 문명 연작 12편</span>
+            <a href="#brand-film">100초 브랜드 필름 ↘</a>
+            <a href="assets/video/nextai-showreel-15s-vertical.mp4" target="_blank" rel="noreferrer">세로형 9:16 ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="brand-film" id="brand-film" aria-labelledby="brand-film-title">
       <div class="section-inner">
