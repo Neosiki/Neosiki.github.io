@@ -37,6 +37,7 @@ const portfolioProjects = [
   { title: '빛과 그림자 사이', category: 'domain', categoryLabel: '도메인·아카이브', description: '현장 관찰과 에너지·산업 이슈를 취재형 서술과 분석 구조로 정리합니다. 기관 보고서, 산업 콘텐츠, 현장 기반 캠페인의 메시지와 자료 구조를 설계하는 편집 레퍼런스입니다.', language: 'FIELD REPORT' , image: 'assets/projects/generated/photoreal-26/36-light-shadow.jpg'},
   { title: '극복은 인류의 알고리즘이다', category: 'domain', categoryLabel: '도메인·아카이브', description: '산림·정원·회복의 주제를 강의 원고와 청중 메시지 구조로 발전시킨 프로젝트입니다. 교육·문화·공공 프로그램에서 복잡한 주제를 설득력 있는 강의와 콘텐츠로 전환할 때 참고할 수 있습니다.', language: 'LECTURE' , image: 'assets/projects/generated/photoreal-26/37-humanity-algorithm.jpg'},
   { title: 'BioInvest Daily Digest', category: 'domain', categoryLabel: '도메인·아카이브', description: '의료·제약·바이오 투자 뉴스를 선별·분류·요약해 다국어 뉴스레터로 제공하는 정보 서비스 구조입니다. 전문 분야의 뉴스 모니터링과 정기 브리핑 자동화를 검토하는 조직에 적합한 플랫폼 사례입니다.', language: 'TYPESCRIPT', url: 'https://github.com/Neosiki/BioInvest-Daily-Digest' , image: 'assets/projects/generated/photoreal-26/38-bioinvest-digest.jpg'},
+  { title: 'Creatorlink 사이트 수집기 (AI 스킬)', category: 'automation', categoryLabel: 'AI·AX·자동화', description: '작가 포트폴리오와 매장 사이트의 작품 이미지, 영상 주소, 설명 글을 메뉴 단위로 받아 파일명 대응표와 검증 결과까지 남기는 오픈소스 수집 도구입니다. 갤러리 첫 화면에 12점만 보이는 구조를 사이트의 목록 요청으로 해결해, 한 메뉴에서 115점 중 49장만 받던 누락을 바로잡았습니다. Claude, ChatGPT, Codex, Gemini 등 AI 도구별 설치 가이드와 사용 매뉴얼을 함께 제공합니다.', language: 'PYTHON · AGENT SKILL · MIT', url: 'https://github.com/Neosiki/creatorlink-site-collector', image: 'assets/projects/generated/photoreal-26/39-site-collector.jpg?v=20261002'},
 ];
 
 const archiveGrid = document.querySelector('#archive-grid');
