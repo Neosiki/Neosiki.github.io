@@ -105,6 +105,12 @@ HUB_CSS = """
 .hero p.intro{max-width:52rem;color:var(--muted);margin:20px 0 0}
 .progress{display:flex;align-items:baseline;gap:12px;margin-top:30px;font-family:var(--mono);font-size:.8rem;color:var(--muted)}
 .progress b{font-size:1.9rem;color:var(--ink);font-family:var(--display)}
+.pubbadge{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-top:28px;padding:15px 18px;border:1px solid var(--line);border-left:3px solid var(--teal-dark);border-radius:10px;background:rgba(255,255,255,.62)}
+.pubbadge .tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-dark);font-weight:700}
+.pubbadge .meta{font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+.pubbadge .note{flex:1 1 20rem;min-width:0;font-size:.86rem;line-height:1.6;color:var(--muted);margin:0}
+.pubbadge a{font-size:.82rem;font-weight:600;color:var(--teal-dark);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px;white-space:nowrap}
+@media(max-width:700px){.pubbadge{padding:13px 14px;gap:8px 14px}.pubbadge .note{flex-basis:100%}}
 .keyvis{margin:34px 0 4px;border-radius:14px;overflow:hidden;background:#0d1621;border:1px solid rgba(0,0,0,.08)}
 .keyvis img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 .keyvis figcaption{padding:14px 18px 17px;font-size:.84rem;line-height:1.65;color:rgba(255,255,255,.62);font-family:var(--mono)}
@@ -430,6 +436,26 @@ def build_hub(cfg, lang):
     doc.append('  <p class="intro">%s</p>' % html.escape(sd["intro"]))
     doc.append('  <div class="progress"><b>%d</b><span>%s</span><span class="bar"><i style="width:%.0f%%"></i></span></div>'
                % (len(works), t["progress"] % s["planned"], 100.0 * len(works) / s["planned"]))
+    pub = s.get("publication")
+    if pub:
+        pd = dict(pub)
+        if lang == "en":
+            pd.update(pub.get("en", {}))
+        bits = []
+        if pd.get("isbn"):
+            bits.append('ISBN %s' % html.escape(pd["isbn"]))
+        if pd.get("stores"):
+            bits.append(html.escape(pd["stores"]))
+        doc.append('  <div class="pubbadge">')
+        doc.append('    <span class="tag">%s</span>' % html.escape(pd.get("label", "")))
+        if bits:
+            doc.append('    <span class="meta">%s</span>' % ' &middot; '.join(bits))
+        if pd.get("note"):
+            doc.append('    <p class="note">%s</p>' % html.escape(pd["note"]))
+        if pd.get("buyUrl"):
+            doc.append('    <a href="%s" target="_blank" rel="noreferrer">%s &#8599;</a>'
+                       % (html.escape(pd["buyUrl"]), html.escape(pd.get("buyLabel", ""))))
+        doc.append('  </div>')
     doc.append('</div></section>')
     kv = s.get("keyVisual")
     if kv:

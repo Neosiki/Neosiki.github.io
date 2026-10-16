@@ -1186,6 +1186,14 @@
 .published-books{padding:80px 0;background:#f2f5f0;color:#182b27}
 .books-intro{max-width:760px;line-height:1.8;margin:18px 0 32px}
 .books-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.books-group{margin-top:34px}
+.books-group:first-of-type{margin-top:8px}
+.books-group-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid #dce3dc}
+.books-group-title{font-size:17px;font-weight:700;margin:0;letter-spacing:-.01em;color:#182b27}
+.books-group-note{margin:0;font-size:13px;line-height:1.6;color:#52635d}
+.book-isbn{font-size:13px;line-height:1.7;color:#244c42;margin:0 0 12px !important}
+.book-isbn b{font-weight:700}
+@media(max-width:520px){.books-group-head{gap:4px 12px;margin-bottom:14px}}
 .book-card{display:flex;gap:24px;padding:28px;background:#fff;border:1px solid #dce3dc;border-radius:16px}
 .book-cover{display:block;flex:0 0 160px;align-self:flex-start}
 .book-cover img{display:block;width:100%;height:auto;box-shadow:0 12px 24px #182b2720}
@@ -1419,18 +1427,23 @@
         <div class="section-kicker">Published Books / NextAI</div>
         <h2 class="section-title" id="books-title">실무 경험을 책으로 만나보세요</h2>
         <p class="books-intro">윤영식의 AI 업무 자동화·AI 검색 분석·소상공인 마케팅 실무와 SF 연작소설(한국어·영문)을 담은 출간 도서입니다. 표지나 구매 버튼을 누르면 유페이퍼의 해당 도서 페이지로 이동합니다.</p>
-        <div class="books-grid">
+                <div class="books-group">
+          <div class="books-group-head">
+            <h3 class="books-group-title">정식 출간 · ISBN 발급</h3>
+            <p class="books-group-note">ISBN이 발급된 타이틀입니다.</p>
+          </div>
+          <div class="books-grid">
           <article class="book-card">
-            <a class="book-cover" href="https://osiki111.upaper.kr/content/1226610" target="_blank" rel="noopener noreferrer" aria-label="사장님, 이 문제부터 함께 풀어봅시다 — 유페이퍼에서 보기">
-              <img src="https://upaper.kr/cover/1226610/Cover_W600.jpg" alt="사장님, 이 문제부터 함께 풀어봅시다 표지" width="300" height="428" loading="lazy" />
+            <a class="book-cover" href="https://osiki111.upaper.kr/content/1225454" target="_blank" rel="noopener noreferrer" aria-label="문명 연작 — 유페이퍼에서 보기">
+              <img src="https://upaper.kr/cover/1225454/Cover_300_428.jpg" alt="문명 연작 표지" width="300" height="428" loading="lazy" />
             </a>
             <div class="book-copy">
-              <div class="section-kicker">07 / Small Business Consulting</div>
-              <h3>사장님, 이 문제부터 함께 풀어봅시다</h3>
-              <p>시리즈 1편 · 찾아가는 소상공인 AI 컨설팅, 가게마다 다른 고민과 실행의 기록. 고깃집, 카페, 네일숍, 향수 사업, 제조 기반 스타트업을 찾아가 무엇을 읽고 무엇을 먼저 하기로 했는지 담았습니다.</p>
-              <p class="book-author">윤영식 컨설턴트, ChatGPT, Claude · 유페이퍼</p>
-              <p class="book-author">유페이퍼 안내: 2026년 11월 4일 0시 공개 예정</p>
-              <a class="book-buy" href="https://osiki111.upaper.kr/content/1226610" target="_blank" rel="noopener noreferrer">유페이퍼에서 도서 보기 <span aria-hidden="true">↗</span></a>
+              <div class="section-kicker">03 / Science Fiction</div>
+              <h3>문명 연작</h3>
+              <p>열두 개의 기록, 하나의 문명. 기록과 기억, 인간과 기계, 파괴와 계승을 묻는 SF 연작소설입니다.</p>
+              <p class="book-author">윤영식, Claude · 유페이퍼</p>
+              <p class="book-isbn"><b>ISBN</b> 979-11-444-3283-3 · 교보문고 · 예스24 · 알라딘 유통</p>
+              <a class="book-buy" href="https://osiki111.upaper.kr/content/1225454" target="_blank" rel="noopener noreferrer">유페이퍼에서 도서 보기·구매 <span aria-hidden="true">↗</span></a>
             </div>
           </article>
           <article class="book-card">
@@ -1442,7 +1455,29 @@
               <h3>CIVILIZATION</h3>
               <p>Twelve Records, One Civilization. 「문명 연작」 전 12편의 영문판입니다. 오식 하나와 불가능한 측량 각도, 두 손이 다르게 기억하는 전쟁이 하나의 초고대문명으로 모입니다.</p>
               <p class="book-author">YoungShig Yoon, Claude · uPaper</p>
+              <p class="book-isbn"><b>ISBN</b> 979-11-444-3339-7 · 유페이퍼</p>
               <a class="book-buy" href="https://osiki111.upaper.kr/content/1225540" target="_blank" rel="noopener noreferrer">유페이퍼에서 도서 보기·구매 <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          </div>
+        </div>
+        <div class="books-group">
+          <div class="books-group-head">
+            <h3 class="books-group-title">유페이퍼 자체 판매</h3>
+            <p class="books-group-note">유페이퍼에서 바로 구매할 수 있습니다.</p>
+          </div>
+          <div class="books-grid">
+          <article class="book-card">
+            <a class="book-cover" href="https://osiki111.upaper.kr/content/1226610" target="_blank" rel="noopener noreferrer" aria-label="사장님, 이 문제부터 함께 풀어봅시다 — 유페이퍼에서 보기">
+              <img src="https://upaper.kr/cover/1226610/Cover_W600.jpg" alt="사장님, 이 문제부터 함께 풀어봅시다 표지" width="300" height="428" loading="lazy" />
+            </a>
+            <div class="book-copy">
+              <div class="section-kicker">07 / Small Business Consulting</div>
+              <h3>사장님, 이 문제부터 함께 풀어봅시다</h3>
+              <p>시리즈 1편 · 찾아가는 소상공인 AI 컨설팅, 가게마다 다른 고민과 실행의 기록. 고깃집, 카페, 네일숍, 향수 사업, 제조 기반 스타트업을 찾아가 무엇을 읽고 무엇을 먼저 하기로 했는지 담았습니다.</p>
+              <p class="book-author">윤영식 컨설턴트, ChatGPT, Claude · 유페이퍼</p>
+              <p class="book-author">유페이퍼 안내: 2026년 11월 4일 0시 공개 예정</p>
+              <a class="book-buy" href="https://osiki111.upaper.kr/content/1226610" target="_blank" rel="noopener noreferrer">유페이퍼에서 도서 보기 <span aria-hidden="true">↗</span></a>
             </div>
           </article>
           <article class="book-card">
@@ -1471,18 +1506,6 @@
             </div>
           </article>
           <article class="book-card">
-            <a class="book-cover" href="https://osiki111.upaper.kr/content/1225454" target="_blank" rel="noopener noreferrer" aria-label="문명 연작 — 유페이퍼에서 보기">
-              <img src="https://upaper.kr/cover/1225454/Cover_300_428.jpg" alt="문명 연작 표지" width="300" height="428" loading="lazy" />
-            </a>
-            <div class="book-copy">
-              <div class="section-kicker">03 / Science Fiction</div>
-              <h3>문명 연작</h3>
-              <p>열두 개의 기록, 하나의 문명. 기록과 기억, 인간과 기계, 파괴와 계승을 묻는 SF 연작소설입니다.</p>
-              <p class="book-author">윤영식, Claude · 유페이퍼</p>
-              <a class="book-buy" href="https://osiki111.upaper.kr/content/1225454" target="_blank" rel="noopener noreferrer">유페이퍼에서 도서 보기·구매 <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="book-card">
             <a class="book-cover" href="https://osiki111.upaper.kr/content/1225579" target="_blank" rel="noopener noreferrer" aria-label="ChatGPT Codex를 활용한 에이전틱 기반 업무 자동화 — 유페이퍼에서 보기">
               <img src="https://upaper.kr/cover/1225579/Cover_300_428.jpg" alt="ChatGPT Codex를 활용한 에이전틱 기반 업무 자동화 표지" width="300" height="428" loading="lazy" />
             </a>
@@ -1506,6 +1529,7 @@
               <a class="book-buy" href="https://osiki111.upaper.kr/content/1225926" target="_blank" rel="noopener noreferrer">유페이퍼에서 도서 보기·구매 <span aria-hidden="true">↗</span></a>
             </div>
           </article>
+          </div>
         </div>
         <p class="books-author-link"><a href="https://osiki111.upaper.kr/" target="_blank" rel="noopener noreferrer">윤영식 작가 페이퍼 전체 보기 ↗</a></p>
       </div>

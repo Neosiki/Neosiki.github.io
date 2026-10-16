@@ -42,6 +42,22 @@
         "wideLabel": "Open 16:9 edition",
         "verticalLabel": "Open 9:16 edition"
       }
+    },
+    "publication": {
+      "label": "전자책 정식 출간",
+      "isbn": "979-11-444-3283-3",
+      "stores": "교보문고 · 예스24 · 알라딘",
+      "note": "유페이퍼 전자책으로 출간되어 ISBN이 발급되었고, 주요 서점 유통을 마쳤습니다.",
+      "buyUrl": "https://osiki111.upaper.kr/content/1225454",
+      "buyLabel": "유페이퍼에서 보기",
+      "en": {
+        "label": "Published as an ebook",
+        "isbn": "979-11-444-3339-7",
+        "stores": "uPaper",
+        "note": "The English edition, CIVILIZATION, is published as an ebook with its own ISBN.",
+        "buyUrl": "https://osiki111.upaper.kr/content/1225540",
+        "buyLabel": "View on uPaper"
+      }
     }
   },
   "works": [
