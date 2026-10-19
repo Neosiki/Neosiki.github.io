@@ -1219,7 +1219,7 @@
         <a href="#work">프로젝트</a>
         <a href="#public-project">전문영역</a>
         <a href="fiction.html">문명 연작</a>
-        <a href="about.html#credentials">자격·수료</a>
+        <a href="about.html#credentials">자격·인증뱃지</a>
       </nav>
       <div class="nav-cta"><a class="pill-link" href="#contact">협업 문의 <span>↗</span></a></div>
     </div>
@@ -1272,7 +1272,7 @@
             <strong id="showreel-title">15초로 보는 NextAI</strong>
           </div>
           <div class="showreel-meta">
-            <span>자격·수료 49 · 선별 프로젝트 39 · 문명 연작 12편</span>
+            <span>자격·인증뱃지 49 · 선별 프로젝트 39 · 문명 연작 12편</span>
             <a href="#brand-film">100초 브랜드 필름 ↘</a>
             <a href="assets/video/nextai-showreel-15s-vertical.mp4" target="_blank" rel="noreferrer">세로형 9:16 ↗</a>
           </div>
@@ -1794,7 +1794,7 @@
 
   <dialog class="cert-dialog" id="cert-dialog" aria-labelledby="cert-dialog-title">
     <div class="cert-dialog-shell">
-      <button class="cert-close" id="cert-close" type="button" aria-label="자격증 확대 화면 닫기">×</button>
+      <button class="cert-close" id="cert-close" type="button" aria-label="자격·인증뱃지 확대 화면 닫기">×</button>
       <div class="cert-dialog-image"><img id="cert-dialog-image" alt="" /></div>
       <div class="cert-dialog-meta">
         <span class="credential-provider" id="cert-dialog-provider"></span>
@@ -1821,7 +1821,7 @@
     });
 
     const credentials = [
-      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI Professional Certificate', date: '2026.03', image: 'assets/certificates/cert-09.png', verify: 'https://www.credly.com/go/b872jm8g' },
+      { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI Professional 자격', date: '2026.03', image: 'assets/certificates/cert-09.png', verify: 'https://www.credly.com/go/b872jm8g' },
       { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI Fundamentals', date: '2026.03', image: 'assets/certificates/cert-08.png', verify: 'https://www.credly.com/go/GZUFMTvK' },
       { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Writing and Communicating', date: '2026.03', image: 'assets/certificates/cert-07.png', verify: 'https://www.credly.com/go/CHMq8kOK' },
       { provider: 'google', providerLabel: 'Google · Coursera', title: 'Google AI for Research and Insights', date: '2026.03', image: 'assets/certificates/cert-06.png', verify: 'https://www.credly.com/go/45b390GH' },
@@ -1868,14 +1868,14 @@
     const certDialogDate = document.querySelector('#cert-dialog-date');
     const certDialogVerify = document.querySelector('#cert-dialog-verify');
 
-    // 자격·수료 영역은 about.html로 옮겨져 이 페이지에 없을 수 있음 — 있을 때만 동작
+    // 자격·인증뱃지 영역은 about.html로 옮겨져 이 페이지에 없을 수 있음 — 있을 때만 동작
     if (credentialGrid && certDialog) {
     function renderCredentials(provider = 'all') {
       const visible = credentials.filter(item => provider === 'all' || item.provider === provider);
       credentialGrid.innerHTML = visible.map(item => {
         const index = credentials.indexOf(item);
-        return `<button class="credential-card" type="button" data-credential-index="${index}" aria-label="${item.title} 수료증 확대 보기">
-          <span class="credential-image"><img src="${item.image}" alt="${item.title} 자격·수료증" loading="lazy" /></span>
+        return `<button class="credential-card" type="button" data-credential-index="${index}" aria-label="${item.title} 자격·인증뱃지 확대 보기">
+          <span class="credential-image"><img src="${item.image}" alt="${item.title} 자격·인증뱃지" loading="lazy" /></span>
           <span class="credential-body">
             <span class="credential-provider">${item.providerLabel}</span>
             <span class="credential-title">${item.title}</span>
@@ -1898,10 +1898,10 @@
       if (!card) return;
       const item = credentials[Number(card.dataset.credentialIndex)];
       certDialogImage.src = item.image;
-      certDialogImage.alt = `${item.title} 자격·수료증 원본`;
+      certDialogImage.alt = `${item.title} 자격·인증뱃지 원본`;
       certDialogProvider.textContent = item.providerLabel;
       certDialogTitle.textContent = item.title;
-      certDialogDate.textContent = `${item.dateLabel || '수료월'} ${item.date}`;
+      certDialogDate.textContent = `${item.dateLabel || '인증월'} ${item.date}`;
       if (item.verify) {
         certDialogVerify.href = item.verify;
         certDialogVerify.hidden = false;
