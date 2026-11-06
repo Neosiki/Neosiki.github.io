@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>NextAI — 15s Showreel v02</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1920px;height:1080px;background:#000;overflow:hidden}
+  #stage{position:relative;width:1920px;height:1080px;overflow:hidden;
+    background:#0B1620;color:#fff;
+    font-family:"Noto Sans CJK KR","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+  .mono{font-family:"DejaVu Sans Mono",monospace;font-variant-numeric:tabular-nums}
+  #vig{position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse 80% 72% at 50% 46%,rgba(0,0,0,0) 40%,rgba(0,0,0,.55) 100%)}
+  #grain{position:absolute;inset:-50px;pointer-events:none;opacity:.055;
+    background-repeat:repeat;image-rendering:pixelated;mix-blend-mode:overlay}
+  #flash{position:absolute;inset:0;opacity:0}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="world" style="position:absolute;inset:0"></div>
+  <div id="vig"></div>
+  <div id="grain"></div>
+  <div id="flash"></div>
+</div>
+<script>
+const FPS = 30, DUR = 15, TOTAL = FPS * DUR;          // 450
+const TEAL = '#16D0E4', PEACH = '#EDB49A', NAVY = '#0B1620';
+
+/* 결정론적 노이즈 타일 */
+function mb(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const TILES=[];(function(){for(let k=0;k<6;k++){const c=document.createElement('canvas');
+  c.width=c.height=200;const x=c.getContext('2d'),im=x.createImageData(200,200),r=mb(400+k*811);
+  for(let i=0;i<im.data.length;i+=4){const v=(r()*255)|0;
+    im.data[i]=im.data[i+1]=im.data[i+2]=v;im.data[i+3]=255}
+  x.putImageData(im,0,0);TILES.push(c.toDataURL('image/png'))}})();
+
+const world=document.getElementById('world'), grain=document.getElementById('grain'),
+      flash=document.getElementById('flash'), stage=document.getElementById('stage');
+
+const cl=(a,b,v)=>Math.max(a,Math.min(b,v));
+const R=(f,a,b)=>cl(0,1,(f-a)/(b-a));
+const E=t=>1-Math.pow(1-t,3);
+
+function el(tag,css,txt){const d=document.createElement(tag);
+  if(css)d.style.cssText=css;if(txt!=null)d.textContent=txt;world.appendChild(d);return d}
+function box(x,y,w,h,color,extra){
+  return el('div',`position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px;background:${color};${extra||''}`)}
+function T(x,y,txt,css){return el('div',`position:absolute;left:${x}px;top:${y}px;white-space:pre;${css||''}`,txt)}
+function C(y,txt,css){return el('div',`position:absolute;left:0;top:${y}px;width:1920px;text-align:center;white-space:pre;${css||''}`,txt)}
+
+/* ── 콘텐츠 (2026.11 기준) ── */
+const SERVICES=[
+  ['공공과제·연구기획','PUBLIC PROJECT'],
+  ['AI 에이전트','AGENTIC BUILD'],
+  ['바이브 코딩','VIBE CODING'],
+  ['데이터 콘텐츠','DATA CONTENT'],
+  ['디지털 검증·팩트체크','VERIFICATION'],
+  ['교육 시스템','EDUCATION'],
+  ['AI 교육·컨설팅','CONSULTING']];
+const ORGS=['한국콘텐츠진흥원','한국언론진흥재단','한국인터넷전문가협회','한국웹툰산업협회',
+  '과학기술정보통신부','경북콘텐츠기업지원센터','대구관광재단','한국인공지능연구소'];
+const CERTS=[['AFP',18],['GOOGLE',8],['ANTHROPIC',21],['MS·국내',7]];
+const KEYS=['AI·AX','에이전트','공공과제','바이브 코딩','팩트체크','연구기획','데이터','교육','자동화'];
+
+/* ── 비트 (30fps) ── */
+const B=[[0,36],[36,66],[66,129],[129,162],[162,196],[196,230],[230,270],[270,312],[312,360],[360,396],[396,450]];
+const bi_of=f=>{for(let i=0;i<B.length;i++)if(f>=B[i][0]&&f<B[i][1])return i;return B.length-1};
+
+window.__seek=function(f){
+  f=cl(0,TOTAL-1,f|0);
+  world.innerHTML='';
+  const bi=bi_of(f), [a,b]=B[bi], lf=f-a, len=b-a;
+
+  const rw=mb(f*29+11); const dx=(rw()-.5)*1.0, dy=(rw()-.5)*1.0;
+  world.style.transform=`translate(${dx.toFixed(2)}px,${dy.toFixed(2)}px)`;
+  grain.style.backgroundImage=`url(${TILES[f%6]})`;
+  const g2=mb(f*13+2); grain.style.backgroundPosition=`${(g2()*200)|0}px ${(g2()*200)|0}px`;
+
+  const isCut=B.some(x=>x[0]===f)&&f>0;
+  flash.style.background=(bi%2? TEAL : '#F4F1EA');
+  flash.style.opacity=isCut?'0.55':'0';
+  stage.style.background=NAVY;
+
+  switch(bi){
+
+  /* 1. 오프닝 */
+  case 0:{
+    const q=E(R(lf,0,13)), k=E(R(lf,12,22));
+    const h=140-132*k, yy=612-h/2;
+    box(0,yy,960*q,h,TEAL);
+    box(1920-960*q,yy,960*q,h,PEACH);
+    if(lf>=19){const w=E(R(lf,19,33));box(0,yy+h/2-1,1920*w,2,'rgba(255,255,255,.85)')}
+    if(lf>=17){const m=E(R(lf,17,33));
+      C(352,'NextAI',`font-size:186px;font-weight:900;letter-spacing:-.045em;color:#fff;
+        clip-path:inset(0 ${((1-m)*100).toFixed(1)}% 0 0);
+        transform:scale(${(1+.035*(1-m)).toFixed(3)});transform-origin:50% 60%`)}
+    if(lf>=26) C(664,'AI · AX  BUSINESS  STUDIO',
+      `font-size:21px;letter-spacing:.48em;color:rgba(255,255,255,.62);
+       font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,26,36).toFixed(2)}`);
+    break;
+  }
+
+  /* 2. AI · AX */
+  case 1:{
+    const q=E(R(lf,0,10));
+    box(150,300,18,480*q,TEAL);
+    C(322,'AI · AX',`font-size:250px;font-weight:900;letter-spacing:-.05em;
+      clip-path:inset(0 0 ${((1-q)*100).toFixed(1)}% 0)`);
+    if(lf>12) C(648,'WORK  TRANSFORMATION',
+      `font-size:26px;letter-spacing:.52em;color:${PEACH};font-family:"DejaVu Sans Mono",monospace;
+       opacity:${R(lf,12,20).toFixed(2)}`);
+    break;
+  }
+
+  /* 3. 서비스 7종 (컷당 9프레임) */
+  case 2:{
+    const step=9, idx=Math.min(6,Math.floor(lf/step)), sf=lf-idx*step;
+    const s=E(R(sf,0,6)), alt=idx%2===0;
+    box(0,0,1920,1080,alt?NAVY:'#0F1D28');
+    box(alt?0:1920-1500*s,340,1500*s,4,alt?TEAL:PEACH);
+    T(alt?160:330,392,SERVICES[idx][0],
+      `font-size:${SERVICES[idx][0].length>9?104:132}px;font-weight:900;letter-spacing:-.04em;
+       clip-path:inset(0 ${((1-s)*100).toFixed(1)}% 0 0);
+       transform:translateX(${((1-s)*(alt?-40:40)).toFixed(1)}px)`);
+    T(alt?164:334,586,SERVICES[idx][1],
+      `font-size:24px;letter-spacing:.42em;color:${alt?PEACH:TEAL};
+       font-family:"DejaVu Sans Mono",monospace;opacity:${R(sf,3,8).toFixed(2)}`);
+    for(let k=0;k<7;k++) box(162+k*40,930,26,5,k<=idx?(alt?TEAL:PEACH):'rgba(255,255,255,.26)');
+    T(162,878,String(idx+1).padStart(2,'0')+' / 07',
+      `font-size:17px;letter-spacing:.34em;color:rgba(255,255,255,.5);font-family:"DejaVu Sans Mono",monospace`);
+    break;
+  }
+
+  /* 4. 자격·인증 54종 */
+  case 3:{
+    const n=Math.round(54*E(R(lf,2,22)));
+    C(232,'CREDENTIALS',`font-size:24px;letter-spacing:.5em;color:${TEAL};font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,0,6).toFixed(2)}`);
+    C(286,String(n),`font-size:300px;font-weight:900;letter-spacing:-.06em;
+      font-family:"DejaVu Sans Mono",monospace`);
+    CERTS.forEach((c,k)=>{
+      const s=E(R(lf,14+k*3,22+k*3)); if(s<=0)return;
+      const x=300+k*340;
+      box(x,706,240*s,3,PEACH);
+      T(x,724,String(c[1]),`font-size:64px;font-weight:900;font-family:"DejaVu Sans Mono",monospace;opacity:${s.toFixed(2)}`);
+      T(x,806,c[0],`font-size:19px;letter-spacing:.2em;color:rgba(255,255,255,.82);opacity:${s.toFixed(2)}`);
+    });
+    break;
+  }
+
+  /* 5. 타임라인 */
+  case 4:{
+    const q=E(R(lf,0,24));
+    box(150,540,1620*q,3,'#fff');
+    T(150,452,'2002',`font-size:52px;font-weight:900;font-family:"DejaVu Sans Mono",monospace;color:${PEACH}`);
+    const yr=2002+Math.round(24*q);
+    T(150+1620*q-140,452,String(yr),`font-size:52px;font-weight:900;font-family:"DejaVu Sans Mono",monospace;color:${TEAL}`);
+    box(150+1620*q-6,524,12,36,TEAL);
+    for(let k=0;k<=6;k++){const tx=150+270*k; if(tx<=150+1620*q) box(tx,543,2,18,'rgba(255,255,255,.4)')}
+    if(lf>14) C(640,'월드컵 운영 · 포털 · 통신 · 방송 · 언론 · 콘텐츠 경영',
+      `font-size:40px;font-weight:700;letter-spacing:-.02em;opacity:${R(lf,14,24).toFixed(2)}`);
+    if(lf>20) C(724,'26 YEARS IN ICT · MEDIA · AI',
+      `font-size:21px;letter-spacing:.46em;color:${PEACH};font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,20,28).toFixed(2)}`);
+    break;
+  }
+
+  /* 6. 38 선별 프로젝트 */
+  case 5:{
+    const cols=10, cw=132, ch=76, ox=300, oy=300;
+    for(let i=0;i<38;i++){
+      const s=E(R(lf,1+i*0.42,7+i*0.42)); if(s<=0)continue;
+      const cx=ox+(i%cols)*cw, cy=oy+Math.floor(i/cols)*ch;
+      box(cx,cy+(1-s)*10,cw-10,ch-10,i%7===0?TEAL:(i%5===0?PEACH:'rgba(255,255,255,.14)'),`opacity:${s.toFixed(2)}`);
+    }
+    const n=Math.round(38*E(R(lf,2,24)));
+    T(300,622,String(n),`font-size:190px;font-weight:900;font-family:"DejaVu Sans Mono",monospace;letter-spacing:-.05em`);
+    T(560,700,'선별 프로젝트',`font-size:52px;font-weight:800;letter-spacing:-.02em;opacity:${R(lf,10,20).toFixed(2)}`);
+    T(564,778,'SELECTED  WORK',`font-size:20px;letter-spacing:.44em;color:${TEAL};font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,14,24).toFixed(2)}`);
+    break;
+  }
+
+  /* 7. 심사·자문 기관 */
+  case 6:{
+    C(210,'REVIEW  ·  ADVISORY',`font-size:22px;letter-spacing:.5em;color:${PEACH};font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,0,6).toFixed(2)}`);
+    const q=E(R(lf,0,34));
+    ORGS.forEach((o,k)=>{
+      const s=E(R(lf,2+k*2.6,10+k*2.6)); if(s<=0)return;
+      const y=290+k*82;
+      T(300,y,o,`font-size:46px;font-weight:800;letter-spacing:-.02em;
+        clip-path:inset(0 ${((1-s)*100).toFixed(1)}% 0 0);
+        transform:translateX(${((1-s)*-26).toFixed(1)}px)`);
+      box(1100,y+30,520*s,2,k%2?TEAL:'rgba(255,255,255,.28)');
+    });
+    box(240,290,4,656*q,TEAL);
+    break;
+  }
+
+  /* 8. 출간 도서 10권 + 문명 연작 12편 */
+  case 7:{
+    C(188,'PUBLISHED  BOOKS  ·  SHORT FICTION',`font-size:22px;letter-spacing:.5em;color:${TEAL};font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,0,6).toFixed(2)}`);
+    for(let i=0;i<10;i++){
+      const s=E(R(lf,2+i*1.6,9+i*1.6)); if(s<=0)continue;
+      const x=272+i*148, h=210*s;
+      box(x,424-h/2,120,h,'rgba(255,255,255,.90)');
+      T(x,640,String(i+1).padStart(2,'0'),`font-size:19px;font-family:"DejaVu Sans Mono",monospace;color:${PEACH};opacity:${s.toFixed(2)}`);
+    }
+    C(716,'출간 도서 10권',`font-size:74px;font-weight:900;letter-spacing:-.035em;opacity:${R(lf,16,26).toFixed(2)}`);
+    C(816,'문명 연작 12편 · 실무 가이드 · 소상공인 · 검증',`font-size:26px;letter-spacing:.04em;color:rgba(255,255,255,.62);opacity:${R(lf,20,30).toFixed(2)}`);
+    break;
+  }
+
+  /* 9. 태그라인 */
+  case 8:{
+    const q1=E(R(lf,2,16)), q2=E(R(lf,14,28));
+    box(150,330,1620*q1,3,PEACH);
+    T(150,372,'조직의 업무를 정리하고',`font-size:118px;font-weight:900;letter-spacing:-.045em;
+      clip-path:inset(0 ${((1-q1)*100).toFixed(1)}% 0 0)`);
+    T(150,516,'실행 가능한 결과로 연결합니다',`font-size:118px;font-weight:900;letter-spacing:-.045em;color:${TEAL};
+      clip-path:inset(0 ${((1-q2)*100).toFixed(1)}% 0 0)`);
+    if(lf>26) T(154,700,'ORGANISE  THE  WORK  ·  DELIVER  THE  RESULT',
+      `font-size:21px;letter-spacing:.42em;color:rgba(255,255,255,.55);font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,26,36).toFixed(2)}`);
+    break;
+  }
+
+  /* 10. 키워드 9개 */
+  case 9:{
+    const POS=[[170,232,92],[980,210,70],[240,400,116],[1210,392,80],
+               [150,576,74],[760,560,100],[1340,572,62],[300,742,86],[1020,756,72]];
+    KEYS.forEach((k,i)=>{
+      const s=E(R(lf,i*2.1,6+i*2.1)); if(s<=0)return;
+      const [x,y,fs]=POS[i];
+      const col=i%3===0?TEAL:(i%3===1?'#fff':PEACH);
+      T(x,y,k,`font-size:${fs}px;font-weight:900;letter-spacing:-.035em;color:${col};
+        opacity:${s.toFixed(2)};transform:scale(${(0.86+0.14*s).toFixed(3)});transform-origin:left center`);
+    });
+    for(let k=0;k<5;k++){
+      const s=E(R(lf,3+k*3,11+k*3));
+      box(0,150+k*190,1920*s,2,'rgba(255,255,255,.12)');
+    }
+    break;
+  }
+
+  /* 11. 엔드 락업 */
+  case 10:{
+    const q=E(R(lf,0,14));
+    box(0,536,960*q,8,TEAL); box(1920-960*q,536,960*q,8,PEACH);
+    const m=E(R(lf,6,22));
+    C(392,'NextAI',`font-size:190px;font-weight:900;letter-spacing:-.05em;
+      clip-path:inset(0 ${((1-m)*100).toFixed(1)}% 0 0)`);
+    if(lf>16) C(620,'윤영식 · AI · AX 업무 전환',
+      `font-size:34px;font-weight:700;letter-spacing:.02em;color:rgba(255,255,255,.82);opacity:${R(lf,16,26).toFixed(2)}`);
+    if(lf>24) C(700,'NEOSIKI.GITHUB.IO',
+      `font-size:22px;letter-spacing:.5em;color:${TEAL};font-family:"DejaVu Sans Mono",monospace;opacity:${R(lf,24,34).toFixed(2)}`);
+    world.style.opacity=(1-0.55*R(lf,len-4,len-1)).toFixed(3);
+    break;
+  }
+  }
+  if(bi!==10) world.style.opacity='1';
+};
+window.__seek(0);
+window.__ready=true;
+</script>
+</body>
+</html>
